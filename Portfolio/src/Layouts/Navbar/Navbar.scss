@@ -1,0 +1,236 @@
+/* Original Navbar Styles - completely unchanged */
+nav {
+  padding: 0px 50px;
+  position: relative;
+  z-index: 10;
+
+  @media (max-width: 551px) {
+    padding: 0px 20px;
+  }
+
+  .upBox {
+    display: flex;
+    border-bottom: 3px solid #ebebeb;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      max-width: 200px;
+    }
+
+    button {
+      height: 50px;
+      width: max-content;
+      padding: 0 25px 0px 17px;
+      display: flex;
+      position: relative;
+      overflow: hidden;
+      width: 200px;
+      cursor: pointer;
+      border-radius: 20px;
+      background: #21295c;
+      border: none;
+      outline: none;
+      border: 1px solid #676767;
+      p {
+        font-size: 20px;
+        top: 25%;
+        left: 5%;
+        transition: all 0.5s ease;
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 600;
+        position: relative;
+        z-index: 2;
+        margin: 0;
+      }
+
+      &:hover {
+        span {
+          top: 0;
+          transition: all 0.5s ease;
+        }
+        p {
+          transition: all 0.5s ease;
+          color: #21295c;
+        }
+      }
+
+      background-color: #21295c;
+      color: #ffffff;
+
+      span {
+        transition: all 0.5s ease;
+        border-radius: 18px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 100%;
+        background: #ffffff;
+        z-index: 1;
+      }
+    }
+
+    @media (max-width: 551px) {
+      img {
+        max-width: 100px;
+      }
+      button {
+        height: 36px;
+        width: 170px;
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+/* Enhanced Circle Overlay with symmetrical animations */
+.circle-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  pointer-events: none;
+  transform-origin: var(--origin-x) var(--origin-y);
+  color: #21295c;
+  display: flex;
+  align-items: end;
+  background: #ffffff;
+
+  background-image: url("../../../public/ContactImage.png");
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* Shared animation properties */
+  @media (max-width: 768px){
+  background-image: url("../../../public/ContactImage1.png");
+
+  }
+  &.expanded,
+  &.collapsed {
+    transition: clip-path 0.8s cubic-bezier(0.77, 0, 0.175, 1),
+      background 0.3s ease;
+  }
+
+  /* Opening Animation */
+  &.expanded {
+    clip-path: circle(150% at var(--origin-x) var(--origin-y));
+    pointer-events: auto;
+
+    .overlay-content {
+      opacity: 1;
+      transition: opacity 0.4s ease 0.4s, transform 0.4s ease 0.4s;
+      transform: translateY(0);
+    }
+  }
+
+  /* Closing Animation - Mirror of opening */
+  &.collapsed {
+    clip-path: circle(0% at var(--origin-x) var(--origin-y));
+    background: transparent;
+
+    .overlay-content {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.2s ease, transform 0.3s ease;
+    }
+  }
+
+  .overlay-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    width: 100%;
+    gap: 60px;
+    transform: translateY(20px);
+
+    @media (max-width: 768px) {
+      padding: 40px;
+    }
+
+    @media (max-width: 480px) {
+      padding: 20px;
+    }
+  }
+
+  .menu-items {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    a {
+      color: #21295c;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: "Inter Tight", sans-serif;
+      transition: transform 0.3s ease;
+      width: max-content;
+      font-size: 100px;
+      @media (max-width: 768px) {
+        font-size: 55px !important;
+      }
+      &:hover {
+        transform: translateX(20px);
+      }
+
+      @media (max-width: 768px) {
+        font-size: 8vw;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: "Inter Tight", sans-serif;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .copyright {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 30px;
+
+      @media (max-width: 480px) {
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      a {
+        color: #21295c;
+        text-decoration: none;
+        font-size: 14px;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 1px;
+          bottom: -2px;
+          left: 0;
+          background-color: #676767;
+          transition: width 0.3s ease;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
+.footerSection {
+  font-family: "Inter Tight", sans-serif;
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px;
+    margin: 0 auto;
+
+    .upBox {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      h2 {
+        font-size: 100px;
+        color: #21295c;
+
+        @media (max-width: 597px) {
+          font-size: 50px;
+          max-width: 300px;
+        }
+      }
+
+      button {
+        height: 50px;
+        width: max-content;
+        padding: 0 20px 12px 23px;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        width: 200px;
+        cursor: pointer;
+        border-radius: 20px;
+        background: #21295c;
+
+        p {
+          font-size: 20px;
+          top: 25%;
+          left: 5%;
+          transition: all 0.5s ease;
+          font-family: "Inter Tight", sans-serif;
+          font-weight: 600;
+          position: relative;
+        }
+        &:hover {
+          span {
+            top: 0;
+            transition: all 0.5s ease;
+          }
+          p {
+            transition: all 0.5s ease;
+            color: #21295c;
+          }
+        }
+        background-color: #21295c;
+        color: #ffffff;
+        span {
+          transition: all 0.5s ease;
+          border-radius: 18px;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 100%;
+          background: #ffffff;
+        }
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+        max-width: 600px;
+        letter-spacing: 0.01em;
+      }
+    }
+
+    .mediumBox {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+
+      .socialMedia {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+        cursor: pointer;
+
+        .box {
+          display: flex;
+          flex-direction: column;
+
+          p {
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin: 0;
+            color: #21295c;
+          }
+
+          span {
+            background: #cdcaca;
+            height: 2px;
+            width: 0%;
+            transition: all 0.7s;
+          }
+
+          &:hover {
+            span {
+              width: 100%;
+            }
+          }
+        }
+
+        h6 {
+          font-size: 1.2rem;
+          margin: 0;
+          padding-left: 5px;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding: 20px;
+
+      .upBox {
+        h2 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  #backToTop {
+    overflow: hidden;
+    margin-top: -50px;
+
+    @media (max-width: 769px) {
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 200px;
+      text-align: center;
+      color: #21295c;
+      font-weight: 1000;
+
+      @media (max-width: 1120px) {
+        font-size: 100px;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 50px;
+      }
+    }
+
+    .down {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 20px 50px;
+      flex-wrap: wrap;
+      background: linear-gradient(
+        106deg,
+        rgba(33, 41, 92, 1) 0%,
+        rgba(101, 107, 138, 1) 50%,
+        rgba(255, 255, 255, 1) 100%
+      );
+
+      @media (max-width: 551px) {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      p {
+        font-weight: 600;
+        color: #ffffff;
+      }
+
+      .box {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+
+        h2 {
+          font-size: 20px;
+          color: #21295c;
+
+          @media (max-width: 551px) {
+            color: #ffffff;
+          }
+        }
+
+        span {
+          height: 2px;
+          width: 0%;
+          background: #676767;
+          transition: all 0.7s;
+        }
+
+        &:hover {
+          span {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

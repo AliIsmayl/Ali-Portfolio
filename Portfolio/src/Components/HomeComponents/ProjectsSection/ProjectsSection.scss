@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
+#projectsSection {
+  padding: 50px;
+  background-position: start;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  @media (max-width: 526px) {
+  }
+  @media (max-width: 597px) {
+    padding: 50px 20px;
+  }
+  .upBox {
+    h1 {
+      font-size: 100px;
+      font-family: "Inter Tight", sans-serif;
+      max-width: 320px;
+      color: #21295c;
+
+      @media (max-width: 597px) {
+        font-size: 50px;
+        max-width: 300px;
+      }
+    }
+  }
+  .downBox {
+    padding: 50px 0px 20px 0px;
+    display: flex;
+    gap: 25px 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .projectCard {
+      width: 49%;
+      height: 440px;
+      border-radius: 14px;
+      overflow: hidden;
+      cursor: pointer;
+      border: 1px solid #21295c;
+      box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.75);
+      text-decoration: none;
+      
+      @media (max-width: 1099px) {
+        width: 100%;
+      }
+      @media (max-width: 597px) {
+        height: 250px;
+      }
+      &:hover {
+        .imgBox {
+          img {
+            transform: scale(1.02);
+            transition: all 0.8s ease;
+          }
+        }
+
+        .textBox {
+          padding: 20px 25px;
+          transition: all 0.8s ease;
+
+          @media (max-width: 597px) {
+            padding: 20px 15px;
+          }
+        }
+      }
+      .imgBox {
+        height: 80%;
+        overflow: hidden;
+        @media (max-width: 597px) {
+          height: 70%;
+        }
+        img {
+          width: 100%;
+          transition: all 0.8s ease;
+          height: 100%;
+          object-fit: cover;
+          aspect-ratio: 1/1;
+        }
+      }
+      .textBox {
+        background-color: #ebebeb;
+        height: 20%;
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Inter Tight", sans-serif;
+        transition: all 0.8s ease;
+        background: #21295c;
+        background: linear-gradient(
+          106deg,
+          rgba(33, 41, 92, 1) 0%,
+          rgba(101, 107, 138, 1) 50%,
+          rgba(255, 255, 255, 1) 100%
+        );
+        @media (max-width: 597px) {
+          padding: 20px 10px;
+          height: 30%;
+        }
+
+        .text {
+          p {
+            font-size: 24px;
+            margin-bottom: 5px;
+            color: #ebebeb;
+            font-weight: 500;
+            &:hover {
+              text-decoration: underline;
+            }
+            @media (max-width: 597px) {
+              font-size: 17px;
+              margin-bottom: 0px;
+            }
+          }
+          span {
+            font-size: 20px;
+            color: #cdcaca;
+            &:hover {
+              text-decoration: underline;
+            }
+            @media (max-width: 597px) {
+              font-size: 12px;
+            }
+          }
+        }
+        .time {
+          font-size: 20px;
+          background: #21295c;
+          padding: 8px 25px;
+          color: #ebebeb;
+          border-radius: 13px;
+          font-weight: 600;
+          @media (max-width: 597px) {
+            font-size: 15px;
+            padding: 5px 15px;
+          }
+        }
+      }
+    }
+  }
+}

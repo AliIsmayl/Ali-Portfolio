@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
+#aboutMe {
+  font-family: "Inter Tight", sans-serif;
+  padding: 50px;
+
+  @media (max-width: 597px) {
+    padding: 50px 20px;
+  }
+  h1 {
+    font-size: 100px;
+    font-family: "Inter Tight", sans-serif;
+    line-height: 1.5;
+    color: #21295c;
+
+    @media (max-width: 597px) {
+      font-size: 50px;
+    }
+  }
+  .downBox {
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+    @media (max-width: 1147px) {
+      flex-direction: column;
+    }
+    img {
+      height: 500px;
+      width: 300px;
+      border-radius: 20px;
+      object-fit: cover;
+      @media (max-width: 1147px) {
+        width: 100%;
+      }
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h3 {
+        width: 90%;
+        color: #21295c;
+        font-size: 30px;
+        @media (max-width: 597px) {
+          width: 100%;
+          font-size: 20px;
+        }
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.5;
+        width: 90%;
+        span {
+          font-style: italic;
+          font-weight: 500;
+        }
+        @media (max-width: 597px) {
+          width: 100%;
+          font-size: 17px;
+        }
+      }
+      .link{
+        text-decoration: none;
+      }
+      button {
+        height: 50px;
+        width: max-content;
+        @media (max-width: 597px) {
+          padding: 0 17px 0px 0px;
+        }
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        width: 200px;
+        cursor: pointer;
+        border-radius: 20px;
+        background: #21295c;
+
+        p {
+          font-size: 17px;
+          top: 25%;
+          left: 5%;
+          transition: all 0.5s ease;
+          font-family: "Inter Tight", sans-serif;
+          font-weight: 600;
+          position: relative;
+        }
+        &:hover {
+          span {
+            top: 0;
+            transition: all 0.5s ease;
+          }
+          p {
+            transition: all 0.5s ease;
+            color: #21295c;
+          }
+        }
+        background-color: #21295c;
+        color: #ffffff;
+        span {
+          transition: all 0.5s ease;
+          border-radius: 18px;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 100%;
+          background: #ffffff;
+        }
+      }
+    }
+  }
+}
