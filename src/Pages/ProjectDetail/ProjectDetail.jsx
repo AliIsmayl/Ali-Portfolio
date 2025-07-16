@@ -32,11 +32,11 @@ function ProjectDetail() {
         </div>
         <div className="right" data-aos="fade-left">
           <div className="box">
-            <span>CLIENT</span>
-            <p>{detail.client}</p>
+            <span>DEVELOPMENT</span>
+            <p>{detail.process}</p>
           </div>
           <div className="box">
-            <span>TYPE</span>
+            <span>FIELD</span>
             <p>{detail.detail}</p>
           </div>
           <div className="box">
