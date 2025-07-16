@@ -4,15 +4,14 @@ const projects = [
     name: "Melhem International Hospital",
     detail: "Hospital Website & Admin Panel",
     time: "2025",
-    image: "../public/melhem1.png",
+    image: "/melhem1.png",
     link: "https://melhemhospital.com/",
     color: "#291730",
     bigDescription:
       "A modern and comprehensive website developed for Melhem International Hospital. The platform presents detailed information about doctors, departments, and technologies, along with a full-featured admin panel. The website is fully responsive and optimized for all devices.",
     client: "Melhem International Hospital",
-    image1: "../public/melhem2.png",
-    image2: "../public/melhem3.png",
-    logo: "../public/melhem1.png",
+    image1: "/melhem2.png",
+    image2: "/melhem3.png",
     job: [
       {
         info: "Front-End Developer",
@@ -33,14 +32,14 @@ const projects = [
     name: "Project Management Systems",
     detail: "IT Solution",
     time: "2024",
-    image: "../public/pms1.png",
+    image: "/pms1.png",
     link: "https://pmsystems.az/",
     color: "#006360",
     bigDescription:
       "A professional website developed for Project Management Systems to showcase their innovative solutions. The site includes sections about services, technologies, and team expertise. Built with full responsiveness and clean structure to ensure optimal user experience.",
     client: "PM Systems",
-    image1: "../public/pms2.png",
-    image2: "../public/pms3.png",
+    image1: "/pms2.png",
+    image2: "/pms3.png",
     job: [
       {
         info: "Front-End Developer",
@@ -57,14 +56,14 @@ const projects = [
     name: "Cinema GIA",
     detail: "Online Movie Platform",
     time: "2024",
-    image: "../public/gia1.png",
+    image: "/gia1.png",
     link: "https://cinema-gia-client.vercel.app/",
     color: "#DC3918",
     bigDescription:
       "A full-featured movie streaming platform developed for Cinema GIA, allowing users to browse, purchase, and watch movies online. The website features a modern UI, admin panel, and dynamic content management.",
     client: "Ali Ismayil",
-    image1: "../public/gia2.png",
-    image2: "../public/gia3.png",
+    image1: "/gia2.png",
+    image2: "/gia3.png",
     job: [
       {
         info: "Front-End Developer",
@@ -89,7 +88,7 @@ const projects = [
     name: "Amina Azif",
     detail: "Sport",
     time: "2024",
-    image: "../public/amina1.png",
+    image: "/amina1.png",
     link: "https://amina-azif.az/",
     bigDescription:
       " A dynamic website for Amina azif, designed to provide movie schedules, ticket booking, and information about the cinema's offerings. The site features a modern design with easy navigation and real-time updates on movie listings.",
@@ -124,14 +123,14 @@ const projects = [
     name: "Atelier di Falco",
     detail: "Fashion",
     time: "2024",
-    image: "../public/atelier1.png",
+    image: "/atelier1.png",
     link: "https://atelierdifalco.az/",
     color: "#1C1812",
     bigDescription:
       "An elegant fashion website developed for Atelier di Falco, offering insights into the brand’s style, philosophy, and latest collections. Designed with a clean, modern aesthetic and optimized for all screen sizes.",
     client: "Ali Ismayil",
-    image1: "../public/atelier2.png",
-    image2: "../public/atelier3.png",
+    image1: "/atelier2.png",
+    image2: "/atelier3.png",
     job: [
       {
         info: "Front-End Developer",
@@ -148,13 +147,13 @@ const projects = [
     name: "Stadt Taxi Lübeck",
     detail: "Taxi",
     time: "2024",
-    image: "../public/taxi1.png",
+    image: "/taxi1.png",
     link: "https://www.stadttaxi-luebeck.de/",
     bigDescription:
       "An informative and modern taxi service website developed for Stadt Taxi Lübeck. The platform introduces the company’s services, provides contact details, and allows users to get acquainted with the taxi fleet. Built with a clean and responsive design for all screen sizes.",
     client: "Stadt Taxi Lübeck",
-    image1: "../public/taxi2.png",
-    image2: "../public/taxi3.png",
+    image1: "/taxi2.png",
+    image2: "/taxi3.png",
     color: "#001D3D",
     job: [
       {
@@ -180,13 +179,13 @@ const projects = [
     name: "Bal Bee",
     detail: "Honey",
     time: "2025",
-    image: "../public/balbee1.png",
+    image: "/balbee1.png",
     link: "https://balbee.az/",
     bigDescription:
       "A modern and visually engaging website built for Bal Bee, focusing on promoting and selling natural honey products. The platform provides detailed information about each product’s ingredients and health benefits, along with an intuitive ordering system. Developed as a fully responsive and informative e-commerce solution.",
     client: "Bal Bee",
-    image1: "../public/balbee2.png",
-    image2: "../public/balbee3.png",
+    image1: "/balbee2.png",
+    image2: "/balbee3.png",
     color: "#E68A00",
     job: [
       {
@@ -212,14 +211,14 @@ const projects = [
     name: "MN ICIT",
     detail: "IT Solution",
     time: "2025",
-    image: "../public/mn1.png",
+    image: "/mn1.png",
     link: "https://mnicit.az/",
     bigDescription:
       "A professional website for MN ICIT, an IT solution company offering consulting, software services, and innovative digital products. The site presents company information, services, and contact options in a structured and visually appealing layout. Designed with responsiveness and simplicity in mind, it includes an admin panel for content management.",
     client: "MN ICIT",
     color: "#004272",
-    image1: "../public/mn2.png",
-    image2: "../public/mn3.png",
+    image1: "/mn2.png",
+    image2: "/mn3.png",
     job: [
       {
         info: "Front-End Developer",
@@ -244,14 +243,14 @@ const projects = [
     name: "Eco Vita",
     detail: "Health",
     time: "2025",
-    image: "../public/eco1.png",
+    image: "/eco1.png",
     link: "https://ecovita.az/",
     color: "#CE338B",
     bigDescription:
       "A health-focused website created for Eco Vita, designed to promote natural wellness products and provide informative content about a healthy lifestyle. The platform includes an admin panel, product catalog, and modern responsive interface tailored for both desktop and mobile users.",
     client: "Eco Vita",
-    image1: "../public/eco2.png",
-    image2: "../public/eco3.png",
+    image1: "/eco2.png",
+    image2: "/eco3.png",
     job: [
       {
         info: "Front-End Developer",
