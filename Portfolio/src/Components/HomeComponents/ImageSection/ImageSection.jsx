@@ -9,6 +9,7 @@ import { PiTiktokLogo } from "react-icons/pi";
 import { LiaTelegramPlane } from "react-icons/lia";
 import { PiYoutubeLogo } from "react-icons/pi";
 import { IoMailOutline } from "react-icons/io5";
+import { Link } from "react-router";
 
 function ImageSection() {
   return (
@@ -17,27 +18,39 @@ function ImageSection() {
         <img src={image1} alt="" />
         <div className="socialMedia">
           <div className="text">
-            <p>
+            <Link
+              className="link"
+              target="_blank"
+              to={"https://www.instagram.com/ali.ismayil_"}
+            >
               <RxInstagramLogo />
-            </p>
-            <p>
+            </Link>
+            <Link className="link" target="_blank">
               <PiFacebookLogo />
-            </p>
-            <p>
+            </Link>
+            <Link
+              className="link"
+              target="_blank"
+              to={"https://www.linkedin.com/in/ali-ismayilzade/"}
+            >
               <PiLinkedinLogo />
-            </p>
-            <p>
+            </Link>
+            <Link className="link" target="_blank">
               <PiYoutubeLogo />
-            </p>
-            <p>
+            </Link>
+            <Link className="link" target="_blank">
               <PiTiktokLogo />
-            </p>
-            <p>
+            </Link>
+            <Link className="link" target="_blank">
               <LiaTelegramPlane />
-            </p>
-            <p>
+            </Link>
+            <Link
+              className="link"
+              to={`mailto:ali.ismayil.681@gmail.com`}
+              target="_blank"
+            >
               <IoMailOutline />
-            </p>
+            </Link>
           </div>
         </div>
       </div>
@@ -46,27 +59,39 @@ function ImageSection() {
         <img src={image2} alt="" />
         <div className="socialMedia">
           <div className="text">
-            <p>
+            <Link
+              className="link"
+              target="_blank"
+              to={"https://www.instagram.com/ali.ismayil_"}
+            >
               <RxInstagramLogo />
-            </p>
-            <p>
+            </Link>
+            <Link className="link" target="_blank">
               <PiFacebookLogo />
-            </p>
-            <p>
+            </Link>
+            <Link
+              className="link"
+              target="_blank"
+              to={"https://www.linkedin.com/in/ali-ismayilzade/"}
+            >
               <PiLinkedinLogo />
-            </p>
-            <p>
+            </Link>
+            <Link className="link" target="_blank">
               <PiYoutubeLogo />
-            </p>
-            <p>
+            </Link>
+            <Link className="link" target="_blank">
               <PiTiktokLogo />
-            </p>
-            <p>
+            </Link>
+            <Link className="link" target="_blank">
               <LiaTelegramPlane />
-            </p>
-            <p>
+            </Link>
+            <Link
+              className="link"
+              to={`mailto:ali.ismayil.681@gmail.com`}
+              target="_blank"
+            >
               <IoMailOutline />
-            </p>
+            </Link>
           </div>
         </div>
       </div>

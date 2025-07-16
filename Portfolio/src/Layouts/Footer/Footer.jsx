@@ -1,6 +1,7 @@
 import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 import "./Footer.scss";
+import { Link } from "react-router";
 
 function Footer() {
   const scrollToTop = () => {
@@ -14,10 +15,10 @@ function Footer() {
       <footer>
         <div className="upBox">
           <h2>LET'S WORK TOGETHER</h2>
-          <button>
+          <Link className="button" to={"/contact"}>
             <span></span>
             <p>CONTACT ME</p>
-          </button>
+          </Link>
           <p>
             HI, I’M ALI — I BUILD INTUITIVE WEBSITES THAT LOOK GOOD, LOAD FAST,
             AND FEEL EFFORTLESS. FROM IDEA TO CODE, I CARE ABOUT EVERY DETAIL.
@@ -25,28 +26,36 @@ function Footer() {
         </div>
         <div className="mediumBox">
           <div className="socialMedia">
-            <div className="box">
+            <Link
+              target="_blank"
+              to={"https://www.instagram.com/ali.ismayil_"}
+              className="box"
+            >
               <p>INSTAGRAM</p>
               <span></span>
-            </div>
+            </Link>
             <h6>
               <MdArrowOutward />
             </h6>
           </div>
           <div className="socialMedia">
-            <div className="box">
+            <Link
+              to={`mailto:ali.ismayil.681@gmail.com`}
+              target="_blank"
+              className="box"
+            >
               <p>GMAIL</p>
               <span></span>
-            </div>
+            </Link>
             <h6>
               <MdArrowOutward />
             </h6>
           </div>
           <div className="socialMedia">
-            <div className="box">
+            <Link to={`tel:+994998982004`} target="_blank" className="box">
               <p>PHONE</p>
               <span></span>
-            </div>
+            </Link>
             <h6>
               <MdArrowOutward />
             </h6>

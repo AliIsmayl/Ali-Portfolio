@@ -25,7 +25,7 @@
         }
       }
 
-      button {
+      .button {
         height: 50px;
         width: max-content;
         padding: 0 20px 12px 23px;
@@ -36,7 +36,7 @@
         cursor: pointer;
         border-radius: 20px;
         background: #21295c;
-
+        text-decoration: none;
         p {
           font-size: 20px;
           top: 25%;
@@ -93,7 +93,7 @@
         .box {
           display: flex;
           flex-direction: column;
-
+          text-decoration: none;
           p {
             font-size: 1.2rem;
             font-weight: 500;
