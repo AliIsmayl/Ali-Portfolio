@@ -14,7 +14,7 @@ import { Link } from "react-router";
 function ImageSection() {
   return (
     <section id="imageSection">
-      <div className="imgBox" id="img1" data-aos="fade-down">
+      {/* <div className="imgBox" id="img1" data-aos="fade-down">
         <img src={image1} alt="" />
         <div className="socialMedia">
           <div className="text">
@@ -53,9 +53,9 @@ function ImageSection() {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="imgBox" id="img2" data-aos="fade-up">
+      {/* <div className="imgBox" id="img2" data-aos="fade-up">
         <img src={image2} alt="" />
         <div className="socialMedia">
           <div className="text">
@@ -94,7 +94,7 @@ function ImageSection() {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
