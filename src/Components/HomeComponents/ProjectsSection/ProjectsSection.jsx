@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./ProjectsSection.scss";
 import info from "../../../project";
 import { Link, useLocation } from "react-router-dom";
@@ -9,6 +9,17 @@ function ProjectsSection() {
   const location = useLocation().pathname;
   const isProjectPage = location === "/project";
   const visibleProjects = isProjectPage ? info : info.slice(0, 6);
+
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 597);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 597);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <section
@@ -29,7 +40,7 @@ function ProjectsSection() {
               className="card"
               key={index}
               to={isProjectPage ? `${item.id}` : `project/${item.id}`}
-              style={{ "--moon-clr": item.color || "rgb(110, 17, 176)" }} // Dynamic color per card
+              style={{ "--moon-clr": item.color || "rgb(110, 17, 176)" }}
             >
               <div
                 style={{
@@ -38,7 +49,7 @@ function ProjectsSection() {
               >
                 <div className="textBox">
                   <div className="text">
-                    <p>{item.name}</p>
+                    <p>{isSmallScreen ? item.littleName : item.name}</p>
                     <span>{item.detail}</span>
                   </div>
                   <div className="time">

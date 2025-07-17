@@ -2,10 +2,11 @@ const projects = [
   {
     id: 1,
     name: "Melhem International Hospital",
-    detail: "Hospital",
+    detail: "Medical",
     time: "2025",
     image: "/melhem1.png",
     link: "https://melhemhospital.com/",
+    littleName: "Melhem Hospital",
     color: "#753D96",
     bigDescription:
       "A modern and comprehensive website developed for Melhem International Hospital. The platform presents detailed information about doctors, departments, and technologies, along with a full-featured admin panel. The website is fully responsive and optimized for all devices.",
@@ -34,6 +35,7 @@ const projects = [
     time: "2024",
     image: "/pms1.png",
     link: "https://pmsystems.az/",
+    littleName: "PM Systems",
     color: "#006360",
     bigDescription:
       "A professional website developed for Project Management Systems to showcase their innovative solutions. The site includes sections about services, technologies, and team expertise. Built with full responsiveness and clean structure to ensure optimal user experience.",
@@ -59,6 +61,7 @@ const projects = [
     image: "/gia1.png",
     link: "https://cinema-gia-client.vercel.app/",
     color: "#DC3918",
+    littleName: "Cinema GIA",
     bigDescription:
       "A full-featured movie streaming platform developed for Cinema GIA, allowing users to browse, purchase, and watch movies online. The website features a modern UI, admin panel, and dynamic content management.",
     process: "Individually",
@@ -91,6 +94,7 @@ const projects = [
     image: "/amina1.png",
     color: "#18407C",
     link: "https://amina-azif.az/",
+    littleName: "Amina Azif",
     bigDescription:
       " A dynamic website for Amina azif, designed to provide movie schedules, ticket booking, and information about the cinema's offerings. The site features a modern design with easy navigation and real-time updates on movie listings.",
     process: "Individually",
@@ -127,6 +131,7 @@ const projects = [
     image: "/atelier1.png",
     link: "https://atelierdifalco.az/",
     color: "#1C1812",
+    littleName: "Atelier",
     bigDescription:
       "An elegant fashion website developed for Atelier di Falco, offering insights into the brand’s style, philosophy, and latest collections. Designed with a clean, modern aesthetic and optimized for all screen sizes.",
     process: "Team-based",
@@ -148,7 +153,7 @@ const projects = [
     name: "Stadt Taxi Lübeck",
     detail: "Taxi",
     time: "2024",
-    process:"",
+    process: "",
     image: "/taxi1.png",
     link: "https://www.stadttaxi-luebeck.de/",
     bigDescription:
@@ -157,6 +162,7 @@ const projects = [
     image1: "/taxi2.png",
     image2: "/taxi3.png",
     color: "#001D3D",
+    littleName: "Stadt Taxi",
     job: [
       {
         info: "Front-End Developer",
@@ -189,6 +195,7 @@ const projects = [
     image1: "/balbee2.png",
     image2: "/balbee3.png",
     color: "#E68A00",
+    littleName: "Bal Bee",
     job: [
       {
         info: "Front-End Developer",
@@ -221,6 +228,7 @@ const projects = [
     color: "#004272",
     image1: "/mn2.png",
     image2: "/mn3.png",
+    littleName: "MN ICIT",
     job: [
       {
         info: "Front-End Developer",
@@ -253,6 +261,40 @@ const projects = [
     process: "Individually",
     image1: "/eco2.png",
     image2: "/eco3.png",
+    littleName: "Eco Vita",
+    job: [
+      {
+        info: "Front-End Developer",
+        work: "Developed the user-facing interface and admin panel using modern front-end technologies. Focused on responsive design, cross-browser compatibility, and clean component architecture.",
+      },
+      {
+        info: "UX/UI Designer",
+        work: "Designed a fresh and visually calming interface aligned with the brand's health and eco-conscious identity. Prioritized simplicity, readability, and a smooth user journey.",
+      },
+      {
+        info: "Team Lead",
+        work: "Led the front-end development team by organizing tasks, reviewing code, and maintaining clear communication to ensure timely delivery and design consistency.",
+      },
+      {
+        info: "Project Manager",
+        work: "Oversaw project planning and communication with the client. Coordinated meetings, collected feedback, and ensured project goals were aligned with business needs.",
+      },
+    ],
+  },
+  {
+    id: 10,
+    name: "CanubGas Supply Service",
+    detail: "Supply",
+    time: "2025",
+    image: "/canub1.png",
+    link: "https://canubgas.az/",
+    color: "#98C744",
+    littleName: "CanubGas",
+    bigDescription:
+      "We built an informative website for CanubGas Supply Service, showcasing their services, projects, and activities. The site provides a clear overview of the company’s work and helps users easily explore what they offer.",
+    process: "Individually",
+    image1: "/canub2.png",
+    image2: "/canub3.png",
     job: [
       {
         info: "Front-End Developer",
