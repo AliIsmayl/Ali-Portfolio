@@ -22,11 +22,15 @@
     align-items: center;
     height: 70vh;
     flex-direction: column;
+
     .work {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 10px;
+      @media (max-width: 551px) {
+        margin-top: 40px;
+      }
       p {
         color: #676767;
         font-weight: 500;

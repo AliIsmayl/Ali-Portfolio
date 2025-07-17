@@ -6,7 +6,7 @@ const projects = [
     time: "2025",
     image: "/melhem1.png",
     link: "https://melhemhospital.com/",
-    color: "#291730",
+    color: "#753D96",
     bigDescription:
       "A modern and comprehensive website developed for Melhem International Hospital. The platform presents detailed information about doctors, departments, and technologies, along with a full-featured admin panel. The website is fully responsive and optimized for all devices.",
     process: "Team-based",
@@ -89,6 +89,7 @@ const projects = [
     detail: "Sport",
     time: "2024",
     image: "/amina1.png",
+    color: "#18407C",
     link: "https://amina-azif.az/",
     bigDescription:
       " A dynamic website for Amina azif, designed to provide movie schedules, ticket booking, and information about the cinema's offerings. The site features a modern design with easy navigation and real-time updates on movie listings.",
