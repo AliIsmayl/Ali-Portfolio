@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./ProjectDetail.scss";
 import projects from "../../project";
 import { useParams } from "react-router";
-
+import ReactHtmlParser from 'html-react-parser';
 function ProjectDetail() {
   const [detail, setDetail] = useState(null);
   const [isHovering, setIsHovering] = useState(false);
@@ -11,11 +11,11 @@ function ProjectDetail() {
   useEffect(() => {
     const projectDetail = projects.find((item) => item.id === Number(id));
     setDetail(projectDetail);
-    
+
     // Set CSS variable based on project color
     if (projectDetail?.color) {
       document.documentElement.style.setProperty(
-        '--project-color', 
+        "--project-color",
         projectDetail.color
       );
     }
@@ -24,11 +24,14 @@ function ProjectDetail() {
   if (!detail) return <div>Loading...</div>;
 
   return (
-    <div id="projectDetail" style={{ "--project-color": detail.color || '#291730' }}>
+    <div
+      id="projectDetail"
+      style={{ "--project-color": detail.color || "#291730" }}
+    >
       <div className="firstBox">
         <div className="left" data-aos="fade-right">
           <h1>{detail.name}</h1>
-          <p>{detail.bigDescription}</p>
+          <p>{ReactHtmlParser(detail.bigDescription)}</p>
         </div>
         <div className="right" data-aos="fade-left">
           <div className="box">

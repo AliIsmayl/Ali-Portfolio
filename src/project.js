@@ -9,7 +9,7 @@ const projects = [
     littleName: "Melhem Hospital",
     color: "#753D96",
     bigDescription:
-      "A modern and comprehensive website developed for Melhem International Hospital. The platform presents detailed information about doctors, departments, and technologies, along with a full-featured admin panel. The website is fully responsive and optimized for all devices.",
+      "A modern and comprehensive website developed for <span> Melhem International Hospital </span> . The platform presents detailed information about doctors, departments, and technologies, along with a full-featured admin panel. The website is fully responsive and optimized for all devices.",
     process: "Team-based",
     image1: "/melhem2.png",
     image2: "/melhem3.png",
@@ -38,7 +38,7 @@ const projects = [
     littleName: "PM Systems",
     color: "#006360",
     bigDescription:
-      "A professional website developed for Project Management Systems to showcase their innovative solutions. The site includes sections about services, technologies, and team expertise. Built with full responsiveness and clean structure to ensure optimal user experience.",
+      "A professional website developed for <span> Project Management Systems </span>  to showcase their innovative solutions. The site includes sections about services, technologies, and team expertise. Built with full responsiveness and clean structure to ensure optimal user experience.",
     process: "Team-based",
     image1: "/pms2.png",
     image2: "/pms3.png",
@@ -63,7 +63,7 @@ const projects = [
     color: "#DC3918",
     littleName: "Cinema GIA",
     bigDescription:
-      "A full-featured movie streaming platform developed for Cinema GIA, allowing users to browse, purchase, and watch movies online. The website features a modern UI, admin panel, and dynamic content management.",
+      "A full-featured movie streaming platform developed for <span> Cinema GIA </span> , allowing users to browse, purchase, and watch movies online. The website features a modern UI, admin panel, and dynamic content management.",
     process: "Individually",
     image1: "/gia2.png",
     image2: "/gia3.png",
@@ -96,7 +96,7 @@ const projects = [
     link: "https://amina-azif.az/",
     littleName: "Amina Azif",
     bigDescription:
-      " A dynamic website for Amina azif, designed to provide movie schedules, ticket booking, and information about the cinema's offerings. The site features a modern design with easy navigation and real-time updates on movie listings.",
+      " A dynamic website for <span> Amina azif </span> , designed to provide movie schedules, ticket booking, and information about the cinema's offerings. The site features a modern design with easy navigation and real-time updates on movie listings.",
     process: "Individually",
     image1: "https://melhemhospital.com/wp-content/uploads/2023/10/1-1.png",
     image2: "https://melhemhospital.com/wp-content/uploads/2023/10/1-1.png",
@@ -133,7 +133,7 @@ const projects = [
     color: "#1C1812",
     littleName: "Atelier",
     bigDescription:
-      "An elegant fashion website developed for Atelier di Falco, offering insights into the brand’s style, philosophy, and latest collections. Designed with a clean, modern aesthetic and optimized for all screen sizes.",
+      "An elegant fashion website developed for <span> Atelier di Falco </span> , offering insights into the brand’s style, philosophy, and latest collections. Designed with a clean, modern aesthetic and optimized for all screen sizes.",
     process: "Team-based",
     image1: "/atelier2.png",
     image2: "/atelier3.png",
@@ -157,7 +157,7 @@ const projects = [
     image: "/taxi1.png",
     link: "https://www.stadttaxi-luebeck.de/",
     bigDescription:
-      "An informative and modern taxi service website developed for Stadt Taxi Lübeck. The platform introduces the company’s services, provides contact details, and allows users to get acquainted with the taxi fleet. Built with a clean and responsive design for all screen sizes.",
+      "An informative and modern taxi service website developed for <span> Stadt Taxi Lübeck </span> . The platform introduces the company’s services, provides contact details, and allows users to get acquainted with the taxi fleet. Built with a clean and responsive design for all screen sizes.",
     process: "Individually",
     image1: "/taxi2.png",
     image2: "/taxi3.png",
@@ -190,7 +190,7 @@ const projects = [
     image: "/balbee1.png",
     link: "https://balbee.az/",
     bigDescription:
-      "A modern and visually engaging website built for Bal Bee, focusing on promoting and selling natural honey products. The platform provides detailed information about each product’s ingredients and health benefits, along with an intuitive ordering system. Developed as a fully responsive and informative e-commerce solution.",
+      "A modern and visually engaging website built for <span> Bal Bee </span> , focusing on promoting and selling natural honey products. The platform provides detailed information about each product’s ingredients and health benefits, along with an intuitive ordering system. Developed as a fully responsive and informative e-commerce solution.",
     process: "Individually",
     image1: "/balbee2.png",
     image2: "/balbee3.png",
@@ -223,7 +223,7 @@ const projects = [
     image: "/mn1.png",
     link: "https://mnicit.az/",
     bigDescription:
-      "A professional website for MN ICIT, an IT solution company offering consulting, software services, and innovative digital products. The site presents company information, services, and contact options in a structured and visually appealing layout. Designed with responsiveness and simplicity in mind, it includes an admin panel for content management.",
+      "A professional website for <span> MN ICIT </span> , an IT solution company offering consulting, software services, and innovative digital products. The site presents company information, services, and contact options in a structured and visually appealing layout. Designed with responsiveness and simplicity in mind, it includes an admin panel for content management.",
     process: "Individually",
     color: "#004272",
     image1: "/mn2.png",
@@ -257,7 +257,7 @@ const projects = [
     link: "https://ecovita.az/",
     color: "#CE338B",
     bigDescription:
-      "A health-focused website created for Eco Vita, designed to promote natural wellness products and provide informative content about a healthy lifestyle. The platform includes an admin panel, product catalog, and modern responsive interface tailored for both desktop and mobile users.",
+      "A health-focused website created for <span> Eco Vita </span> , designed to promote natural wellness products and provide informative content about a healthy lifestyle. The platform includes an admin panel, product catalog, and modern responsive interface tailored for both desktop and mobile users.",
     process: "Individually",
     image1: "/eco2.png",
     image2: "/eco3.png",
@@ -291,7 +291,7 @@ const projects = [
     color: "#98C744",
     littleName: "CanubGas",
     bigDescription:
-      "We built an informative website for CanubGas Supply Service, showcasing their services, projects, and activities. The site provides a clear overview of the company’s work and helps users easily explore what they offer.",
+      "We built an informative website for <span> CanubGas Supply </span> Service, showcasing their services, projects, and activities. The site provides a clear overview of the company’s work and helps users easily explore what they offer.",
     process: "Individually",
     image1: "/canub2.png",
     image2: "/canub3.png",

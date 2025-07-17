@@ -86,7 +86,7 @@
       bottom: 0px;
       padding: 0px 20px !important;
       @media (max-width: 597px) {
-        padding: 20px 5px !important ;
+        padding: 30px 10px !important ;
       }
 
       .text {
@@ -125,6 +125,7 @@
         border-radius: 13px;
         font-family: "Inter Tight", sans-serif;
         font-weight: 600;
+        
         @media (max-width: 597px) {
           font-size: 15px;
           padding: 5px 15px;
