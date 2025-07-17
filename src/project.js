@@ -291,7 +291,7 @@ const projects = [
     color: "#98C744",
     littleName: "CanubGas",
     bigDescription:
-      "We built an informative website for <span> CanubGas Supply </span> Service, showcasing their services, projects, and activities. The site provides a clear overview of the company’s work and helps users easily explore what they offer.",
+      "We built an informative website for <span> CanubGas Supply Service</span> , showcasing their services, projects, and activities. The site provides a clear overview of the company’s work and helps users easily explore what they offer.",
     process: "Individually",
     image1: "/canub2.png",
     image2: "/canub3.png",
