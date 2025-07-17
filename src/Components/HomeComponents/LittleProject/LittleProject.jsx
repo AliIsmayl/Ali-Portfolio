@@ -30,20 +30,24 @@ function LittleProject() {
     img20, img21,
   ];
 
-  // Repeat logos to create infinite scroll
-  const duplicatedLogos = [...logos, ...logos];
+  // Create two sets of logos for seamless infinite scroll
+  const carouselItems = [...logos, ...logos].map((item, index) => (
+    <div key={index} className="carousel-item">
+      <div className="logo-container">
+        <img src={item} alt={`logo-${index}`} className="logo-img" />
+      </div>
+    </div>
+  ));
 
   return (
     <section className="logo-carousel">
       <div className="carousel-container">
         <div className="carousel-track">
-          {duplicatedLogos.map((item, index) => (
-            <div key={index} className="carousel-item">
-              <img src={item} alt={`logo-${index}`} />
-            </div>
-          ))}
+          {carouselItems}
         </div>
       </div>
+      <div className="gradient-overlay left"></div>
+      <div className="gradient-overlay right"></div>
     </section>
   );
 }

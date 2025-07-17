@@ -20,7 +20,7 @@ function Footer() {
             <p>CONTACT ME</p>
           </Link>
           <p>
-            HI, I’M ALI — I BUILD INTUITIVE WEBSITES THAT LOOK GOOD, LOAD FAST,
+            HI, I’M ALI — I BUILD INTUITIVE WEBSITES THAT LOOK IDEAL, LOAD FAST,
             AND FEEL EFFORTLESS. FROM IDEA TO CODE, I CARE ABOUT EVERY DETAIL.
           </p>
         </div>
@@ -64,9 +64,9 @@ function Footer() {
       </footer>
 
       <section id="backToTop">
-        <h1 data-aos="fade-down">FRONT END</h1>
+        <h1 data-aos="fade-down">ALI ISMAYIL</h1>
         <div className="down">
-          <p>© 2024 ALL RIGHTS RESERVED</p>
+          <p>© {new Date().getFullYear()} ALL RIGHTS RESERVED</p>
           <div className="box">
             <h2 onClick={scrollToTop}>GO BACK TO TOP</h2>
             <span></span>
