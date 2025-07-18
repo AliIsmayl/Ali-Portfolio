@@ -3,7 +3,7 @@ import { IoMailOutline } from "react-icons/io5";
 import { RxInstagramLogo } from "react-icons/rx";
 import { Link } from "react-router";
 import { LuPhone } from "react-icons/lu";
-import contactImage from "../../Image/Image1.jpg";
+import contactImage from "../../Image/contact.jpg";
 import "./ContactPage.scss";
 import emailjs from "@emailjs/browser";
 import {

@@ -10,7 +10,7 @@ function AboutMe() {
   };
   return (
     <section id="aboutMe">
-      <h1>MORE ABOUT ALI ©</h1>
+      <h1>MORE ABOUT ME ©</h1>
       <div className="downBox">
         <img src={image} alt="" />
         <div className="text">
@@ -20,15 +20,14 @@ function AboutMe() {
             FUNCTIONAL WEBSITES.
           </h3>
           <p>
-            Whether it’s a corporate platform, a digital menu, or a fashion
-            brand’s showcase — I build digital experiences that are clean, fast,
-            and intuitive. I specialize in HTML, CSS, JavaScript, React and
-            no-code tools, blending <span>"technical precision"</span> with a
-            deep respect for user needs. With experience across diverse
-            industries — from healthcare to real estate and e-commerce — I focus
-            on performance, responsive design, and a smooth user journey. My
-            work doesn’t just look good; it solves real problems and feels
-            right. Let’s build something meaningful.
+            I create simple, fast, and easy-to-use websites. It can be a company
+            website, a digital menu, or a fashion brand page. I use HTML, CSS,
+            JavaScript, React, and no-code tools to build my projects. I care
+            about how people use websites and try to make everything work well
+            on all devices. I have worked with different industries like
+            healthcare, real estate, online shops and etc. My websites are not
+            only beautiful — they also solve real problems. Let’s build
+            something great together.
           </p>
           <Link className="link" onClick={handleFileOpen}>
             <button target="_blank">
