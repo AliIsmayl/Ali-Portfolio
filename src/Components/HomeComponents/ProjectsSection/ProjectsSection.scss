@@ -125,7 +125,7 @@
         border-radius: 13px;
         font-family: "Inter Tight", sans-serif;
         font-weight: 600;
-        
+
         @media (max-width: 597px) {
           font-size: 15px;
           padding: 5px 15px;
@@ -164,6 +164,8 @@
       background-attachment: fixed;
       border-radius: 18px;
       display: flex;
+      box-shadow: 0px 0px 19px 1px var(--moon-clr);
+
       @media (max-width: 533px) {
         border-radius: 12px;
       }
@@ -173,6 +175,7 @@
         inset: 0;
         background: linear-gradient(to top, var(--moon-clr), #0000);
         opacity: 0.3;
+
         border-radius: 18px;
         @media (max-width: 533px) {
           border-radius: 12px;
@@ -233,22 +236,23 @@
       animation: neon-rotate var(--animation-duration) linear infinite;
     }
 
-    &::after {
-      content: "";
-      position: absolute;
-      inset: var(--glow-offset);
-      z-index: -2;
-      background: conic-gradient(
-        from var(--angle),
-        var(--moon-clr),
-        transparent,
-        var(--moon-clr)
-      );
-      border-radius: 15px;
-      filter: blur(12px);
-      opacity: 0.6;
-      animation: neon-rotate var(--animation-duration) linear infinite;
-    }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+
+    //   inset: var(--glow-offset);
+    //   z-index: -2;
+    //   background: conic-gradient(
+    //     from var(--angle),
+    //     var(--moon-clr),
+    //     transparent,
+    //     var(--moon-clr)
+    //   );
+    //   border-radius: 15px;
+    //   // filter: blur(100px);
+    //   opacity: 0.6;
+    //   animation: neon-rotate var(--animation-duration) linear infinite;
+    // }
   }
 
   @keyframes neon-rotate {

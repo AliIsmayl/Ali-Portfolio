@@ -1,7 +1,74 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./ImageSection.scss";
-import image1 from "../../../Image/Image1.jpg";
-import image2 from "../../../Image/Image2.jpg";
+import image2 from "../../../Image/BackImg1.png"; // Update with your actual image path
+import image1 from '../../../Image/BackImg.png'
+
+function ImageSection() {
+  const sectionRef = useRef(null);
+  const [backgroundImage, setBackgroundImage] = useState(image1);
+
+  useEffect(() => {
+    // Handle background image based on screen size
+    const handleResize = () => {
+      if (window.innerWidth < 597) {
+        setBackgroundImage(image2);
+      } else {
+        setBackgroundImage(image1);
+      }
+    };
+
+    // Set initial image
+    handleResize();
+
+    // Add resize listener
+    window.addEventListener("resize", handleResize);
+
+    // Scroll effect for iOS
+    const handleScroll = () => {
+      if (sectionRef.current) {
+        const scrollPosition = window.pageYOffset;
+        const sectionPosition = sectionRef.current.offsetTop;
+        const sectionHeight = sectionRef.current.offsetHeight;
+
+        if (
+          scrollPosition > sectionPosition - window.innerHeight &&
+          scrollPosition < sectionPosition + sectionHeight
+        ) {
+          const offset = (scrollPosition - sectionPosition) * 0.3;
+          sectionRef.current.style.backgroundPositionY = `${offset}px`;
+        }
+      }
+    };
+
+    const isIOS =
+      /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+      (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+
+    if (isIOS) {
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      if (isIOS) {
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+  }, []);
+
+  return (
+    <section
+      id="imageSection"
+      ref={sectionRef}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    ></section>
+  );
+}
+
+export default ImageSection;
+
+// import image1 from "../../../Image/Image1.jpg";
+// import image2 from "../../../Image/Image2.jpg";
 import { RxInstagramLogo } from "react-icons/rx";
 import { PiFacebookLogo } from "react-icons/pi";
 import { PiLinkedinLogo } from "react-icons/pi";
@@ -11,10 +78,8 @@ import { PiYoutubeLogo } from "react-icons/pi";
 import { IoMailOutline } from "react-icons/io5";
 import { Link } from "react-router";
 
-function ImageSection() {
-  return (
-    <section id="imageSection">
-      {/* <div className="imgBox" id="img1" data-aos="fade-down">
+{
+  /* <div className="imgBox" id="img1" data-aos="fade-down">
         <img src={image1} alt="" />
         <div className="socialMedia">
           <div className="text">
@@ -53,9 +118,11 @@ function ImageSection() {
             </Link>
           </div>
         </div>
-      </div> */}
+      </div> */
+}
 
-      {/* <div className="imgBox" id="img2" data-aos="fade-up">
+{
+  /* <div className="imgBox" id="img2" data-aos="fade-up">
         <img src={image2} alt="" />
         <div className="socialMedia">
           <div className="text">
@@ -94,9 +161,5 @@ function ImageSection() {
             </Link>
           </div>
         </div>
-      </div> */}
-    </section>
-  );
+      </div> */
 }
-
-export default ImageSection;
