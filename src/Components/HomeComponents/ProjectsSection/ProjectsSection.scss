@@ -64,7 +64,6 @@
     text-decoration: none;
     min-height: 350px;
     border-radius: 20px;
-
     @media (max-width: 1100px) {
       width: 100%;
     }
@@ -175,8 +174,8 @@
         inset: 0;
         background: linear-gradient(to top, var(--moon-clr), #0000);
         opacity: 0.3;
-
         border-radius: 18px;
+
         @media (max-width: 533px) {
           border-radius: 12px;
         }
@@ -224,14 +223,14 @@
       border-radius: inherit;
       background: conic-gradient(
           from var(--angle),
-          var(--moon-clr) 40%,
+          var(--moon-clr) 20%,
           transparent,
-          var(--moon-clr) 60%
+          var(--moon-clr) 35%
         )
         border-box;
       mask: conic-gradient(yellow 0 0) subtract,
         conic-gradient(yellow 0 0) padding-box;
-      opacity: 0.75;
+      opacity: 1;
       z-index: 1;
       animation: neon-rotate var(--animation-duration) linear infinite;
     }
