@@ -4,15 +4,18 @@ const projects = [
     name: "Melhem International Hospital",
     detail: "Medical",
     time: "2025",
-    image: "/melhem1.png",
+    image:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180378/Ali-Portfolio/melhem1_b6zpkb.png",
     link: "https://melhemhospital.com/",
     littleName: "Melhem Hospital",
     color: "#753D96",
     bigDescription:
       "A modern and comprehensive website developed for <span> Melhem International Hospital </span> . The platform presents detailed information about doctors, departments, and technologies, along with a full-featured admin panel. The website is fully responsive and optimized for all devices.",
     process: "Team-based",
-    image1: "/melhem2.png",
-    image2: "/melhem3.png",
+    image1:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180378/Ali-Portfolio/melhem2_md6bql.png",
+    image2:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180377/Ali-Portfolio/melhem3_vrjupr.png",
     job: [
       {
         info: "Front-End Developer",
@@ -33,15 +36,18 @@ const projects = [
     name: "Project Management Systems",
     detail: "IT Solution",
     time: "2024",
-    image: "/pms1.png",
+    image:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180378/Ali-Portfolio/pms1_hreywo.png",
     link: "https://pmsystems.az/",
     littleName: "PM Systems",
     color: "#006360",
     bigDescription:
       "A professional website developed for <span> Project Management Systems </span>  to showcase their innovative solutions. The site includes sections about services, technologies, and team expertise. Built with full responsiveness and clean structure to ensure optimal user experience.",
     process: "Team-based",
-    image1: "/pms2.png",
-    image2: "/pms3.png",
+    image1:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180378/Ali-Portfolio/pms2_hvsvbs.png",
+    image2:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180378/Ali-Portfolio/pms3_uglilq.png",
     job: [
       {
         info: "Front-End Developer",
@@ -58,15 +64,18 @@ const projects = [
     name: "Cinema GIA",
     detail: "Movie",
     time: "2024",
-    image: "/gia1.png",
+    image:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180381/Ali-Portfolio/gia1_oqsgpe.png",
     link: "https://cinema-gia-client.vercel.app/",
     color: "#DC3918",
     littleName: "Cinema GIA",
     bigDescription:
       "A full-featured movie streaming platform developed for <span> Cinema GIA </span> , allowing users to browse, purchase, and watch movies online. The website features a modern UI, admin panel, and dynamic content management.",
     process: "Individually",
-    image1: "/gia2.png",
-    image2: "/gia3.png",
+    image1:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180381/Ali-Portfolio/gia2_sdyu3y.png",
+    image2:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180384/Ali-Portfolio/gia3_zqbfol.png",
     job: [
       {
         info: "Front-End Developer",
@@ -91,7 +100,8 @@ const projects = [
     name: "Amina Azif",
     detail: "Sport",
     time: "2024",
-    image: "/amina1.png",
+    image:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180379/Ali-Portfolio/amina1_pg4rxq.png",
     color: "#18407C",
     link: "https://amina-azif.az/",
     littleName: "Amina Azif",
@@ -128,15 +138,18 @@ const projects = [
     name: "Atelier di Falco",
     detail: "Fashion",
     time: "2024",
-    image: "/atelier1.png",
+    image:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180381/Ali-Portfolio/atelier1_qovcz8.png",
     link: "https://atelierdifalco.az/",
     color: "#1C1812",
     littleName: "Atelier",
     bigDescription:
       "An elegant fashion website developed for <span> Atelier di Falco </span> , offering insights into the brand’s style, philosophy, and latest collections. Designed with a clean, modern aesthetic and optimized for all screen sizes.",
     process: "Team-based",
-    image1: "/atelier2.png",
-    image2: "/atelier3.png",
+    image1:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180383/Ali-Portfolio/atelier2_cwkfa4.png",
+    image2:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180378/Ali-Portfolio/atelier3_h1yk0g.png",
     job: [
       {
         info: "Front-End Developer",
@@ -153,15 +166,18 @@ const projects = [
     name: "CanubGas Supply Service",
     detail: "Supply",
     time: "2025",
-    image: "/canub1.png",
+    image:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180379/Ali-Portfolio/canub1_mvtdcv.png",
     link: "https://canubgas.az/",
     color: "#98C744",
     littleName: "CanubGas",
     bigDescription:
       "We built an informative website for <span> CanubGas Supply Service</span> , showcasing their services, projects, and activities. The site provides a clear overview of the company’s work and helps users easily explore what they offer.",
     process: "Individually",
-    image1: "/canub2.png",
-    image2: "/canub3.png",
+    image1:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180383/Ali-Portfolio/canub2_eqsixp.png",
+    image2:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180380/Ali-Portfolio/canub3_wyd9tr.png",
     job: [
       {
         info: "Front-End Developer",
@@ -186,14 +202,17 @@ const projects = [
     name: "CoLink",
     detail: "IT Solution",
     time: "2025",
-    image: "/colink1.png",
+    image:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180379/Ali-Portfolio/colink1_yet9rw.png",
     link: "https://colink.uz/",
     color: "#17968D",
     bigDescription:
       "A professional website for <span> CoLink </span> , an IT solution company offering consulting, software services, and innovative digital products. The site presents company information, services, and contact options in a structured and visually appealing layout. Designed with responsiveness and simplicity in mind, it includes an admin panel for content management.",
     process: "Individually",
-    image1: "/colink2.png",
-    image2: "/colink3.png",
+    image1:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180379/Ali-Portfolio/colink2_k90t92.png",
+    image2:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180379/Ali-Portfolio/colink3_yjp27k.png",
     job: [
       {
         info: "Front-End Developer",
@@ -219,13 +238,16 @@ const projects = [
     detail: "Taxi",
     time: "2024",
     process: "",
-    image: "/taxi1.png",
+    image:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180380/Ali-Portfolio/taxi1_zmesxx.png",
     link: "https://www.stadttaxi-luebeck.de/",
     bigDescription:
       "An informative and modern taxi service website developed for <span> Stadt Taxi Lübeck </span> . The platform introduces the company’s services, provides contact details, and allows users to get acquainted with the taxi fleet. Built with a clean and responsive design for all screen sizes.",
     process: "Individually",
-    image1: "/taxi2.png",
-    image2: "/taxi3.png",
+    image1:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180379/Ali-Portfolio/taxi2_y2wfbz.png",
+    image2:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180378/Ali-Portfolio/taxi3_lfw1uc.png",
     color: "#001D3D",
     littleName: "Stadt Taxi",
     job: [
@@ -252,13 +274,16 @@ const projects = [
     name: "Bal Bee",
     detail: "Honey",
     time: "2025",
-    image: "/balbee1.png",
+    image:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180380/Ali-Portfolio/balbee1_f8owlz.png",
     link: "https://balbee.az/",
     bigDescription:
       "A modern and visually engaging website built for <span> Bal Bee </span> , focusing on promoting and selling natural honey products. The platform provides detailed information about each product’s ingredients and health benefits, along with an intuitive ordering system. Developed as a fully responsive and informative e-commerce solution.",
     process: "Individually",
-    image1: "/balbee2.png",
-    image2: "/balbee3.png",
+    image1:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180380/Ali-Portfolio/balbee2_s2qk5q.png",
+    image2:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180384/Ali-Portfolio/balbee3_jjxwug.png",
     color: "#E68A00",
     littleName: "Bal Bee",
     job: [
@@ -285,14 +310,17 @@ const projects = [
     name: "MN ICIT",
     detail: "IT Solution",
     time: "2025",
-    image: "/mn1.png",
+    image:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180378/Ali-Portfolio/mn1_o4lknc.png",
     link: "https://mnicit.az/",
     bigDescription:
       "A professional website for <span> MN ICIT </span> , an IT solution company offering consulting, software services, and innovative digital products. The site presents company information, services, and contact options in a structured and visually appealing layout. Designed with responsiveness and simplicity in mind, it includes an admin panel for content management.",
     process: "Individually",
     color: "#004272",
-    image1: "/mn2.png",
-    image2: "/mn3.png",
+    image1:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180380/Ali-Portfolio/mn2_fbitjp.png",
+    image2:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180381/Ali-Portfolio/mn3_gk6hqs.png",
     littleName: "MN ICIT",
     job: [
       {
@@ -318,14 +346,17 @@ const projects = [
     name: "Eco Vita",
     detail: "Health",
     time: "2025",
-    image: "/eco1.png",
+    image:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180381/Ali-Portfolio/eco1_lmkgsw.png",
     link: "https://ecovita.az/",
     color: "#CE338B",
     bigDescription:
       "A health-focused website created for <span> Eco Vita </span> , designed to promote natural wellness products and provide informative content about a healthy lifestyle. The platform includes an admin panel, product catalog, and modern responsive interface tailored for both desktop and mobile users.",
     process: "Individually",
-    image1: "/eco2.png",
-    image2: "/eco3.png",
+    image1:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180381/Ali-Portfolio/eco2_xpphny.png",
+    image2:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180380/Ali-Portfolio/eco3_b8fdt8.png",
     littleName: "Eco Vita",
     job: [
       {

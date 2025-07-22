@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./ProjectsSection.scss";
 import info from "../../../project";
 import { Link, useLocation } from "react-router-dom";
-import Image1 from "../../../../public/BackPro.png";
-import Image2 from "../../../../public/BackPro2.png";
 
 function ProjectsSection() {
   const location = useLocation().pathname;
@@ -25,7 +23,7 @@ function ProjectsSection() {
     <section
       id="projectsSection"
       style={{
-        backgroundImage: `url(${isProjectPage ? Image2 : Image1})`,
+        backgroundImage: `url(${isProjectPage ? "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180377/Ali-Portfolio/BackPro2_vltofu.png" : "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180377/Ali-Portfolio/BackPro_hpllfg.png"})`,
       }}
     >
       <div className="upBox">

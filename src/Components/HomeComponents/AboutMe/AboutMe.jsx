@@ -1,6 +1,5 @@
 import React from "react";
 import "./AboutMe.scss";
-import image from "../../../Image/Image1.jpg";
 import cv from "../../../Image/Ali-Ismayil.Cv.pdf";
 import { Link } from "react-router";
 
@@ -12,7 +11,7 @@ function AboutMe() {
     <section id="aboutMe">
       <h1>MORE ABOUT ME ©</h1>
       <div className="downBox">
-        <img src={image} alt="" />
+        <img src="https://res.cloudinary.com/ds42i5esb/image/upload/v1753182180/Ali-Portfolio/Image1_xk2but.jpg" alt="" />
         <div className="text">
           {" "}
           <h3>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
-import signature from "../../Image/signature.png";
 import { Link } from "react-router";
 
 function Navbar() {
@@ -24,7 +23,7 @@ function Navbar() {
       <nav>
         <div className="upBox">
           <Link to={"/"}>
-            <img src={signature} alt="" />
+            <img src="https://res.cloudinary.com/ds42i5esb/image/upload/v1753182191/Ali-Portfolio/signature_hsl56l.png" alt="" />
           </Link>
           <div className="navigate">
             <button onClick={toggleNavigate}>

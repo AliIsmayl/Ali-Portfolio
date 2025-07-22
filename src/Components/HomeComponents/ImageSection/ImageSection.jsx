@@ -1,19 +1,23 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./ImageSection.scss";
-import image2 from "../../../Image/BackImg1.png"; // Update with your actual image path
-import image1 from '../../../Image/BackImg.png'
 
 function ImageSection() {
   const sectionRef = useRef(null);
-  const [backgroundImage, setBackgroundImage] = useState(image1);
+  const [backgroundImage, setBackgroundImage] = useState(
+    "https://res.cloudinary.com/ds42i5esb/image/upload/v1753182180/Ali-Portfolio/BackImg1_rhnyhs.png"
+  );
 
   useEffect(() => {
     // Handle background image based on screen size
     const handleResize = () => {
       if (window.innerWidth < 597) {
-        setBackgroundImage(image2);
+        setBackgroundImage(
+          "https://res.cloudinary.com/ds42i5esb/image/upload/v1753182180/Ali-Portfolio/BackImg1_rhnyhs.png"
+        );
       } else {
-        setBackgroundImage(image1);
+        setBackgroundImage(
+          "https://res.cloudinary.com/ds42i5esb/image/upload/v1753182181/Ali-Portfolio/BackImg_vnzf7h.png"
+        );
       }
     };
 

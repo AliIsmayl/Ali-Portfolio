@@ -59,7 +59,7 @@ function ProjectDetail() {
                 rel="noreferrer"
                 href={detail.link}
               >
-                <p>CLICK</p>
+                <p style={{color:`${detail.color}`}}>CLICK</p>
               </a>
             </div>
           </div>

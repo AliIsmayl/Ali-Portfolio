@@ -3,7 +3,6 @@ import { IoMailOutline } from "react-icons/io5";
 import { RxInstagramLogo } from "react-icons/rx";
 import { Link } from "react-router";
 import { LuPhone } from "react-icons/lu";
-import contactImage from "../../Image/contact.jpg";
 import "./ContactPage.scss";
 import emailjs from "@emailjs/browser";
 import {
@@ -274,7 +273,7 @@ function ContactPage() {
         <div className="image-section">
           <div className="image-container">
             <img
-              src={contactImage}
+              src="https://res.cloudinary.com/ds42i5esb/image/upload/v1753182192/Ali-Portfolio/contact_wjv2pw.jpg"
               alt="Contact us"
               className="contact-image"
             />
