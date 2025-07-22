@@ -150,6 +150,71 @@ const projects = [
   },
   {
     id: 6,
+    name: "CanubGas Supply Service",
+    detail: "Supply",
+    time: "2025",
+    image: "/canub1.png",
+    link: "https://canubgas.az/",
+    color: "#98C744",
+    littleName: "CanubGas",
+    bigDescription:
+      "We built an informative website for <span> CanubGas Supply Service</span> , showcasing their services, projects, and activities. The site provides a clear overview of the company’s work and helps users easily explore what they offer.",
+    process: "Individually",
+    image1: "/canub2.png",
+    image2: "/canub3.png",
+    job: [
+      {
+        info: "Front-End Developer",
+        work: "Developed the user-facing interface and admin panel using modern front-end technologies. Focused on responsive design, cross-browser compatibility, and clean component architecture.",
+      },
+      {
+        info: "UX/UI Designer",
+        work: "Designed a fresh and visually calming interface aligned with the brand's health and eco-conscious identity. Prioritized simplicity, readability, and a smooth user journey.",
+      },
+      {
+        info: "Team Lead",
+        work: "Led the front-end development team by organizing tasks, reviewing code, and maintaining clear communication to ensure timely delivery and design consistency.",
+      },
+      {
+        info: "Project Manager",
+        work: "Oversaw project planning and communication with the client. Coordinated meetings, collected feedback, and ensured project goals were aligned with business needs.",
+      },
+    ],
+  },
+  {
+    id: 7,
+    name: "CoLink",
+    detail: "IT Solution",
+    time: "2025",
+    image: "/colink1.png",
+    link: "https://colink.uz/",
+    color: "#17968D",
+    bigDescription:
+      "A professional website for <span> CoLink </span> , an IT solution company offering consulting, software services, and innovative digital products. The site presents company information, services, and contact options in a structured and visually appealing layout. Designed with responsiveness and simplicity in mind, it includes an admin panel for content management.",
+    process: "Individually",
+    image1: "/colink2.png",
+    image2: "/colink3.png",
+    job: [
+      {
+        info: "Front-End Developer",
+        work: "Developed the user-facing interface and admin panel using modern front-end technologies. Focused on responsive design, cross-browser compatibility, and clean component architecture.",
+      },
+      {
+        info: "UX/UI Designer",
+        work: "Designed a fresh and visually calming interface aligned with the brand's health and eco-conscious identity. Prioritized simplicity, readability, and a smooth user journey.",
+      },
+      {
+        info: "Team Lead",
+        work: "Led the front-end development team by organizing tasks, reviewing code, and maintaining clear communication to ensure timely delivery and design consistency.",
+      },
+      {
+        info: "Project Manager",
+        work: "Oversaw project planning and communication with the client. Coordinated meetings, collected feedback, and ensured project goals were aligned with business needs.",
+      },
+    ],
+  },
+  {
+    id: 8,
     name: "Stadt Taxi Lübeck",
     detail: "Taxi",
     time: "2024",
@@ -183,7 +248,7 @@ const projects = [
     ],
   },
   {
-    id: 7,
+    id: 9,
     name: "Bal Bee",
     detail: "Honey",
     time: "2025",
@@ -216,7 +281,7 @@ const projects = [
     ],
   },
   {
-    id: 8,
+    id: 10,
     name: "MN ICIT",
     detail: "IT Solution",
     time: "2025",
@@ -249,7 +314,7 @@ const projects = [
     ],
   },
   {
-    id: 9,
+    id: 11,
     name: "Eco Vita",
     detail: "Health",
     time: "2025",
@@ -262,39 +327,6 @@ const projects = [
     image1: "/eco2.png",
     image2: "/eco3.png",
     littleName: "Eco Vita",
-    job: [
-      {
-        info: "Front-End Developer",
-        work: "Developed the user-facing interface and admin panel using modern front-end technologies. Focused on responsive design, cross-browser compatibility, and clean component architecture.",
-      },
-      {
-        info: "UX/UI Designer",
-        work: "Designed a fresh and visually calming interface aligned with the brand's health and eco-conscious identity. Prioritized simplicity, readability, and a smooth user journey.",
-      },
-      {
-        info: "Team Lead",
-        work: "Led the front-end development team by organizing tasks, reviewing code, and maintaining clear communication to ensure timely delivery and design consistency.",
-      },
-      {
-        info: "Project Manager",
-        work: "Oversaw project planning and communication with the client. Coordinated meetings, collected feedback, and ensured project goals were aligned with business needs.",
-      },
-    ],
-  },
-  {
-    id: 10,
-    name: "CanubGas Supply Service",
-    detail: "Supply",
-    time: "2025",
-    image: "/canub1.png",
-    link: "https://canubgas.az/",
-    color: "#98C744",
-    littleName: "CanubGas",
-    bigDescription:
-      "We built an informative website for <span> CanubGas Supply Service</span> , showcasing their services, projects, and activities. The site provides a clear overview of the company’s work and helps users easily explore what they offer.",
-    process: "Individually",
-    image1: "/canub2.png",
-    image2: "/canub3.png",
     job: [
       {
         info: "Front-End Developer",
