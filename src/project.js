@@ -108,10 +108,8 @@ const projects = [
     bigDescription:
       " A dynamic website for <span> Amina azif </span> , designed to provide movie schedules, ticket booking, and information about the cinema's offerings. The site features a modern design with easy navigation and real-time updates on movie listings.",
     process: "Individually",
-    image1: "https://melhemhospital.com/wp-content/uploads/2023/10/1-1.png",
-    image2: "https://melhemhospital.com/wp-content/uploads/2023/10/1-1.png",
-    image3: "https://melhemhospital.com/wp-content/uploads/2023/10/1-1.png",
-    image4: "https://melhemhospital.com/wp-content/uploads/2023/10/1-1.png",
+    image1: "https://res.cloudinary.com/ds42i5esb/image/upload/v1753384372/Ali-Portfolio/amina3_74_cyl1b6.png",
+    image2: "https://res.cloudinary.com/ds42i5esb/image/upload/v1753384210/Ali-Portfolio/Amina2_75_st9i27.png",
     job: [
       { info: "Front End Developer" },
       { info: "Back End Developer" },
