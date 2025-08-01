@@ -208,7 +208,7 @@ const projects = [
       "A professional website for <span> CoLink </span> , an IT solution company offering consulting, software services, and innovative digital products. The site presents company information, services, and contact options in a structured and visually appealing layout. Designed with responsiveness and simplicity in mind, it includes an admin panel for content management.",
     process: "Individually",
     image1:
-      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180379/Ali-Portfolio/colink2_k90t92.png",
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1754054526/colink1.png",
     image2:
       "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180379/Ali-Portfolio/colink3_yjp27k.png",
     job: [

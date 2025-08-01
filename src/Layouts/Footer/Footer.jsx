@@ -53,7 +53,7 @@ function Footer() {
           </div>
           <div className="socialMedia">
             <Link to={`tel:+994998982004`} target="_blank" className="box">
-              <p>PHONE</p>
+              <p>NUMBER</p>
               <span></span>
             </Link>
             <h6>
