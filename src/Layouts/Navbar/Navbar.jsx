@@ -10,7 +10,7 @@ function Navbar() {
 
   const defaultLang = localStorage.getItem("language")
     ? JSON.parse(localStorage.getItem("language"))
-    : "Az";
+    : "En";
   const [selectedLang, setSelectedLang] = useState(defaultLang);
 
   const [isExpanded, setIsExpanded] = useState(false);
