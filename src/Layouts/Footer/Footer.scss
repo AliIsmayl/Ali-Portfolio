@@ -40,11 +40,14 @@
         p {
           font-size: 20px;
           top: 25%;
-          left: 5%;
+          // left: 5%;
           transition: all 0.5s ease;
           font-family: "Inter Tight", sans-serif;
           font-weight: 600;
           position: relative;
+          width: 100%;
+          // background: red;
+          text-align: center;
         }
         &:hover {
           span {

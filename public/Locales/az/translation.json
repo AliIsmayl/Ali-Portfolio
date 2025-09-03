@@ -1,0 +1,73 @@
+{
+  "Pages": {
+    "Home": "Əsas",
+    "Project": "Layihələr",
+    "Contact": "Əlaqə",
+    "Instagram": "INSTAGRAM",
+    "Gmail": "GMAIL",
+    "Number": "NÖMRƏ",
+    "CopyRight": "BÜTÜN HÜQUQLAR QORUNUR"
+  },
+  "Navbar": {
+    "Nav": "NAVİQASİYA"
+  },
+  "Home": {
+    "Head": "ƏMƏKDAŞLIQ ÜÇÜN AÇIQ",
+    "Name": "ƏLİ İSMAYIL",
+    "Location": "BAKI, AZƏRBAYCAN"
+  },
+  "Feature": {
+    "Head": "SEÇİLMİŞ İŞLƏR"
+  },
+  "About": {
+    "Head": "HAQQIMDA ƏTRAFLI ©",
+    "Text1": "MƏN ƏLİ İSMAYILAM — FİKİRLƏRİ ZƏRİF VƏ FUNKSİONAL SAYTLARA ÇEVİRƏN FRONT-END TƏRƏQQİÇİYƏM.",
+    "Text2": "Sadə, sürətli və istifadəçi dostu veb saytlar hazırlayıram. Bu, bir şirkət saytı, rəqəmsal menyu və ya moda brendi səhifəsi ola bilər. Layihələrimi HTML, CSS, JavaScript, React və kodsuz alətlərlə qururam. Saytların istifadəsinə və cihazlara uyğun olmasına böyük önəm verirəm. Səhiyyə, daşınmaz əmlak, onlayn mağazalar və digər sahələrlə çalışmışam. Hazırladığım saytlar təkcə estetik deyil — real problemləri də həll edir. Gəlin birlikdə əla bir iş ortaya qoyaq.",
+    "Button": "CV-ni Yüklə"
+  },
+  "Connect": {
+    "Head": "GƏLİN BİRLİKDƏ İŞLƏYƏK",
+    "Contact": "ƏLAQƏ",
+    "Text": "SALAM, MƏN ƏLİYƏM — ZƏRİF GÖRÜNƏN, SÜRƏTLİ YÜKLƏNƏN VƏ RAHAT HİSS OLUNAN SAYTLAR HAZIRLAYIRAM. FİKRDƏN KODA QƏDƏR HƏR DETALA DİQQƏT EDİRƏM."
+  },
+  "Footer": {
+    "ToTop": "YUXARI QAYIT"
+  },
+  "Project": {
+    "Head": "BÜTÜN LAYİHƏLƏR"
+  },
+  "Contact": {
+    "Head": "Əlaqə Saxlayın",
+    "Desc": "Sizdən eşitmək bizim üçün xoş olar! Aşağıdakı formu doldurun, qısa zamanda geri dönüş edəcəyik.",
+    "Name": "Ad Soyad",
+    "Email": "Email Ünvanı",
+    "Service": "Xidmət",
+    "Message": "Mesajınız",
+    "Button": "Mesajı Göndər",
+
+    "NameP": "Adınızı daxil edin",
+    "EmailP": "Email ünvanınızı daxil edin",
+
+    "NameE": "Ad mütləqdir",
+    "EmailE": "Email mütləqdir",
+    "ServiceE": "Zəhmət olmasa bir xidmət seçin",
+    "MessageE": "Mesaj mütləqdir",
+
+    "Info": "Əlaqə Məlumatları",
+    "Success": "Təşəkkürlər! Mesajınız uğurla göndərildi.",
+
+    "Service1": "Mənə veb sayt lazımdır",
+    "Service2": "Biz startupıq.",
+    "Service3": "Sizinlə işləmək istəyirik.",
+    "Service4": "Məlumat almaq istəyirəm.",
+    "Service5": "Komanda rəhbəri axtarırıq.",
+    "Other": "Digər"
+  },
+  "Detail": {
+    "Dev": "İNKİŞAF",
+    "Field": "SAHƏ",
+    "Date": "TARİX",
+    "Project": "LAYİHƏ",
+    "Click": "BAX"
+  }
+}

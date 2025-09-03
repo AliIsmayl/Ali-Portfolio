@@ -2,6 +2,7 @@ import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 import "./Footer.scss";
 import { Link } from "react-router";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
   const scrollToTop = () => {
@@ -10,19 +11,29 @@ function Footer() {
       behavior: "smooth", // Smooth scroll animation
     });
   };
+
+  const { t: Home } = useTranslation("translation", {
+    keyPrefix: "Home",
+  });
+  const { t: Pages } = useTranslation("translation", {
+    keyPrefix: "Pages",
+  });
+  const { t: Footer } = useTranslation("translation", {
+    keyPrefix: "Footer",
+  });
+  const { t: Connect } = useTranslation("translation", {
+    keyPrefix: "Connect",
+  });
   return (
     <div className="footerSection">
       <footer>
         <div className="upBox">
-          <h2>LET'S WORK TOGETHER</h2>
+          <h2>{Connect("Head")}</h2>
           <Link className="button" to={"/contact"}>
             <span></span>
-            <p>CONTACT ME</p>
+            <p>{Connect("Contact")}</p>
           </Link>
-          <p>
-            HI, I’M ALI — I BUILD INTUITIVE WEBSITES THAT LOOK IDEAL, LOAD FAST,
-            AND FEEL EFFORTLESS. FROM IDEA TO CODE, I CARE ABOUT EVERY DETAIL.
-          </p>
+          <p>{Connect("Text")}</p>
         </div>
         <div className="mediumBox">
           <div className="socialMedia">
@@ -31,7 +42,7 @@ function Footer() {
               to={"https://www.instagram.com/ali.ismayil_"}
               className="box"
             >
-              <p>INSTAGRAM</p>
+              <p>{Pages("Instagram")}</p>
               <span></span>
             </Link>
             <h6>
@@ -44,7 +55,7 @@ function Footer() {
               target="_blank"
               className="box"
             >
-              <p>GMAIL</p>
+              <p>{Pages("Gmail")}</p>
               <span></span>
             </Link>
             <h6>
@@ -53,7 +64,7 @@ function Footer() {
           </div>
           <div className="socialMedia">
             <Link to={`tel:+994998982004`} target="_blank" className="box">
-              <p>NUMBER</p>
+              <p>{Pages("Number")}</p>
               <span></span>
             </Link>
             <h6>
@@ -64,11 +75,11 @@ function Footer() {
       </footer>
 
       <section id="backToTop">
-        <h1 data-aos="fade-down">ALI ISMAYIL</h1>
+        <h1 data-aos="fade-down">{Home("Name")}</h1>
         <div className="down">
-          <p>© {new Date().getFullYear()} ALL RIGHTS RESERVED</p>
+          <p>© {new Date().getFullYear()} {Pages("CopyRight")}</p>
           <div className="box">
-            <h2 onClick={scrollToTop}>GO BACK TO TOP</h2>
+            <h2 onClick={scrollToTop}>{Footer("ToTop")}</h2>
             <span></span>
           </div>
         </div>

@@ -2,11 +2,20 @@ import React, { useEffect, useState } from "react";
 import "./ProjectsSection.scss";
 import info from "../../../project";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function ProjectsSection() {
   const location = useLocation().pathname;
   const isProjectPage = location === "/project";
   const visibleProjects = isProjectPage ? info : info.slice(0, 6);
+  const { t: Project } = useTranslation("translation", {
+    keyPrefix: "Project",
+  });
+  const { t: Feature } = useTranslation("translation", {
+    keyPrefix: "Feature",
+  });
+
+  const lang = localStorage.getItem("i18nextLng");
 
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 597);
 
@@ -23,11 +32,15 @@ function ProjectsSection() {
     <section
       id="projectsSection"
       style={{
-        backgroundImage: `url(${isProjectPage ? "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180377/Ali-Portfolio/BackPro2_vltofu.png" : "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180377/Ali-Portfolio/BackPro_hpllfg.png"})`,
+        backgroundImage: `url(${
+          isProjectPage
+            ? "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180377/Ali-Portfolio/BackPro2_vltofu.png"
+            : "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180377/Ali-Portfolio/BackPro_hpllfg.png"
+        })`,
       }}
     >
       <div className="upBox">
-        <h1>{isProjectPage ? "ALL PROJECTS" : "FEATURED WORK"}</h1>
+        <h1>{isProjectPage ? `${Project("Head")}` : `${Feature("Head")}`}</h1>
       </div>
       <div className="cards">
         {visibleProjects &&
@@ -47,11 +60,15 @@ function ProjectsSection() {
               >
                 <div className="textBox">
                   <div className="text">
-                    <p>{isSmallScreen ? item.littleName : item.name}</p>
-                    <span>{item.detail}</span>
+                    <p>
+                      {isSmallScreen
+                        ? item?.littleName[lang]
+                        : item?.name[lang]}
+                    </p>
+                    <span>{item?.detail[lang]}</span>
                   </div>
                   <div className="time">
-                    <p>{item.time}</p>
+                    <p>{item?.time}</p>
                   </div>
                 </div>
               </div>

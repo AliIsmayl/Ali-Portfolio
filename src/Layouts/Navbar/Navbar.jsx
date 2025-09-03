@@ -1,10 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
 import { Link } from "react-router";
+import { useTranslation } from "react-i18next";
+import i18n from "../../i18n";
 
 function Navbar() {
+  const { t: Pages } = useTranslation("translation", { keyPrefix: "Pages" });
+  const { t: Navbar } = useTranslation("translation", { keyPrefix: "Navbar" });
+
+  const defaultLang = localStorage.getItem("language")
+    ? JSON.parse(localStorage.getItem("language"))
+    : "Az";
+  const [selectedLang, setSelectedLang] = useState(defaultLang);
+
   const [isExpanded, setIsExpanded] = useState(false);
   const [buttonPosition, setButtonPosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const storedLang = JSON.parse(localStorage.getItem("language")) || "Az";
+    i18n.changeLanguage(storedLang.toLowerCase());
+  }, []);
+
+  const handleLangChange = (lang) => {
+    setSelectedLang(lang);
+    i18n.changeLanguage(lang.toLowerCase());
+    localStorage.setItem("language", JSON.stringify(lang));
+  };
 
   const toggleNavigate = (e) => {
     const buttonRect = e.currentTarget.getBoundingClientRect();
@@ -19,22 +40,24 @@ function Navbar() {
 
   return (
     <>
-      {/* Original Navbar - completely unchanged */}
       <nav>
         <div className="upBox">
           <Link to={"/"}>
-            <img src="https://res.cloudinary.com/ds42i5esb/image/upload/v1753182191/Ali-Portfolio/signature_hsl56l.png" alt="" />
+            <img
+              src="https://res.cloudinary.com/ds42i5esb/image/upload/v1753182191/Ali-Portfolio/signature_hsl56l.png"
+              alt=""
+            />
           </Link>
+
           <div className="navigate">
             <button onClick={toggleNavigate}>
               <span></span>
-              <p>NAVIGATE HERE</p>
+              <p>{Navbar("Nav")}</p>
             </button>
           </div>
         </div>
       </nav>
 
-      {/* Circle Overlay with content */}
       <div
         className={`circle-overlay ${isExpanded ? "expanded" : "collapsed"}`}
         style={{
@@ -44,32 +67,54 @@ function Navbar() {
       >
         <div className="overlay-content">
           <div></div>
+          {/* <div className="language">
+            <div
+              className={`lang ${selectedLang === "Az" ? "selected" : ""}`}
+              onClick={() => {
+                handleLangChange("Az");
+                setIsExpanded(false);
+              }}
+            >
+              Az
+            </div>
+            <div
+              className={`lang ${selectedLang === "En" ? "selected" : ""}`}
+              onClick={() => {
+                handleLangChange("En");
+                setIsExpanded(false);
+              }}
+            >
+              En
+            </div>
+          </div> */}
           <div className="menu-items">
             <Link to="/" onClick={() => setIsExpanded(false)}>
-              HOME
+              {Pages("Home")}
             </Link>
             <Link to="/project" onClick={() => setIsExpanded(false)}>
-              PROJECT
+              {Pages("Project")}
             </Link>
             <Link to="/contact" onClick={() => setIsExpanded(false)}>
-              CONTACT
+              {Pages("Contact")}
             </Link>
           </div>
 
           <div className="footer">
-            <div className="copyright">© {year} ALL RIGHTS RESERVED</div>
+            <div className="copyright">
+              © {year} {Pages("CopyRight")}
+            </div>
             <div className="social-links">
               <Link
                 to={"https://www.instagram.com/ali.ismayil_"}
                 target="_blank"
               >
-                INSTAGRAM
+                {Pages("Instagram")}
               </Link>
               <Link to={`mailto:ali.ismayil.681@gmail.com`} target="_blank">
-                GMAIL
+                {Pages("Gmail")}
               </Link>
               <Link to={`tel:+994998982004`} target="_blank">
-                PHONE
+                {Pages("Number")}
               </Link>
             </div>
           </div>

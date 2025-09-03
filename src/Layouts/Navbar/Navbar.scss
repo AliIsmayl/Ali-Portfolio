@@ -36,13 +36,14 @@ nav {
       p {
         font-size: 20px;
         top: 25%;
-        left: 5%;
+        left: 3%;
         transition: all 0.5s ease;
         font-family: "Inter Tight", sans-serif;
         font-weight: 600;
         position: relative;
         z-index: 2;
         margin: 0;
+        width: 100%;
       }
 
       &:hover {
@@ -126,7 +127,7 @@ nav {
   &.expanded {
     clip-path: circle(150% at var(--origin-x) var(--origin-y));
     pointer-events: auto;
-
+    padding: 100px 0px 0px;
     .overlay-content {
       opacity: 1;
       transition: opacity 0.4s ease 0.4s, transform 0.4s ease 0.4s;
@@ -153,9 +154,50 @@ nav {
     justify-content: center;
     padding: 50px;
     width: 100%;
-    gap: 60px;
+    // gap: 20px;
     transform: translateY(20px);
 
+    .language {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      padding: 0px 5px;
+      justify-content: end;
+      .lang {
+        font-family: "Inter Tight", sans-serif;
+        color: #b0afaf;
+        font-size: 20px;
+        position: relative;
+        cursor: pointer;
+        &.selected {
+          color: #21295c !important;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 1px;
+          bottom: -2px;
+          left: 0;
+          background-color: #21295c;
+          transition: width 0.3s ease;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+
+        /* Selected state underline */
+        &.selected::after {
+          width: 100%;
+          transition: none; /* Seçili çizgi için animasyon yok */
+        }
+
+        @media (max-width: 551px) {
+          font-size: 18px;
+        }
+      }
+    }
     @media (max-width: 768px) {
       padding: 40px;
     }
@@ -166,11 +208,14 @@ nav {
   }
 
   .menu-items {
-    margin-top: 80px;
+    // margin-top: 80px;
     display: flex;
     flex-direction: column;
     gap: 30px;
-
+    margin-bottom: 60px;
+    @media (max-width: 551px) {
+      margin-top: 30px;
+    }
     a {
       color: #21295c;
       text-decoration: none;
@@ -199,12 +244,10 @@ nav {
     justify-content: space-between;
     align-items: flex-end;
     font-family: "Inter Tight", sans-serif;
-
     @media (max-width: 768px) {
       flex-direction: column;
       align-items: flex-start;
       gap: 20px;
-
     }
 
     .copyright {

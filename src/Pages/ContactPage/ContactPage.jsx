@@ -18,6 +18,7 @@ import {
   CircularProgress,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import { useTranslation } from "react-i18next";
 
 const StyledSelect = styled(Select)(({ theme }) => ({
   "& .MuiOutlinedInput-root": {
@@ -46,6 +47,10 @@ const StyledMenuItem = styled(MenuItem)(({ theme }) => ({
 }));
 
 function ContactPage() {
+  const { t: Contact } = useTranslation("translation", {
+    keyPrefix: "Contact",
+  });
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -67,14 +72,14 @@ function ContactPage() {
 
   const validateForm = () => {
     const newErrors = {};
-    if (!formData.name.trim()) newErrors.name = "Name is required";
+    if (!formData.name.trim()) newErrors.name = Contact("NameE");
     if (!formData.email.trim()) {
-      newErrors.email = "Email is required";
+      newErrors.email = Contact("EmailE");
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = "Email is invalid";
+      newErrors.email = Contact("EmailE");
     }
-    if (!formData.service) newErrors.service = "Please select a service";
-    if (!formData.message.trim()) newErrors.message = "Message is required";
+    if (!formData.service) newErrors.service = Contact("ServiceE");
+    if (!formData.message.trim()) newErrors.message = Contact("MessageE");
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -120,21 +125,18 @@ function ContactPage() {
     <div className="contact-page">
       <div className="contact-container">
         <div className="form-section">
-          <h1 className="contact-title">Get in Touch</h1>
-          <p className="contact-subtitle">
-            We'd love to hear from you! Fill out the form below and we'll get
-            back to you soon.
-          </p>
+          <h1 className="contact-title">{Contact("Head")}</h1>
+          <p className="contact-subtitle">{Contact("Desc")}</p>
 
           <form onSubmit={handleSubmit} className="contact-form">
             <Box>
               <TextField
                 fullWidth
-                label="Full Name"
+                label={Contact("Name")}
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="Enter your name"
+                placeholder={Contact("NameP")}
                 variant="outlined"
                 error={!!errors.name}
                 helperText={errors.name}
@@ -150,12 +152,12 @@ function ContactPage() {
             <Box>
               <TextField
                 fullWidth
-                label="Email Address"
+                label={Contact("Email")}
                 name="email"
                 type="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="Enter your email"
+                placeholder={Contact("EmailP")}
                 variant="outlined"
                 error={!!errors.email}
                 helperText={errors.email}
@@ -170,30 +172,32 @@ function ContactPage() {
 
             <Box>
               <FormControl fullWidth error={!!errors.service}>
-                <InputLabel id="service-label">Service</InputLabel>
+                <InputLabel id="service-label">{Contact("Service")}</InputLabel>
                 <StyledSelect
                   labelId="service-label"
                   name="service"
                   value={formData.service}
                   onChange={handleChange}
-                  input={<OutlinedInput label="Service" />}
+                  input={<OutlinedInput label={Contact("Service")} />}
                 >
-                  <StyledMenuItem value="I want a website.">
-                    I want a website.
+                  <StyledMenuItem value={Contact("Service1")}>
+                    {Contact("Service1")}
                   </StyledMenuItem>
-                  <StyledMenuItem value="We're running a startup.">
-                    We're running a startup.
+                  <StyledMenuItem value={Contact("Service2")}>
+                    {Contact("Service2")}
                   </StyledMenuItem>
-                  <StyledMenuItem value="We want to work with you.">
-                    We want to work with you.
+                  <StyledMenuItem value={Contact("Service3")}>
+                    {Contact("Service3")}
                   </StyledMenuItem>
-                  <StyledMenuItem value="I want to get information.">
-                    I want to get information.
+                  <StyledMenuItem value={Contact("Service4")}>
+                    {Contact("Service4")}
                   </StyledMenuItem>
-                  <StyledMenuItem value="We are looking for a team leader.">
-                    We are looking for a team leader.
+                  <StyledMenuItem value={Contact("Service5")}>
+                    {Contact("Service5")}
                   </StyledMenuItem>
-                  <StyledMenuItem value="other">Other</StyledMenuItem>
+                  <StyledMenuItem value={Contact("Other")}>
+                    {Contact("Other")}
+                  </StyledMenuItem>
                 </StyledSelect>
                 {errors.service && (
                   <Typography
@@ -210,11 +214,11 @@ function ContactPage() {
             <Box mb={3}>
               <TextField
                 fullWidth
-                label="Your Message"
+                label={Contact("Message")}
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Enter your message"
+                placeholder={Contact("Message")}
                 variant="outlined"
                 multiline
                 rows={5}
@@ -251,7 +255,7 @@ function ContactPage() {
               {isSubmitting ? (
                 <CircularProgress size={24} color="inherit" />
               ) : (
-                "Send Message"
+                Contact("Button")
               )}
             </Button>
 
@@ -264,7 +268,7 @@ function ContactPage() {
                 borderRadius={1}
                 textAlign="center"
               >
-                Thank you! Your message has been sent successfully.
+                {Contact("Success")}
               </Box>
             )}
           </form>
@@ -280,7 +284,7 @@ function ContactPage() {
             <div className="image-overlay"></div>
           </div>
           <div className="contact-info">
-            <h3>Contact Information</h3>
+            <h3>{Contact("Info")}</h3>
             <Link
               to={`mailto:ali.ismayil.681@gmail.com`}
               target="_blank"

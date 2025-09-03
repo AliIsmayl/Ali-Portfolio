@@ -1,0 +1,73 @@
+{
+  "Pages": {
+    "Home": "Home",
+    "Project": "Project",
+    "Contact": "Contact",
+    "Instagram": "INSTAGRAM",
+    "Gmail": "GMAIL",
+    "Number": "NUMBER",
+    "CopyRight": " ALL RIGHTS RESERVED"
+  },
+  "Navbar": {
+    "Nav": "NAVIGATE HERE"
+  },
+  "Home": {
+    "Head": "OPEN FOR COLLABORATION",
+    "Name": "ALI ISMAYIL",
+    "Location": "BAKU, AZERBAIJAN"
+  },
+  "Feature": {
+    "Head": "FEATURED WORK"
+  },
+  "About": {
+    "Head": "MORE ABOUT ME ©",
+    "Text1": "I’M ALI ISMAYIL, A FRONT-END DEVELOPER WHO TURNS IDEAS INTO ELEGANT, FUNCTIONAL WEBSITES.",
+    "Text2": "I create simple, fast, and easy-to-use websites. It can be a company website, a digital menu, or a fashion brand page. I use HTML, CSS, JavaScript, React, and no-code tools to build my projects. I care about how people use websites and try to make everything work well on all devices. I have worked with different industries like healthcare, real estate, online shops and etc. My websites are not only beautiful — they also solve real problems. Let’s build something great together.",
+    "Button": "Download Resum"
+  },
+  "Connect": {
+    "Head": "LET'S WORK TOGETHER",
+    "Contact": "CONTACT",
+    "Text": "HI, I’M ALI — I BUILD INTUITIVE WEBSITES THAT LOOK IDEAL, LOAD FAST, AND FEEL EFFORTLESS. FROM IDEA TO CODE, I CARE ABOUT EVERY DETAIL."
+  },
+  "Footer": {
+    "ToTop": "GO BACK TO TOP"
+  },
+  "Project": {
+    "Head": "ALL PROJECTS"
+  },
+  "Contact": {
+    "Head": "Get in Touch",
+    "Desc": "We'd love to hear from you! Fill out the form below and we'll get back to you soon.",
+    "Name": "Full Name",
+    "Email": "Email Address",
+    "Service": "Service",
+    "Message": "Your Message",
+    "Button": "Send Message",
+
+    "NameP": "Enter your name",
+    "EmailP": "Enter your email",
+
+    "NameE": "Name is required",
+    "EmailE": "Email is required",
+    "ServiceE": "Please select a service",
+    "MessageE": "Message is required",
+
+    "Info": "Contact Information",
+    "Success": "Thank you! Your message has been sent successfully.",
+
+    "Service1": "I want a website",
+    "Service2": "We're running a startup.",
+    "Service3": "We want to work with you.",
+    "Service4": "I want to get information.",
+    "Service5": "We are looking for a team leader.",
+    "Other": "Other"
+  },
+  "Detail": {
+    "Dev": "DEVELOPMENT",
+    "Field": "FIELD",
+    "Date": "DATE",
+    "Project": "PROJECT",
+    "Click": "CLICK"
+  }
+}

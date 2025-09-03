@@ -2,11 +2,16 @@ import React, { useEffect, useState } from "react";
 import "./ProjectDetail.scss";
 import projects from "../../project";
 import { useParams } from "react-router";
-import ReactHtmlParser from 'html-react-parser';
+import ReactHtmlParser from "html-react-parser";
+import { useTranslation } from "react-i18next";
+
 function ProjectDetail() {
   const [detail, setDetail] = useState(null);
   const [isHovering, setIsHovering] = useState(false);
   const { id } = useParams();
+  const { t: Detail } = useTranslation("translation", {
+    keyPrefix: "Detail",
+  });
 
   useEffect(() => {
     const projectDetail = projects.find((item) => item.id === Number(id));
@@ -21,6 +26,8 @@ function ProjectDetail() {
     }
   }, [id]);
 
+  const lang = localStorage.getItem("i18nextLng");
+
   if (!detail) return <div>Loading...</div>;
 
   return (
@@ -30,28 +37,28 @@ function ProjectDetail() {
     >
       <div className="firstBox">
         <div className="left" data-aos="fade-right">
-          <h1>{detail.name}</h1>
-          <p>{ReactHtmlParser(detail.bigDescription)}</p>
+          <h1>{detail?.name[lang]}</h1>
+          <p>{ReactHtmlParser(detail?.bigDescription[lang])}</p>
         </div>
         <div className="right" data-aos="fade-left">
           <div className="box">
-            <span>DEVELOPMENT</span>
-            <p>{detail.process}</p>
+            <span>{Detail("Dev")}</span>
+            <p>{detail?.process[lang]}</p>
           </div>
           <div className="box">
-            <span>FIELD</span>
-            <p>{detail.detail}</p>
+            <span>{Detail("Field")}</span>
+            <p>{detail?.detail[lang]}</p>
           </div>
           <div className="box">
-            <span>DATE</span>
-            <p>{detail.time}</p>
+            <span>{Detail("Date")}</span>
+            <p>{detail?.time}</p>
           </div>
           <div
             className="box project-link-box"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
           >
-            <span>PROJECT</span>
+            <span>{Detail("Project")}</span>
             <div className="link-container">
               <a
                 className="link"
@@ -59,7 +66,7 @@ function ProjectDetail() {
                 rel="noreferrer"
                 href={detail.link}
               >
-                <p style={{color:`${detail.color}`}}>CLICK</p>
+                <p style={{ color: `${detail.color}` }}>{Detail("Click")}</p>
               </a>
             </div>
           </div>
@@ -77,10 +84,10 @@ function ProjectDetail() {
           {detail.job?.map((item, index) => (
             <div className="box" key={index}>
               <span data-aos="fade-left" className="signature-line">
-                {item.info}
+                {item?.info[lang]}
               </span>
               <p data-aos="fade-right">
-                {detail.work?.[index]?.info || item.work}
+                {detail.work?.[index]?.info[lang] || item?.work[lang]}
               </p>
             </div>
           ))}
