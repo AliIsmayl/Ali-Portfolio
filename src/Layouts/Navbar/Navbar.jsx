@@ -67,7 +67,7 @@ function Navbar() {
       >
         <div className="overlay-content">
           <div></div>
-          {/* <div className="language">
+          <div className="language">
             <div
               className={`lang ${selectedLang === "Az" ? "selected" : ""}`}
               onClick={() => {
@@ -86,7 +86,7 @@ function Navbar() {
             >
               En
             </div>
-          </div> */}
+          </div>
           <div className="menu-items">
             <Link to="/" onClick={() => setIsExpanded(false)}>
               {Pages("Home")}
