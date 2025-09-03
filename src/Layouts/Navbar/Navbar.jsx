@@ -17,7 +17,7 @@ function Navbar() {
   const [buttonPosition, setButtonPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const storedLang = JSON.parse(localStorage.getItem("language")) || "Az";
+    const storedLang = JSON.parse(localStorage.getItem("language")) || "En";
     i18n.changeLanguage(storedLang.toLowerCase());
   }, []);
 
