@@ -15,7 +15,8 @@ function ProjectsSection() {
     keyPrefix: "Feature",
   });
 
-  const lang = localStorage.getItem("i18nextLng");
+  const rawLang = localStorage.getItem("i18nextLng");
+  const lang = rawLang === "eng" ? "en" : rawLang;
 
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 597);
 
@@ -62,10 +63,10 @@ function ProjectsSection() {
                   <div className="text">
                     <p>
                       {isSmallScreen
-                        ? item?.littleName[lang]
-                        : item?.name[lang]}
+                        ? item?.littleName?.[lang] || item?.littleName?.en || ""
+                        : item?.name?.[lang] || item?.name?.en || ""}
                     </p>
-                    <span>{item?.detail[lang]}</span>
+                   <span>{item?.detail?.[lang] || item?.detail?.en || ""}</span>
                   </div>
                   <div className="time">
                     <p>{item?.time}</p>
