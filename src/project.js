@@ -833,6 +833,78 @@ const projects = [
       },
     ],
   },
+ {
+  id: 13,
+  name: {
+    az: "AZTURK PACKAGE",
+    en: "AZTURK PACKAGE"
+  },
+  detail: {
+    az: "Paketləşdirmə və qablaşdırma şirkəti",
+    en: "Packaging and packing company"
+  },
+  time: "2025",
+  image: "https://res.cloudinary.com/ds42i5esb/image/upload/v1762031508/Gray_Red_Bold_History_YouTube_Thumbnail_81_rr3dtl.png",
+  link: "https://azturkpackage.az/",
+  color: "#B72D44",
+  bigDescription: {
+    az: "<span>AZTURK PACKAGE</span> üçün hazırlanan korporativ veb-sayt və admin panel; şirkət xidmətlərinin təqdimatı, məzmunun rahat idarə edilməsi və yüksək performanslı, tam responsiv istifadəçi təcrübəsi üzərində qurulub. Layihə ərzində dizayn sistemi, komponent əsaslı memarlıq və müasir front-end praktikaları tətbiq edildi.",
+    en: "<span>AZTURK PACKAGE</span> corporate website and admin panel were built to showcase the company's services, enable easy content management, and deliver a high-performance, fully responsive user experience. A design system, component-based architecture, and modern front-end practices were applied throughout the project."
+  },
+  process: {
+    az: "Komanda ilə",
+    en: "With team"
+  },
+  image1: "https://res.cloudinary.com/ds42i5esb/image/upload/v1762031512/Gray_Red_Bold_History_YouTube_Thumbnail_82_obmnrm.png",
+  image2: "https://res.cloudinary.com/ds42i5esb/image/upload/v1762031517/Gray_Red_Bold_History_YouTube_Thumbnail_83_cipyor.png",
+  littleName: {
+    az: "AZTURK",
+    en: "AZTURK"
+  },
+  job: [
+    {
+      info: {
+        az: "Front-End Tərtibatçı",
+        en: "Front-End Developer"
+      },
+      work: {
+        az: "Veb-saytın və admin panelin istifadəçi interfeysini müasir front-end texnologiyaları ilə qurdu. Yenidən istifadə oluna bilən komponentlər, API inteqrasiyası və tam responsivlik üzərində fokuslandı.",
+        en: "Implemented the website and admin panel UI with modern front-end technologies, focusing on reusable components, API integration, and full responsiveness."
+      }
+    },
+    {
+      info: {
+        az: "UX/UI Dizayner",
+        en: "UX/UI Designer"
+      },
+      work: {
+        az: "Dizayn sistemi, rəng/typo ardıcıllığı və komponent kitabxanası hazırladı. Bir neçə nümunə veb-saytdan ilhamlanaraq səmərəli, oxunaqlı və rahat naviqasiyalı interfeys dizayn etdi.",
+        en: "Created a design system with consistent color/typography and a component library. Drew inspiration from several reference sites to design a clear, readable interface with intuitive navigation."
+      }
+    },
+    {
+      info: {
+        az: "Komanda Rəhbəri",
+        en: "Team Lead"
+      },
+      work: {
+        az: "Komandanı idarə etdi, tapşırıqları planladı və bölüşdürdü, kod baxışları (code review) apardı, keyfiyyət standartlarını qorudu.",
+        en: "Led the team, planned and distributed tasks, conducted code reviews, and upheld quality standards."
+      }
+    },
+    {
+      info: {
+        az: "Məhsul Sahibi",
+        en: "Product Owner"
+      },
+      work: {
+        az: "Müştəri ilə mütəmadi görüşlər keçirdi, tələbləri topladı və prioritetləşdirdi, sprint planlama və icranı koordinasiya edərək layihə müddətində riskləri idarə etdi.",
+        en: "Held regular client meetings, gathered and prioritized requirements, coordinated sprint planning and execution, and managed risks throughout the project."
+      }
+    }
+  ]
+}
+
 ];
 
 export default projects;

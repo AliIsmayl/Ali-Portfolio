@@ -66,7 +66,9 @@ function ProjectsSection() {
                         ? item?.littleName?.[lang] || item?.littleName?.en || ""
                         : item?.name?.[lang] || item?.name?.en || ""}
                     </p>
-                   <span>{item?.detail?.[lang] || item?.detail?.en || ""}</span>
+                    <span>
+                      {item?.detail?.[lang] || item?.detail?.en || ""}
+                    </span>
                   </div>
                   <div className="time">
                     <p>{item?.time}</p>
