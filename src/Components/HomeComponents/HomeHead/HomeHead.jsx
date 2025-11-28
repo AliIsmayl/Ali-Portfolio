@@ -19,7 +19,7 @@ function HomeHead() {
         <p>{Home("Location")}</p>
 
         <div className="text">
-          <p>PRODUCT OWNER</p>
+          <p>{Home("Job")}</p>
           <span></span>
         </div>
       </div>

@@ -181,8 +181,8 @@ const projects = [
       },
       {
         info: {
-          az: "Məhsul Sahibi",
-          en: "Product Owner",
+          az: "Layihə Meneceri",
+          en: "Project Manager",
         },
         work: {
           az: "Layihənin bütün həyat dövrünü müstəqil şəkildə idarə etdi — planlaşdırmadan son təhvilə qədər. Azərbaycan Texniki Universitetində son məhsulu layihənin başdan-sona icrasının nümayişi kimi təqdim etdi.",
@@ -527,8 +527,8 @@ const projects = [
       },
       {
         info: {
-          az: "Məhsul Sahibi",
-          en: "Product Owner",
+          az: "Layihə Meneceri",
+          en: "Project Manager",
         },
         work: {
           az: "Layihənin planlaşdırılmasını və icrasını müstəqil şəkildə idarə etdi. Son tarixləri idarə etdi, layihənin əhatə dairəsini müəyyənləşdirdi və uğurlu təhvil verilməsini təmin etdi. Azərbaycan Texniki Universitetində son məhsulu təqdim etdi.",
@@ -601,8 +601,8 @@ const projects = [
       },
       {
         info: {
-          az: "Məhsul Sahibi",
-          en: "Product Owner",
+          az: "Layihə Meneceri",
+          en: "Project Manager",
         },
         work: {
           az: "Layihəni konsepsiyadan tətbiqə qədər müstəqil şəkildə idarə etdi. Vaxt qrafiklərini müəyyənləşdirdi, prioritetləri idarə etdi və layihəni Azərbaycan Texniki Universitetində ictimai şəkildə təqdim etdi.",
@@ -894,8 +894,8 @@ const projects = [
     },
     {
       info: {
-        az: "Məhsul Sahibi",
-        en: "Product Owner"
+        az: "Layihə Meneceri",
+        en: "Project Manager"
       },
       work: {
         az: "Müştəri ilə mütəmadi görüşlər keçirdi, tələbləri topladı və prioritetləşdirdi, sprint planlama və icranı koordinasiya edərək layihə müddətində riskləri idarə etdi.",

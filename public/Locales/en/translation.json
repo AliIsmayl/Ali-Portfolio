@@ -14,21 +14,22 @@
   "Home": {
     "Head": "OPEN FOR COLLABORATION",
     "Name": "ALI ISMAYIL",
-    "Location": "BAKU, AZERBAIJAN"
+    "Location": "BAKU, AZERBAIJAN",
+    "Job": "PROJECT MANAGER | FRONT END DEVELOPER"
   },
   "Feature": {
     "Head": "FEATURED WORK"
   },
   "About": {
     "Head": "MORE ABOUT ME ©",
-    "Text1": "I’m Ali Ismayıl, a Product Owner who turns business needs into simple and usable digital products.",
-    "Text2": "I’ve been working as a Product Owner for 1+ year, combining both technical understanding and strong soft skills. I’ve been involved in delivering 20+ websites across different industries — from company pages to digital menu systems and brand landing pages. My focus is always clear requirements, correct prioritization and creating real business value — not just visuals.",
+    "Text1": "I’m Ali Ismayıl, a Project Manager and Frontend Developer who turns business needs into clear, user-friendly digital products.",
+    "Text2": "I’ve been working as a Project Manager and Frontend Developer for 1+ year, combining technical understanding with strong communication and coordination skills. I’ve helped deliver 20+ websites in different industries — from corporate sites to digital menus and brand landing pages. My focus is always clear requirements, correct prioritization, and creating real business value — not just good-looking interfaces.",
     "Button": "Download Resume"
   },
   "Connect": {
     "Head": "LET'S WORK TOGETHER",
     "Contact": "CONTACT",
-    "Text": "Hi, I’m Ali — a Product Owner focused on clarity, measurable outcomes, and web products that feel effortless to use."
+    "Text": "Hi, I’m Ali — a Project Manager and Frontend Developer focused on clarity, measurable outcomes, and web products that feel effortless to use."
   },
   "Footer": {
     "ToTop": "GO BACK TO TOP"

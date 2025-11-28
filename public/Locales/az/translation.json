@@ -14,21 +14,22 @@
   "Home": {
     "Head": "ƏMƏKDAŞLIQ ÜÇÜN AÇIQ",
     "Name": "ƏLİ İSMAYIL",
-    "Location": "BAKI, AZƏRBAYCAN"
+    "Location": "BAKI, AZƏRBAYCAN",
+    "Job": "LAYİHƏ MENECERİ | FRONTEND DEVELOPER"
   },
   "Feature": {
     "Head": "SEÇİLMİŞ İŞLƏR"
   },
   "About": {
     "Head": "HAQQIMDA ƏTRAFLI ©",
-    "Text1": "Mən Əli İsmayıl — biznes ehtiyaclarını sadə və istifadə oluna bilən rəqəmsal məhsullara çevirən Məhsul Sahibiyəm.",
-    "Text2": "ildən artıqdır Məhsul Sahibi kimi çalışıram və həm texniki anlayışı, həm də güclü kommunikasiya/koordinasiya bacarıqlarını birləşdirirəm. Bu müddətdə müxtəlif sahələr üzrə 20-dən çox veb-saytın hazırlanmasında iştirak etmişəm — şirkət səhifələrindən digital menyu sistemlərinə və brend landing səhifələrinə qədər. Fokusum həmişə aydın tələblər, düzgün prioritetləndirmə və təkcə vizual deyil, real biznes dəyəri yaradan nəticələrdir.",
+    "Text1": "Mən Əli İsmayılam, biznes tələblərini aydın və istifadəçi-yönümlü rəqəmsal məhsullara çevirən Layihə Meneceri və Frontend Developerəm.",
+    "Text2": "Artıq 1 ildən çoxdur ki, Layihə Meneceri və Frontend Developer kimi çalışıram və texniki biliklərimi güclü kommunikasiya və koordinasiya bacarıqları ilə birləşdirirəm. Fərqli sahələr üzrə 20-dən çox veb saytın hazırlanmasında iştirak etmişəm — korporativ saytlardan rəqəmsal menyu sistemlərinə və brend landing səhifələrinə qədər. Mənim üçün əsas olan sadəcə gözəl interfeyslər deyil, aydın tələblər, düzgün prioritetləşdirmə və biznes üçün real dəyər yaratmaqdır.",
     "Button": "CV-ni Yüklə"
   },
   "Connect": {
     "Head": "GƏLİN BİRLİKDƏ İŞLƏYƏK",
     "Contact": "ƏLAQƏ",
-    "Text": "Salam, mən Ali — aydınlıq, ölçülə bilən nəticələr və istifadə üçün rahat veb məhsullara fokuslanan Məhsul Sahibiyəm"
+    "Text": "Salam, mən Əliyəm — aydınlıq, ölçülə bilən nəticələr və istifadəsi rahat olan veb məhsullara fokuslanan Layihə Meneceri və Frontend Developerəm."
   },
   "Footer": {
     "ToTop": "YUXARI QAYIT"
