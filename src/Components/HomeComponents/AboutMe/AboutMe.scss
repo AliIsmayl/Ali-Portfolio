@@ -37,19 +37,21 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-      h3 {
+      p {
         width: 90%;
         color: #21295c;
         font-size: 30px;
+        font-weight: 600;
         @media (max-width: 597px) {
           width: 100%;
           font-size: 20px;
         }
       }
-      p {
+      h3 {
         font-size: 20px;
         line-height: 1.5;
         width: 90%;
+        font-weight: 400;
         span {
           font-style: italic;
           font-weight: 500;
@@ -65,9 +67,9 @@
       button {
         height: 50px;
         width: max-content;
-        @media (max-width: 597px) {
-          padding: 0 17px 0px 0px;
-        }
+        // @media (max-width: 597px) {
+          // padding: 0 17px 0px 0px;
+        // }
         display: flex;
         position: relative;
         overflow: hidden;
@@ -76,21 +78,21 @@
         border-radius: 20px;
         background: #21295c;
 
-        p {
+        h4 {
           font-size: 17px;
           top: 25%;
-          left: 5%;
           transition: all 0.5s ease;
           font-family: "Inter Tight", sans-serif;
           font-weight: 600;
           position: relative;
+          width: 100%;
         }
         &:hover {
           span {
             top: 0;
             transition: all 0.5s ease;
           }
-          p {
+          h4 {
             transition: all 0.5s ease;
             color: #21295c;
           }

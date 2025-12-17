@@ -19,7 +19,7 @@ function HomeHead() {
         <p>{Home("Location")}</p>
 
         <div className="text">
-          <p>{Home("Job")}</p>
+          <h1>{Home("Job")}</h1>
           <span></span>
         </div>
       </div>

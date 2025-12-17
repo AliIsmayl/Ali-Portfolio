@@ -18,16 +18,16 @@ function AboutMe() {
         <img src="https://res.cloudinary.com/ds42i5esb/image/upload/v1753182180/Ali-Portfolio/Image1_xk2but.jpg" alt="" />
         <div className="text">
           {" "}
-          <h3>
-           {About("Text1")}
-          </h3>
           <p>
-           {About("Text2")}
+           {About("Text1")}
           </p>
+          <h3>
+           {About("Text2")}
+          </h3>
           <Link className="link" onClick={handleFileOpen}>
             <button target="_blank">
               <span></span>
-              <p>{About("Button")}</p>
+              <h4>{About("Button")}</h4>
             </button>
           </Link>
         </div>
