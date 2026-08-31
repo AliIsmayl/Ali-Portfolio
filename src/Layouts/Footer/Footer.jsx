@@ -1,87 +1,84 @@
 import React from "react";
-import { MdArrowOutward } from "react-icons/md";
+import { MdArrowOutward, MdArrowUpward, MdArrowForward } from "react-icons/md";
 import "./Footer.scss";
 import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
 
 function Footer() {
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth", // Smooth scroll animation
-    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const { t: Home } = useTranslation("translation", {
-    keyPrefix: "Home",
-  });
-  const { t: Pages } = useTranslation("translation", {
-    keyPrefix: "Pages",
-  });
-  const { t: Footer } = useTranslation("translation", {
-    keyPrefix: "Footer",
-  });
-  const { t: Connect } = useTranslation("translation", {
-    keyPrefix: "Connect",
-  });
+  const { t: Home } = useTranslation("translation", { keyPrefix: "Home" });
+  const { t: Pages } = useTranslation("translation", { keyPrefix: "Pages" });
+  const { t: Footer } = useTranslation("translation", { keyPrefix: "Footer" });
+  const { t: Connect } = useTranslation("translation", { keyPrefix: "Connect" });
+
+  const year = new Date().getFullYear();
+
+  const socials = [
+    { label: Pages("Instagram"), href: "https://www.instagram.com/ali.ismayil_" },
+    { label: Pages("Gmail"), href: "mailto:ali.ismayil.681@gmail.com" },
+    { label: Pages("Number"), href: "tel:+994998982004" },
+  ];
+
   return (
     <div className="footerSection">
       <footer>
-        <div className="upBox">
-          <h2>{Connect("Head")}</h2>
-          <Link className="button" to={"/contact"}>
-            <span></span>
-            <p>{Connect("Contact")}</p>
-          </Link>
-          <p>{Connect("Text")}</p>
-        </div>
-        <div className="mediumBox">
-          <div className="socialMedia">
-            <Link
-              target="_blank"
-              to={"https://www.instagram.com/ali.ismayil_"}
-              className="box"
-            >
-              <p>{Pages("Instagram")}</p>
-              <span></span>
+        <div className="foot-grid">
+          <div className="foot-lead">
+            <span className="foot-kicker">— {Pages("Contact")}</span>
+            <h2>{Connect("Head")}</h2>
+            <p>{Connect("Text")}</p>
+            <Link className="foot-cta" to={"/contact"}>
+              <span>{Connect("Contact")}</span>
+              <MdArrowForward />
             </Link>
-            <h6>
-              <MdArrowOutward />
-            </h6>
           </div>
-          <div className="socialMedia">
-            <Link
-              to={`mailto:ali.ismayil.681@gmail.com`}
-              target="_blank"
-              className="box"
-            >
-              <p>{Pages("Gmail")}</p>
-              <span></span>
-            </Link>
-            <h6>
-              <MdArrowOutward />
-            </h6>
-          </div>
-          <div className="socialMedia">
-            <Link to={`tel:+994998982004`} target="_blank" className="box">
-              <p>{Pages("Number")}</p>
-              <span></span>
-            </Link>
-            <h6>
-              <MdArrowOutward />
-            </h6>
+
+          <div className="foot-links">
+            <span className="foot-kicker">— Elsewhere</span>
+
+            <div className="foot-linklist">
+              {socials.map((s) => (
+                <Link
+                  key={s.label}
+                  to={s.href}
+                  target="_blank"
+                  rel="noopener"
+                  className="foot-link"
+                >
+                  <span>{s.label}</span>
+                  <MdArrowOutward />
+                </Link>
+              ))}
+              <a
+                href="https://insyde.info/personal/06upZzUpyAx4/"
+                target="_blank"
+                rel="noopener"
+                className="foot-link"
+              >
+                <span>Digital Card</span>
+                <MdArrowOutward />
+              </a>
+            </div>
           </div>
         </div>
       </footer>
 
       <section id="backToTop">
-        <h1 data-aos="fade-down">{Home("Name")}</h1>
+        <h1 onClick={scrollToTop} title={Footer("ToTop")}>
+          {Home("Name")}
+        </h1>
         <div className="down">
-          <p>© {new Date().getFullYear()} {Pages("CopyRight")}</p>
-          <div className="box">
-            <h2 onClick={scrollToTop}>{Footer("ToTop")}</h2>
-            <span></span>
-          </div>
+          <p>
+            © {year}
+            {Pages("CopyRight")}
+          </p>
+          <button className="box" onClick={scrollToTop}>
+            <span>{Footer("ToTop")}</span>
+            <MdArrowUpward />
+          </button>
         </div>
       </section>
     </div>

@@ -903,8 +903,138 @@ const projects = [
       }
     }
   ]
-}
-
+},
+  {
+    id: 24,
+    name: { az: "Macara Sheki", en: "Macara Sheki" },
+    detail: { az: "Turizm və Əyləncə", en: "Tourism & Entertainment" },
+    time: "2024",
+    image: "https://image.thum.io/get/width/1200/crop/900/https://sheki.macaraclub.az/",
+    link: "https://sheki.macaraclub.az/",
+    littleName: { az: "Macara Sheki", en: "Macara Sheki" },
+    color: "#A8563B",
+    bigDescription: {
+      az: "<span>Macara Sheki</span> — Macara Club şəbəkəsinin Şəki filialı üçün hazırlanmış rəqəmsal platforma. Əyləncə paketləri, rezervasiya axını və məkan təqdimatı təmiz, tam responsiv interfeysdə birləşdirilib. Layihə boyunca tələblərin planlaşdırılması, funksiyaların prioritetləşdirilməsi, komanda koordinasiyası və baştan-sona təhvil aparıldı. (Qeyd: hazırkı şəkillər müvəqqəti mock-up-dır.)",
+      en: "A digital platform built for <span>Macara Sheki</span>, the Sheki branch of the Macara Club network. Entertainment packages, a reservation flow and venue showcase are combined in a clean, fully responsive interface. Requirement planning, feature prioritization, team coordination and end-to-end delivery were carried out throughout the project. (Note: current images are a temporary mock-up.)",
+    },
+    process: { az: "Komanda əsaslı", en: "Team-based" },
+    image1: "https://image.thum.io/get/width/600/crop/1000/https://sheki.macaraclub.az/",
+    image2: "",
+    job: [
+      {
+        info: { az: "IT Layihə Meneceri", en: "IT Project Manager" },
+        work: { az: "Layihəni planlaşdırmadan təhvilə qədər idarə etdi — tələblərin toplanması, funksiya planlaşdırması, komanda koordinasiyası və müştəri ilə kommunikasiya.", en: "Led the project from planning to delivery — requirement gathering, feature planning, team coordination, and client communication." },
+      },
+      {
+        info: { az: "Product Owner", en: "Product Owner" },
+        work: { az: "Məhsul baxışını və backloqu idarə etdi, rezervasiya axınını və məzmun strukturunu biznes məqsədlərinə uyğunlaşdırdı.", en: "Owned the product vision and backlog, aligning the reservation flow and content structure with business goals." },
+      },
+    ],
+  },
+  {
+    id: 27,
+    name: { az: "Macara Club", en: "Macara Club" },
+    detail: { az: "Turizm və Əyləncə", en: "Tourism & Entertainment" },
+    time: "2024",
+    image: "https://image.thum.io/get/width/1200/crop/900/https://macaraclub.az/",
+    link: "https://macaraclub.az/",
+    littleName: { az: "Macara Club", en: "Macara Club" },
+    color: "#3F7E6E",
+    bigDescription: {
+      az: "<span>Macara Club</span> — əyləncə və istirahət məkanları şəbəkəsi üçün hazırlanmış əsas rəqəmsal platforma. Filiallar, tədbir formatları və rezervasiya modulu vahid, tam responsiv təcrübədə toplanıb. Layihə boyunca tələblərin planlaşdırılması, funksiyaların prioritetləşdirilməsi, komanda koordinasiyası və baştan-sona təhvil aparıldı. (Qeyd: hazırkı şəkillər müvəqqəti mock-up-dır.)",
+      en: "A main digital platform built for <span>Macara Club</span>, a network of entertainment and leisure venues. Branches, event formats and a reservation module are gathered into a single, fully responsive experience. Requirement planning, feature prioritization, team coordination and end-to-end delivery were carried out throughout the project. (Note: current images are a temporary mock-up.)",
+    },
+    process: { az: "Komanda əsaslı", en: "Team-based" },
+    image1: "https://image.thum.io/get/width/600/crop/1000/https://macaraclub.az/",
+    image2: "",
+    job: [
+      {
+        info: { az: "IT Layihə Meneceri", en: "IT Project Manager" },
+        work: { az: "Layihəni planlaşdırmadan təhvilə qədər idarə etdi — tələblərin toplanması, funksiya planlaşdırması, komanda koordinasiyası və müştəri ilə kommunikasiya.", en: "Led the project from planning to delivery — requirement gathering, feature planning, team coordination, and client communication." },
+      },
+      {
+        info: { az: "Product Owner", en: "Product Owner" },
+        work: { az: "Filial və rezervasiya modullarının məhsul tələblərini müəyyənləşdirdi, prioritetləri idarə etdi və buraxılışı koordinasiya etdi.", en: "Defined product requirements for the branch and reservation modules, managed priorities, and coordinated the release." },
+      },
+    ],
+  },
+  {
+    id: 29,
+    name: { az: "OliveAds", en: "OliveAds" },
+    detail: { az: "Marketinq Agentliyi", en: "Marketing Agency" },
+    time: "2024",
+    image: "https://image.thum.io/get/width/1200/crop/900/https://oliveads.az/",
+    link: "https://oliveads.az/",
+    littleName: { az: "OliveAds", en: "OliveAds" },
+    color: "#6E8B3D",
+    bigDescription: {
+      az: "<span>OliveAds</span> — rəqəmsal marketinq agentliyi üçün xidmətləri, keys-ləri və əlaqə axınını təqdim edən korporativ veb-sayt. Təmiz struktur, sürətli yüklənmə və tam responsivlik üzərində fokuslanıldı. Layihə boyunca tələblərin planlaşdırılması, funksiyaların prioritetləşdirilməsi, komanda koordinasiyası və baştan-sona təhvil aparıldı. (Qeyd: hazırkı şəkillər müvəqqəti mock-up-dır.)",
+      en: "A corporate website for <span>OliveAds</span>, a digital marketing agency, presenting services, case studies and a contact flow. The focus was on clean structure, fast loading and full responsiveness. Requirement planning, feature prioritization, team coordination and end-to-end delivery were carried out throughout the project. (Note: current images are a temporary mock-up.)",
+    },
+    process: { az: "Komanda əsaslı", en: "Team-based" },
+    image1: "https://image.thum.io/get/width/600/crop/1000/https://oliveads.az/",
+    image2: "",
+    job: [
+      {
+        info: { az: "IT Layihə Meneceri", en: "IT Project Manager" },
+        work: { az: "Layihəni planlaşdırmadan təhvilə qədər idarə etdi — tələblərin toplanması, funksiya planlaşdırması, komanda koordinasiyası və müştəri ilə kommunikasiya.", en: "Led the project from planning to delivery — requirement gathering, feature planning, team coordination, and client communication." },
+      },
+      {
+        info: { az: "Product Owner", en: "Product Owner" },
+        work: { az: "Səhifə strukturunu və məzmun prioritetlərini müəyyənləşdirdi, agentliyin xidmət təqdimatını istifadəçi ehtiyaclarına uyğunlaşdırdı.", en: "Defined the page structure and content priorities, aligning the agency's service presentation with user needs." },
+      },
+    ],
+  },
+  {
+    id: 32,
+    name: { az: "Insyde", en: "Insyde" },
+    detail: { az: "Rəqəmsal Məhsul", en: "Digital Product" },
+    time: "2026",
+    image: "https://image.thum.io/get/width/1200/crop/900/https://insyde.info/",
+    link: "https://insyde.info/",
+    littleName: { az: "Insyde", en: "Insyde" },
+    color: "#1b2350",
+    bigDescription: {
+      az: "<span>Insyde</span> — NFC və QR ilə işləyən rəqəmsal profil platforması. İstifadəçi bir toxunuşla əlaqə məlumatlarını, sosial şəbəkələrini və portfoliosunu paylaşa bilir; sistem tam olaraq öz üzərimdə dizayn edilib və qurulub. Bazar araşdırması, funksiya prioritetləşdirməsi və buraxılış baştan-sona idarə olundu. (Qeyd: hazırkı şəkillər müvəqqəti mock-up-dır.)",
+      en: "<span>Insyde</span> is an NFC- and QR-powered digital profile platform. A user can share contact details, social links and a portfolio with a single tap; the system was designed and built entirely by me. Market research, feature prioritization and launch were managed end-to-end. (Note: current images are a temporary mock-up.)",
+    },
+    process: { az: "Fərdi", en: "Individually" },
+    image1: "https://image.thum.io/get/width/600/crop/1000/https://insyde.info/",
+    image2: "",
+    job: [
+      {
+        info: { az: "Təsisçi və Product Owner", en: "Founder & Product Owner" },
+        work: { az: "Məhsul vizyonu, sistem dizaynı və icranı baştan-sona öz üzərinə götürdü — bazar araşdırması, funksiya prioritetləşdirməsi və buraxılış.", en: "Owned product vision, system design, and implementation end-to-end — market research, feature prioritization, and launch." },
+      },
+    ],
+  },
+  {
+    id: 34,
+    name: { az: "Indo", en: "Indo" },
+    detail: { az: "Pərakəndə", en: "Retail" },
+    time: "2024",
+    image: "https://image.thum.io/get/width/1200/crop/900/https://www.indo.az/",
+    link: "https://www.indo.az/",
+    littleName: { az: "Indo", en: "Indo" },
+    color: "#B23A48",
+    bigDescription: {
+      az: "<span>Indo</span> — pərakəndə brendi üçün Cervision komandası ilə hazırlanmış korporativ veb-platforma. Məhsul kataloqu, mağaza məlumatları və kampaniya bölmələri tam responsiv, sürətli interfeysdə birləşdirilib. Layihə boyunca tələblərin planlaşdırılması, funksiyaların prioritetləşdirilməsi, komanda koordinasiyası və baştan-sona təhvil aparıldı. (Qeyd: hazırkı şəkillər müvəqqəti mock-up-dır.)",
+      en: "<span>Indo</span> is a corporate web platform built with the Cervision team for a retail brand. Product catalogue, store information and campaign sections are combined in a fast, fully responsive interface. Requirement planning, feature prioritization, team coordination and end-to-end delivery were carried out throughout the project. (Note: current images are a temporary mock-up.)",
+    },
+    process: { az: "Komanda əsaslı · Cervision", en: "Team-based · Cervision" },
+    image1: "https://image.thum.io/get/width/600/crop/1000/https://www.indo.az/",
+    image2: "",
+    job: [
+      {
+        info: { az: "IT Layihə Meneceri", en: "IT Project Manager" },
+        work: { az: "Layihəni planlaşdırmadan təhvilə qədər idarə etdi — tələblərin toplanması, funksiya planlaşdırması, komanda koordinasiyası və müştəri ilə kommunikasiya.", en: "Led the project from planning to delivery — requirement gathering, feature planning, team coordination, and client communication." },
+      },
+      {
+        info: { az: "Product Owner", en: "Product Owner" },
+        work: { az: "Kataloq və kampaniya modullarının tələblərini müəyyənləşdirdi, backloqu prioritetləşdirdi və Cervision komandası ilə icranı koordinasiya etdi.", en: "Defined requirements for the catalogue and campaign modules, prioritized the backlog, and coordinated delivery with the Cervision team." },
+      },
+    ],
+  },
 ];
 
 export default projects;

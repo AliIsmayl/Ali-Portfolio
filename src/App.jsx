@@ -9,11 +9,19 @@ import Navbar from "./Layouts/Navbar/Navbar";
 import Footer from "./Layouts/Footer/Footer";
 import ContactPage from "./Pages/ContactPage/ContactPage";
 import ProjectDetail from "./Pages/ProjectDetail/ProjectDetail";
+import InsydeCard from "./Components/InsydeCard/InsydeCard";
 
 function ScrollToTopOnRouteChange() {
   const location = useLocation();
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+
+    const path = location.pathname;
+    let route = "home";
+    if (path === "/project") route = "projects";
+    else if (path.startsWith("/project/")) route = "detail";
+    else if (path === "/contact") route = "contact";
+    document.body.dataset.route = route;
   }, [location.pathname]);
   return null;
 }
@@ -35,6 +43,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />
+      <InsydeCard />
     </BrowserRouter>
   );
 }

@@ -1,0 +1,89 @@
+.insyde-card {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 4; /* below the nav overlay (5) so it hides when the menu opens */
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 320px;
+  padding: 10px 14px;
+  background: #ffffff;
+  border: 1px solid rgba(27, 35, 80, 0.22);
+  box-shadow: none;
+  text-decoration: none;
+
+  transition: opacity 0.4s ease, transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.35s ease;
+
+  &.is-hidden {
+    opacity: 0;
+    transform: translateY(24px);
+    pointer-events: none;
+  }
+
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 50% !important;
+    border: 2px solid #b07d43;
+    display: block;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    gap: 1px;
+
+    strong {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: #1b2350;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    small {
+      font-family: "Inter Tight", sans-serif;
+      font-size: 10.5px;
+      letter-spacing: 0.02em;
+      color: rgba(27, 35, 80, 0.55);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &__arrow {
+    flex-shrink: 0;
+    margin-left: 4px;
+    font-size: 18px;
+    color: #1b2350;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    border-color: #1b2350;
+    .insyde-card__arrow {
+      transform: translateX(4px);
+    }
+  }
+
+  /* compact on small screens: avatar + arrow only */
+  @media (max-width: 560px) {
+    right: 14px;
+    bottom: 14px;
+    max-width: none;
+    gap: 8px;
+    padding: 9px 11px;
+
+    &__text {
+      display: none;
+    }
+  }
+}

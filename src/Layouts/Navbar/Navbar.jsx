@@ -15,10 +15,24 @@ function Navbar() {
 
   const [isExpanded, setIsExpanded] = useState(false);
   const [buttonPosition, setButtonPosition] = useState({ x: 0, y: 0 });
+  const [hideNav, setHideNav] = useState(false);
 
   useEffect(() => {
     const storedLang = JSON.parse(localStorage.getItem("language")) || "En";
     i18n.changeLanguage(storedLang.toLowerCase());
+  }, []);
+
+  // hide the navbar on scroll down, reveal it on scroll up
+  useEffect(() => {
+    let lastY = window.scrollY;
+    const onScroll = () => {
+      const y = window.scrollY;
+      if (y > lastY && y > 80) setHideNav(true);
+      else if (y < lastY) setHideNav(false);
+      lastY = y;
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   const handleLangChange = (lang) => {
@@ -40,7 +54,7 @@ function Navbar() {
 
   return (
     <>
-      <nav>
+      <nav className={hideNav && !isExpanded ? "is-hidden" : ""}>
         <div className="upBox">
           <Link to={"/"}>
             <img

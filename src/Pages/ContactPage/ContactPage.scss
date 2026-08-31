@@ -1,10 +1,10 @@
 // Variables
-$primary-color: #21295c;
+$primary-color: #1b2350;
 $secondary-color: #6c757d;
 $error-color: #ff3860;
 $success-color: #23d160;
 $light-color: #f8f9fa;
-$dark-color: #21295c;
+$dark-color: #1b2350;
 $transition: all 0.3s ease;
 
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
@@ -48,89 +48,109 @@ $transition: all 0.3s ease;
 
 // Styles
 .contact-page {
-  padding: 50px;
+  min-height: 100vh;
+  padding: 90px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  font-family: "Fraunces", Georgia, serif;
 
   @media (max-width: 769px) {
-    padding: 50px 20px;
+    padding: 40px 20px;
   }
-  min-height: 100vh;
-  @include flex-center;
-  font-family: "Inter Tight", sans-serif;
 
   .contact-container {
-    max-width: 1200px;
+    max-width: 1160px;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    background: white;
-    border-radius: 15px;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 0;
+    background: #f4f1ea;
+    border: 1px solid rgba(27, 35, 80, 0.18);
     overflow: hidden;
-    @include box-shadow;
     animation: fadeIn 0.8s ease-out;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    background-image: url("../../Image/Contact.png");
-    @media (max-width: 768px) {
+
+    @media (max-width: 900px) {
       grid-template-columns: 1fr;
     }
   }
 
   .form-section {
-    padding: 30px;
-    animation: fadeIn 0.8s ease-out 0.2s both;
-
-    @media (max-width: 769px) {
-      padding: 20px;
-    }
+    padding: clamp(28px, 4vw, 60px);
+    align-self: center;
+    animation: fadeIn 0.8s ease-out 0.15s both;
 
     .contact-title {
-      font-size: 2.5rem;
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
       color: $dark-color;
-      margin-bottom: 1rem;
-      position: relative;
+      margin-bottom: 0.9rem;
 
+      &::before {
+        content: "\2014  SAY HELLO";
+        display: block;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.26em;
+        color: rgba(27, 35, 80, 0.5);
+        margin-bottom: 14px;
+      }
       &::after {
-        content: "";
-        position: absolute;
-        bottom: -10px;
-        left: 0;
-        width: 60px;
-        height: 4px;
-        background: $primary-color;
-        border-radius: 2px;
+        display: none;
       }
     }
 
     .contact-subtitle {
-      color: $secondary-color;
-      margin-bottom: 2rem;
-      font-size: 1.1rem;
+      color: rgba(27, 35, 80, 0.6);
+      margin-bottom: 2.6rem;
+      font-size: 1.02rem;
+      line-height: 1.6;
+      max-width: 42ch;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
     }
 
     .MuiFormControl-root {
-      margin-bottom: 1.5rem;
+      margin: 0;
     }
 
     .MuiInputLabel-root {
-      color: $dark-color;
-      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.8rem;
+      color: rgba(27, 35, 80, 0.55);
       &.Mui-focused {
-        color: $primary-color;
+        color: #1b2350;
       }
     }
 
-    .Mui-error {
-      .MuiOutlinedInput-notchedOutline {
-        border-color: $error-color !important;
-      }
+    .MuiFormHelperText-root.Mui-error {
+      color: $error-color;
+      margin-left: 0;
+      letter-spacing: 0.02em;
     }
 
-    .MuiFormHelperText-root {
+    /* message: real boxed field; label (always shrunk) sits clearly above it */
+    .MuiInputBase-multiline {
+      margin-top: 30px;
+      padding: 14px !important;
+      border: 1px solid rgba(27, 35, 80, 0.3);
+      transition: border-color 0.3s ease;
+
+      &:before,
+      &:after {
+        display: none !important;
+      }
+      &.Mui-focused {
+        border-color: #1b2350;
+      }
       &.Mui-error {
-        color: $error-color;
+        border-color: $error-color;
       }
     }
   }
@@ -191,7 +211,7 @@ $transition: all 0.3s ease;
           left: 0;
           width: 40px;
           height: 3px;
-          background: white;
+          background: #f4f1ea;
         }
       }
 

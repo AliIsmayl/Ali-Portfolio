@@ -11,7 +11,6 @@ import {
   MenuItem,
   FormControl,
   InputLabel,
-  OutlinedInput,
   Button,
   Box,
   Typography,
@@ -20,28 +19,34 @@ import {
 import { styled } from "@mui/material/styles";
 import { useTranslation } from "react-i18next";
 
-const StyledSelect = styled(Select)(({ theme }) => ({
-  "& .MuiOutlinedInput-root": {
-    backgroundColor: "#f8f9fa",
-    borderRadius: "8px",
-    "& fieldset": {
-      borderColor: "#ddd",
-    },
-    "&:hover fieldset": {
-      borderColor: "#21295c",
-    },
-    "&.Mui-focused fieldset": {
-      borderColor: "#21295c",
-      boxShadow: "0 0 0 3px rgba(33, 41, 92, 0.2)",
-    },
+const fieldSx = {
+  "& .MuiInput-root:before": { borderBottom: "1px solid rgba(27,35,80,0.3)" },
+  "& .MuiInput-root:hover:not(.Mui-disabled):before": {
+    borderBottom: "1px solid #1b2350",
   },
+  "& .MuiInput-root:after": { borderBottom: "1px solid #1b2350" },
+  "& .MuiInputBase-input": { padding: "10px 0", fontSize: "1.05rem" },
+  "& .MuiInputLabel-root": {
+    fontSize: "0.8rem",
+    letterSpacing: "0.16em",
+    textTransform: "uppercase",
+    color: "rgba(27,35,80,0.55)",
+  },
+  "& .MuiInputLabel-root.Mui-focused": { color: "#1b2350" },
+};
+
+const StyledSelect = styled(Select)(() => ({
+  "&:before": { borderBottom: "1px solid rgba(27,35,80,0.3)" },
+  "&:hover:not(.Mui-disabled):before": { borderBottom: "1px solid #1b2350" },
+  "&:after": { borderBottom: "1px solid #1b2350" },
+  "& .MuiSelect-select": { padding: "10px 0", fontSize: "1.05rem" },
 }));
 
 const StyledMenuItem = styled(MenuItem)(({ theme }) => ({
   "&.Mui-selected": {
-    backgroundColor: "rgba(33, 41, 92, 0.08)",
+    backgroundColor: "rgba(27, 35, 80, 0.08)",
     "&:hover": {
-      backgroundColor: "rgba(33, 41, 92, 0.12)",
+      backgroundColor: "rgba(27, 35, 80, 0.12)",
     },
   },
 }));
@@ -137,15 +142,10 @@ function ContactPage() {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder={Contact("NameP")}
-                variant="outlined"
+                variant="standard"
                 error={!!errors.name}
                 helperText={errors.name}
-                InputProps={{
-                  style: {
-                    backgroundColor: "#f8f9fa",
-                    borderRadius: "8px",
-                  },
-                }}
+                sx={fieldSx}
               />
             </Box>
 
@@ -158,27 +158,22 @@ function ContactPage() {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder={Contact("EmailP")}
-                variant="outlined"
+                variant="standard"
                 error={!!errors.email}
                 helperText={errors.email}
-                InputProps={{
-                  style: {
-                    backgroundColor: "#f8f9fa",
-                    borderRadius: "8px",
-                  },
-                }}
+                sx={fieldSx}
               />
             </Box>
 
             <Box>
-              <FormControl fullWidth error={!!errors.service}>
+              <FormControl fullWidth variant="standard" error={!!errors.service}>
                 <InputLabel id="service-label">{Contact("Service")}</InputLabel>
                 <StyledSelect
                   labelId="service-label"
                   name="service"
                   value={formData.service}
                   onChange={handleChange}
-                  input={<OutlinedInput label={Contact("Service")} />}
+                  variant="standard"
                 >
                   <StyledMenuItem value={Contact("Service1")}>
                     {Contact("Service1")}
@@ -219,17 +214,13 @@ function ContactPage() {
                 value={formData.message}
                 onChange={handleChange}
                 placeholder={Contact("Message")}
-                variant="outlined"
+                variant="standard"
                 multiline
                 rows={5}
                 error={!!errors.message}
                 helperText={errors.message}
-                InputProps={{
-                  style: {
-                    backgroundColor: "#f8f9fa",
-                    borderRadius: "8px",
-                  },
-                }}
+                InputLabelProps={{ shrink: true }}
+                sx={fieldSx}
               />
             </Box>
 
@@ -237,19 +228,20 @@ function ContactPage() {
               type="submit"
               variant="contained"
               color="primary"
+              disableElevation
               disabled={isSubmitting}
               fullWidth
               size="large"
               sx={{
-                py: 1.5,
+                py: 1.9,
+                borderRadius: 0,
                 textTransform: "uppercase",
-                letterSpacing: 1,
-                mt: 1,
-                background: "#21295c",
-                "&:hover": {
-                  transform: "translateY(-2px)",
-                },
-                transition: "all 0.3s ease",
+                letterSpacing: "0.28em",
+                fontSize: "0.78rem",
+                mt: 2,
+                background: "#1b2350",
+                "&:hover": { background: "#2b356e" },
+                transition: "background 0.3s ease",
               }}
             >
               {isSubmitting ? (
@@ -277,8 +269,8 @@ function ContactPage() {
         <div className="image-section">
           <div className="image-container">
             <img
-              src="https://res.cloudinary.com/ds42i5esb/image/upload/v1753182192/Ali-Portfolio/contact_wjv2pw.jpg"
-              alt="Contact us"
+              src="https://res.cloudinary.com/ds42i5esb/image/upload/v1753182180/Ali-Portfolio/Image1_xk2but.jpg"
+              alt="Ali Ismayil"
               className="contact-image"
             />
             <div className="image-overlay"></div>

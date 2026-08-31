@@ -1,45 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Sharp corners everywhere — no rounded borders */
+*,
+*::before,
+*::after {
+  border-radius: 0 !important;
+}
+/* keep genuine dots/spinners round */
+.lamp,
+.MuiCircularProgress-svg,
+.MuiTouchRipple-root,
+.MuiTouchRipple-child,
+.MuiTouchRipple-ripple,
+.insyde-card__avatar {
+  border-radius: 50% !important;
+}
+
+/* One typeface everywhere */
+body {
+  background: #f4f1ea;
+  color: #1b2350;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  transition: background 0.5s ease;
+}
+*,
+*::before,
+*::after,
+input,
+textarea,
+select,
+button,
+.MuiInputBase-root,
+.MuiInputBase-input,
+.MuiInputLabel-root,
+.MuiButton-root,
+.MuiMenuItem-root,
+.MuiTypography-root,
+.MuiFormHelperText-root {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif !important;
+  font-optical-sizing: auto;
+}
+
+/* No sliding / clipping: neutralise AOS transforms, keep content visible */
+[data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+  pointer-events: auto !important;
+}
+
+/* Per-page background tone — same family, page-appropriate */
+body[data-route="home"] {
+  background: #f4f1ea;
+}
+body[data-route="projects"] {
+  background: #efece2;
+}
+body[data-route="contact"] {
+  background: #f1ebdd;
+}
+body[data-route="detail"] {
+  background: #f1ede3;
+}
+
 ::selection {
-  background-color: #21295c;
-  color: #ebebeb;
+  background-color: #1b2350;
+  color: #f4f1ea;
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 10px;
-}
-::-webkit-scrollbar-button {
-  width: 0px;
-  height: 0px;
+  width: 9px;
+  height: 9px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #e1e1e1;
-  border: 10px solid #21295c;
-  border-radius: 2px;
+  background: #1b2350;
+  border-radius: 0;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffffff;
-}
-::-webkit-scrollbar-thumb:active {
-  background: #ebebeb;
+  background: #2b356e;
 }
 ::-webkit-scrollbar-track {
-  background: #ebebeb !important;
-}
-::-webkit-scrollbar-track:hover {
-  background: yellow;
-}
-::-webkit-scrollbar-track:active {
-  background: blue;
+  background: #e3ded1;
 }
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
-button {
-      border: 1px solid #676767;
-
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1b2350 #e3ded1;
 }
