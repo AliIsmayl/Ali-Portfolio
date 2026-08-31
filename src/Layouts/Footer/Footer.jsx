@@ -3,12 +3,9 @@ import { MdArrowOutward, MdArrowUpward, MdArrowForward } from "react-icons/md";
 import "./Footer.scss";
 import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
+import { scrollToTop } from "../../lenis";
 
 function Footer() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   const { t: Home } = useTranslation("translation", { keyPrefix: "Home" });
   const { t: Pages } = useTranslation("translation", { keyPrefix: "Pages" });
   const { t: Footer } = useTranslation("translation", { keyPrefix: "Footer" });

@@ -28,7 +28,9 @@ body {
   color: #1b2350;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  /* "clip" hides horizontal overflow without creating a scroll container,
+     which would otherwise fight Lenis' smooth scrolling */
+  overflow-x: clip;
   transition: background 0.5s ease;
 }
 *,

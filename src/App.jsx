@@ -10,11 +10,12 @@ import Footer from "./Layouts/Footer/Footer";
 import ContactPage from "./Pages/ContactPage/ContactPage";
 import ProjectDetail from "./Pages/ProjectDetail/ProjectDetail";
 import InsydeCard from "./Components/InsydeCard/InsydeCard";
+import { initLenis, scrollToTop } from "./lenis";
 
 function ScrollToTopOnRouteChange() {
   const location = useLocation();
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    scrollToTop({ immediate: true });
 
     const path = location.pathname;
     let route = "home";
@@ -28,6 +29,7 @@ function ScrollToTopOnRouteChange() {
 
 function App() {
   useEffect(() => {
+    initLenis();
     AOS.init();
     AOS.refresh();
   }, []);
