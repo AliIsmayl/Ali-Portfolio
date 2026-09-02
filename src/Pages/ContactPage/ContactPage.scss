@@ -1,10 +1,10 @@
 // Variables
-$primary-color: #1b2350;
+$primary-color: var(--clr-base);
 $secondary-color: #6c757d;
-$error-color: #ff3860;
+$error-color: var(--clr-shade-2);
 $success-color: #23d160;
 $light-color: #f8f9fa;
-$dark-color: #1b2350;
+$dark-color: var(--clr-base);
 $transition: all 0.3s ease;
 
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
@@ -125,7 +125,7 @@ $transition: all 0.3s ease;
       font-size: 0.8rem;
       color: rgba(27, 35, 80, 0.55);
       &.Mui-focused {
-        color: #1b2350;
+        color: var(--clr-base);
       }
     }
 
@@ -133,6 +133,16 @@ $transition: all 0.3s ease;
       color: $error-color;
       margin-left: 0;
       letter-spacing: 0.02em;
+    }
+
+    /* keep validation states inside the navy palette — no red */
+    .MuiInputLabel-root.Mui-error,
+    .MuiFormLabel-root.Mui-error,
+    .MuiTypography-colorError {
+      color: $error-color !important;
+    }
+    .MuiInput-underline.Mui-error:after {
+      border-bottom-color: $error-color !important;
     }
 
     /* message: real boxed field; label (always shrunk) sits clearly above it */
@@ -147,7 +157,7 @@ $transition: all 0.3s ease;
         display: none !important;
       }
       &.Mui-focused {
-        border-color: #1b2350;
+        border-color: var(--clr-base);
       }
       &.Mui-error {
         border-color: $error-color;

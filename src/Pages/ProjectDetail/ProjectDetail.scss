@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   font-family: "Fraunces", Georgia, serif;
-  color: #1b2350;
+  color: var(--clr-base);
 }
 
 #projectDetail {
@@ -56,7 +56,7 @@
       font-size: clamp(2.1rem, 5.2vw, 3.9rem);
       line-height: 1.02;
       letter-spacing: -0.025em;
-      color: #1b2350;
+      color: var(--clr-base);
     }
 
     p {
@@ -67,7 +67,7 @@
       max-width: 60ch;
 
       span {
-        color: #1b2350;
+        color: var(--clr-base);
         font-weight: 500;
         font-style: italic;
       }
@@ -118,7 +118,7 @@
       a {
         font-family: "Fraunces", Georgia, serif;
         font-size: 0.96rem;
-        color: #1b2350;
+        color: var(--clr-base);
         text-align: right;
         text-decoration: none;
       }
@@ -148,7 +148,7 @@
       span {
         font-family: "Fraunces", Georgia, serif;
         font-size: 1.02rem;
-        color: #1b2350;
+        color: var(--clr-base);
       }
       p {
         font-size: 0.84rem;

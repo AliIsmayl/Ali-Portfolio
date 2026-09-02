@@ -17,7 +17,7 @@
         letter-spacing: -0.025em;
         max-width: 18ch;
         text-wrap: balance;
-        color: #1b2350;
+        color: var(--clr-base);
       }
     }
   }
@@ -124,7 +124,7 @@
           font-weight: 400;
           letter-spacing: -0.01em;
           line-height: 1.15;
-          color: #1b2350;
+          color: var(--clr-base);
 
           /* project colour — explicit swatch, not the border */
           &::before {
@@ -132,7 +132,7 @@
             width: 10px;
             height: 10px;
             flex-shrink: 0;
-            background: var(--moon-clr, #1b2350);
+            background: var(--moon-clr, var(--clr-base));
           }
         }
 
@@ -142,7 +142,7 @@
           font-weight: 600;
           letter-spacing: 0.2em;
           text-transform: uppercase;
-          color: #6a6a6a;
+          color: var(--clr-tint-4);
           padding-left: 21px;
         }
       }
@@ -151,7 +151,7 @@
         flex-shrink: 0;
         background: none;
         padding: 0 !important;
-        color: #6a6a6a;
+        color: var(--clr-tint-4);
         font-family: "Inter Tight", sans-serif;
         font-weight: 600;
         font-size: 12px;
@@ -170,5 +170,47 @@
         padding-right: 28px !important;
       }
     }
+  }
+}
+
+.rowList {
+  margin-top: clamp(48px, 7vw, 88px);
+
+  h2 {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--clr-tint-4);
+    margin: 0 0 10px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 24px;
+    border-top: 1px solid rgba(27, 35, 80, 0.18);
+
+    @media (max-width: 1000px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 700px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 16px;
+    }
+  }
+
+  li {
+    padding: 16px 4px;
+    border-bottom: 1px solid rgba(27, 35, 80, 0.18);
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(16px, 1.6vw, 20px);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    color: var(--clr-base);
   }
 }

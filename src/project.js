@@ -320,80 +320,6 @@ const projects = [
     ],
   },
   {
-    id: 6,
-    name: {
-      az: "CanubGas Təchizat Xidməti",
-      en: "CanubGas Supply Service",
-    },
-    detail: {
-      az: "Təchizat",
-      en: "Supply",
-    },
-    time: "2025",
-    image:
-      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180379/Ali-Portfolio/canub1_mvtdcv.png",
-    link: "https://canubgas.az/",
-    color: "#98C744",
-    littleName: {
-      az: "CanubGas",
-      en: "CanubGas",
-    },
-    bigDescription: {
-      az: "<span>CanubGas Təchizat Xidməti</span> üçün onların xidmətlərini, layihələrini və fəaliyyətlərini nümayiş etdirən məlumatlandırıcı veb-sayt qurduq. Sayt şirkətin işinə aydın baxış təqdim edir və istifadəçilərə təklif etdiklərini asanlıqla araşdırmağa kömək edir.",
-      en: "We built an informative website for <span> CanubGas Supply Service</span> , showcasing their services, projects, and activities. The site provides a clear overview of the company’s work and helps users easily explore what they offer.",
-    },
-    process: {
-      az: "Fərdi olaraq",
-      en: "Individually",
-    },
-    image1:
-      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180383/Ali-Portfolio/canub2_eqsixp.png",
-    image2:
-      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180380/Ali-Portfolio/canub3_wyd9tr.png",
-    job: [
-      {
-        info: {
-          az: "Front-End Tərtibatçı",
-          en: "Front-End Developer",
-        },
-        work: {
-          az: "Müasir front-end texnologiyalarından istifadə edərək istifadəçi tərəfli interfeys və idarəetmə paneli hazırladı. Responsiv dizayn, brauzerlər arası uyğunluq və təmiz komponent arxitekturasına diqqət yetirdi.",
-          en: "Developed the user-facing interface and admin panel using modern front-end technologies. Focused on responsive design, cross-browser compatibility, and clean component architecture.",
-        },
-      },
-      {
-        info: {
-          az: "UX/UI Dizayner",
-          en: "UX/UI Designer",
-        },
-        work: {
-          az: "Brendin sağlamlıq və eko-şüurlu kimliyinə uyğun təzə və vizual olaraq sakitləşdirici interfeys dizayn etdi. Sadəlik, oxunaqlılıq və rəvan istifadəçi təcrübəsinə üstünlük verdi.",
-          en: "Designed a fresh and visually calming interface aligned with the brand's health and eco-conscious identity. Prioritized simplicity, readability, and a smooth user journey.",
-        },
-      },
-      {
-        info: {
-          az: "Komanda Rəhbəri",
-          en: "Team Lead",
-        },
-        work: {
-          az: "Tapşırıqları təşkil edərək, kodu nəzərdən keçirərək və aydın kommunikasiyanı qoruyaraq front-end tərtibat komandasına rəhbərlik etdi, vaxtında çatdırılma və dizayn ardıcıllığını təmin etdi.",
-          en: "Led the front-end development team by organizing tasks, reviewing code, and maintaining clear communication to ensure timely delivery and design consistency.",
-        },
-      },
-      {
-        info: {
-          az: "Layihə Meneceri",
-          en: "Project Manager",
-        },
-        work: {
-          az: "Layihə planlaşdırmasını və müştəri ilə kommunikasiyanı nəzarət etdi. Görüşləri koordinasiya etdi, rəyləri topladı və layihə məqsədlərinin biznes ehtiyaclarına uyğun olmasını təmin etdi.",
-          en: "Oversaw project planning and communication with the client. Coordinated meetings, collected feedback, and ensured project goals were aligned with business needs.",
-        },
-      },
-    ],
-  },
-  {
     id: 7,
     name: {
       az: "CoLink",
@@ -459,154 +385,6 @@ const projects = [
         work: {
           az: "Layihə planlaşdırmasını və müştəri ilə kommunikasiyanı nəzarət etdi. Görüşləri koordinasiya etdi, rəyləri topladı və layihə məqsədlərinin biznes ehtiyaclarına uyğun olmasını təmin etdi.",
           en: "Oversaw project planning and communication with the client. Coordinated meetings, collected feedback, and ensured project goals were aligned with business needs.",
-        },
-      },
-    ],
-  },
-  {
-    id: 8,
-    name: {
-      az: "Stadt Taxi Lübeck",
-      en: "Stadt Taxi Lübeck",
-    },
-    detail: {
-      az: "Taksi",
-      en: "Taxi",
-    },
-    time: "2024",
-    image:
-      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180380/Ali-Portfolio/taxi1_zmesxx.png",
-    link: "https://www.stadttaxi-luebeck.de/",
-    color: "#001D3D",
-    littleName: {
-      az: "Stadt Taxi",
-      en: "Stadt Taxi",
-    },
-    bigDescription: {
-      az: "<span>Stadt Taxi Lübeck</span> üçün hazırlanmış məlumatlandırıcı və müasir taksi xidməti veb-saytı. Platforma şirkətin xidmətlərini təqdim edir, əlaqə məlumatlarını verir və istifadəçilərə taksi parkı ilə tanış olmağa imkan verir. Bütün ekran ölçüləri üçün təmiz və responsiv dizaynla qurulub.",
-      en: "An informative and modern taxi service website developed for <span> Stadt Taxi Lübeck </span> . The platform introduces the company’s services, provides contact details, and allows users to get acquainted with the taxi fleet. Built with a clean and responsive design for all screen sizes.",
-    },
-    process: {
-      az: "Fərdi olaraq",
-      en: "Individually",
-    },
-    image1:
-      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180379/Ali-Portfolio/taxi2_y2wfbz.png",
-    image2:
-      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180378/Ali-Portfolio/taxi3_lfw1uc.png",
-    job: [
-      {
-        info: {
-          az: "Front-End Tərtibatçı",
-          en: "Front-End Developer",
-        },
-        work: {
-          az: "Veb-saytın bütün istifadəçi interfeysini responsivlik, əlçatanlıq və müasir UI təcrübələrinə güclü diqqət yetirərək qurdu. Cihazlar arasında rəvan qarşılıqlı əlaqə və vizual ardıcıllığı təmin etdi.",
-          en: "Built the entire user interface of the website with a strong focus on responsiveness, accessibility, and modern UI practices. Ensured seamless interaction and visual consistency across devices.",
-        },
-      },
-      {
-        info: {
-          az: "UX/UI Dizayner",
-          en: "UX/UI Designer",
-        },
-        work: {
-          az: "Aparıcı veb-saytlardan ilham alaraq tərtibat və istifadəçi təcrübəsini dizayn etdi. İstifadəni artıran unikal, intuitiv və brendlə uyğunlaşdırılmış vizual üslub yaratdı.",
-          en: "Designed the layout and user experience by drawing inspiration from leading websites. Created a unique, intuitive, and brand-aligned visual style that enhances usability.",
-        },
-      },
-      {
-        info: {
-          az: "Back-End Tərtibatçı",
-          en: "Back-End Developer",
-        },
-        work: {
-          az: "CRUD əməliyyatları və əsas sistem xüsusiyyətləri daxil olmaqla bütün back-end funksiyalarını hazırladı. API inteqrasiyasını, məlumat idarəetməsini və ümumi back-end arxitekturasını idarə etdi.",
-          en: "Developed all back-end functionalities including CRUD operations and key system features. Handled API integration, data management, and overall backend architecture.",
-        },
-      },
-      {
-        info: {
-          az: "Layihə Meneceri",
-          en: "Project Manager",
-        },
-        work: {
-          az: "Layihənin planlaşdırılmasını və icrasını müstəqil şəkildə idarə etdi. Son tarixləri idarə etdi, layihənin əhatə dairəsini müəyyənləşdirdi və uğurlu təhvil verilməsini təmin etdi. Azərbaycan Texniki Universitetində son məhsulu təqdim etdi.",
-          en: "Led the planning and execution of the project independently. Managed deadlines, defined project scope, and ensured successful delivery. Presented the final product at Azerbaijan Technical University.",
-        },
-      },
-    ],
-  },
-  {
-    id: 9,
-    name: {
-      az: "Bal Bee",
-      en: "Bal Bee",
-    },
-    detail: {
-      az: "Bal",
-      en: "Honey",
-    },
-    time: "2025",
-    image:
-      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180380/Ali-Portfolio/balbee1_f8owlz.png",
-    link: "https://balbee.az/",
-    color: "#E68A00",
-    littleName: {
-      az: "Bal Bee",
-      en: "Bal Bee",
-    },
-    bigDescription: {
-      az: "<span>Bal Bee</span> üçün hazırlanmış müasir və vizual olaraq cəlbedici veb-sayt, təbii bal məhsullarının təşviqi və satışı üzərində fokuslanıb. Platforma hər bir məhsulun tərkibi və sağlamlıq faydaları haqqında ətraflı məlumat təqdim edir, həmçinin intuitiv sifariş sistemi ilə təchiz edilib. Tam responsiv və məlumatlandırıcı e-ticarət həlli kimi hazırlanmışdır.",
-      en: "A modern and visually engaging website built for <span> Bal Bee </span> , focusing on promoting and selling natural honey products. The platform provides detailed information about each product’s ingredients and health benefits, along with an intuitive ordering system. Developed as a fully responsive and informative e-commerce solution.",
-    },
-    process: {
-      az: "Fərdi olaraq",
-      en: "Individually",
-    },
-    image1:
-      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180380/Ali-Portfolio/balbee2_s2qk5q.png",
-    image2:
-      "https://res.cloudinary.com/ds42i5esb/image/upload/v1753180384/Ali-Portfolio/balbee3_jjxwug.png",
-    job: [
-      {
-        info: {
-          az: "Front-End Tərtibatçı",
-          en: "Front-End Developer",
-        },
-        work: {
-          az: "Responsiv dizayn prinsiplərindən istifadə edərək bütün istifadəçi tərəfli veb-saytı və idarəetmə panelini hazırladı. Bütün cihazlar və ekran ölçülərində rəvan və ardıcıl istifadəçi təcrübələri təmin etdi.",
-          en: "Developed the entire front-facing website and admin dashboard using responsive design principles. Ensured smooth and consistent user experiences across all devices and screen sizes.",
-        },
-      },
-      {
-        info: {
-          az: "UX/UI Dizayner",
-          en: "UX/UI Designer",
-        },
-        work: {
-          az: "Təbiət temalı interfeyslərdən ilhamlanaraq xüsusi və müasir dizayn yaratdı. Bal mərkəzli e-ticarət platforması üçün uyğunlaşdırılmış istifadəçi axınları və vizual elementlər dizayn etdi.",
-          en: "Created a custom and modern design inspired by nature-themed interfaces. Designed user flows and visuals tailored for a honey-focused e-commerce platform.",
-        },
-      },
-      {
-        info: {
-          az: "Back-End Tərtibatçı",
-          en: "Back-End Developer",
-        },
-        work: {
-          az: "Məhsul məlumatlarını, istifadəçi autentifikasiyasını və sifariş emalını tam real vaxt imkanları ilə idarə etmək üçün Firebase əsaslı back-end həyata keçirdi.",
-          en: "Implemented a Firebase-based backend to handle product data, user authentication, and order processing with full real-time capabilities.",
-        },
-      },
-      {
-        info: {
-          az: "Layihə Meneceri",
-          en: "Project Manager",
-        },
-        work: {
-          az: "Layihəni konsepsiyadan tətbiqə qədər müstəqil şəkildə idarə etdi. Vaxt qrafiklərini müəyyənləşdirdi, prioritetləri idarə etdi və layihəni Azərbaycan Texniki Universitetində ictimai şəkildə təqdim etdi.",
-          en: "Independently led the project from concept to deployment. Defined timelines, managed priorities, and presented the project publicly at the Azerbaijan Technical University.",
         },
       },
     ],
@@ -760,193 +538,24 @@ const projects = [
     ],
   },
   {
-    id: 12,
-    name: {
-      az: "TACS",
-      en: "TACS",
-    },
-    detail: {
-      az: "Audit xidməti",
-      en: "Audit Service",
-    },
-    time: "2025",
-    image:
-      "https://res.cloudinary.com/ds42i5esb/image/upload/v1756902162/Gray_Red_Bold_History_YouTube_Thumbnail_78_rhjbch.png",
-    link: "https://tacs.az/",
-    color: "#5CAA82",
-    bigDescription: {
-      az: "<span>TACS</span> üçün hazırlanan korporativ veb-sayt və admin panel; şirkət xidmətlərinin təqdimatı, məzmunun rahat idarə edilməsi və yüksək performanslı, tam responsiv istifadəçi təcrübəsi üzərində qurulub. Layihə ərzində dizayn sistemi, komponent əsaslı memarlıq və müasir front-end praktikaları tətbiq edildi.",
-      en: "A corporate website and admin panel built for <span>TACS</span>, focused on presenting company services, enabling easy content management, and delivering a high-performance, fully responsive user experience. The project employed a cohesive design system, component-based architecture, and modern front-end best practices.",
-    },
-    process: {
-      az: "Komanda ilə",
-      en: "With Team",
-    },
-    image1:
-      "https://res.cloudinary.com/ds42i5esb/image/upload/v1756902207/Gray_Red_Bold_History_YouTube_Thumbnail_79_zzslbj.png",
-    image2:
-      "https://res.cloudinary.com/ds42i5esb/image/upload/v1756902186/Gray_Red_Bold_History_YouTube_Thumbnail_80_kttqk4.png",
-    littleName: {
-      az: "TACS",
-      en: "TACS",
-    },
-    job: [
-      {
-        info: {
-          az: "Front-End Tərtibatçı",
-          en: "Front-End Developer",
-        },
-        work: {
-          az: "Veb-saytın və admin panelin istifadəçi interfeysini müasir front-end texnologiyaları ilə qurdu. Yenidən istifadə oluna bilən komponentlər, API inteqrasiyası və tam responsivlik üzərində fokuslandı.",
-          en: "Implemented the website and admin panel UI using modern front-end technologies. Focused on reusable components, API integration, and full responsiveness.",
-        },
-      },
-      {
-        info: {
-          az: "UX/UI Dizayner",
-          en: "UX/UI Designer",
-        },
-        work: {
-          az: "Dizayn sistemi, rəng/typo ardıcıllığı və komponent kitabxanası hazırladı. Bir neçə nümunə veb-saytdan ilhamlanaraq səmərəli, oxunaqlı və rahat naviqasiyalı interfeys dizayn etdi.",
-          en: "Created a design system with consistent color/typography and a component library. Drew inspiration from several reference sites to craft a clear, readable interface with intuitive navigation.",
-        },
-      },
-      {
-        info: {
-          az: "Komanda Rəhbəri",
-          en: "Team Lead",
-        },
-        work: {
-          az: "Komandanı idarə etdi, tapşırıqları planladı və bölüşdürdü, kod baxışları (code review) apardı, keyfiyyət standartlarını qorudu.",
-          en: "Led the team, planned and distributed tasks, performed code reviews, and enforced quality standards.",
-        },
-      },
-      {
-        info: {
-          az: "Layihə Meneceri",
-          en: "Project Manager",
-        },
-        work: {
-          az: "Müştəri ilə mütəmadi görüşlər keçirdi, tələbləri topladı və prioritetləşdirdi, sprint planlama və icranı koordinasiya edərək layihə müddətində riskləri idarə etdi.",
-          en: "Held regular client meetings, gathered and prioritized requirements, coordinated sprint planning and execution, and managed risks throughout the project.",
-        },
-      },
-    ],
-  },
- {
-  id: 13,
-  name: {
-    az: "AZTURK PACKAGE",
-    en: "AZTURK PACKAGE"
-  },
-  detail: {
-    az: "Paketləşdirmə və qablaşdırma şirkəti",
-    en: "Packaging and packing company"
-  },
-  time: "2025",
-  image: "https://res.cloudinary.com/ds42i5esb/image/upload/v1762031508/Gray_Red_Bold_History_YouTube_Thumbnail_81_rr3dtl.png",
-  link: "https://azturkpackage.az/",
-  color: "#B72D44",
-  bigDescription: {
-    az: "<span>AZTURK PACKAGE</span> üçün hazırlanan korporativ veb-sayt və admin panel; şirkət xidmətlərinin təqdimatı, məzmunun rahat idarə edilməsi və yüksək performanslı, tam responsiv istifadəçi təcrübəsi üzərində qurulub. Layihə ərzində dizayn sistemi, komponent əsaslı memarlıq və müasir front-end praktikaları tətbiq edildi.",
-    en: "<span>AZTURK PACKAGE</span> corporate website and admin panel were built to showcase the company's services, enable easy content management, and deliver a high-performance, fully responsive user experience. A design system, component-based architecture, and modern front-end practices were applied throughout the project."
-  },
-  process: {
-    az: "Komanda ilə",
-    en: "With team"
-  },
-  image1: "https://res.cloudinary.com/ds42i5esb/image/upload/v1762031512/Gray_Red_Bold_History_YouTube_Thumbnail_82_obmnrm.png",
-  image2: "https://res.cloudinary.com/ds42i5esb/image/upload/v1762031517/Gray_Red_Bold_History_YouTube_Thumbnail_83_cipyor.png",
-  littleName: {
-    az: "AZTURK",
-    en: "AZTURK"
-  },
-  job: [
-    {
-      info: {
-        az: "Front-End Tərtibatçı",
-        en: "Front-End Developer"
-      },
-      work: {
-        az: "Veb-saytın və admin panelin istifadəçi interfeysini müasir front-end texnologiyaları ilə qurdu. Yenidən istifadə oluna bilən komponentlər, API inteqrasiyası və tam responsivlik üzərində fokuslandı.",
-        en: "Implemented the website and admin panel UI with modern front-end technologies, focusing on reusable components, API integration, and full responsiveness."
-      }
-    },
-    {
-      info: {
-        az: "UX/UI Dizayner",
-        en: "UX/UI Designer"
-      },
-      work: {
-        az: "Dizayn sistemi, rəng/typo ardıcıllığı və komponent kitabxanası hazırladı. Bir neçə nümunə veb-saytdan ilhamlanaraq səmərəli, oxunaqlı və rahat naviqasiyalı interfeys dizayn etdi.",
-        en: "Created a design system with consistent color/typography and a component library. Drew inspiration from several reference sites to design a clear, readable interface with intuitive navigation."
-      }
-    },
-    {
-      info: {
-        az: "Komanda Rəhbəri",
-        en: "Team Lead"
-      },
-      work: {
-        az: "Komandanı idarə etdi, tapşırıqları planladı və bölüşdürdü, kod baxışları (code review) apardı, keyfiyyət standartlarını qorudu.",
-        en: "Led the team, planned and distributed tasks, conducted code reviews, and upheld quality standards."
-      }
-    },
-    {
-      info: {
-        az: "Layihə Meneceri",
-        en: "Project Manager"
-      },
-      work: {
-        az: "Müştəri ilə mütəmadi görüşlər keçirdi, tələbləri topladı və prioritetləşdirdi, sprint planlama və icranı koordinasiya edərək layihə müddətində riskləri idarə etdi.",
-        en: "Held regular client meetings, gathered and prioritized requirements, coordinated sprint planning and execution, and managed risks throughout the project."
-      }
-    }
-  ]
-},
-  {
-    id: 24,
-    name: { az: "Macara Sheki", en: "Macara Sheki" },
-    detail: { az: "Turizm və Əyləncə", en: "Tourism & Entertainment" },
-    time: "2024",
-    image: "https://image.thum.io/get/width/1200/crop/900/https://sheki.macaraclub.az/",
-    link: "https://sheki.macaraclub.az/",
-    littleName: { az: "Macara Sheki", en: "Macara Sheki" },
-    color: "#A8563B",
-    bigDescription: {
-      az: "<span>Macara Sheki</span> — Macara Club şəbəkəsinin Şəki filialı üçün hazırlanmış rəqəmsal platforma. Əyləncə paketləri, rezervasiya axını və məkan təqdimatı təmiz, tam responsiv interfeysdə birləşdirilib. Layihə boyunca tələblərin planlaşdırılması, funksiyaların prioritetləşdirilməsi, komanda koordinasiyası və baştan-sona təhvil aparıldı. (Qeyd: hazırkı şəkillər müvəqqəti mock-up-dır.)",
-      en: "A digital platform built for <span>Macara Sheki</span>, the Sheki branch of the Macara Club network. Entertainment packages, a reservation flow and venue showcase are combined in a clean, fully responsive interface. Requirement planning, feature prioritization, team coordination and end-to-end delivery were carried out throughout the project. (Note: current images are a temporary mock-up.)",
-    },
-    process: { az: "Komanda əsaslı", en: "Team-based" },
-    image1: "https://image.thum.io/get/width/600/crop/1000/https://sheki.macaraclub.az/",
-    image2: "",
-    job: [
-      {
-        info: { az: "IT Layihə Meneceri", en: "IT Project Manager" },
-        work: { az: "Layihəni planlaşdırmadan təhvilə qədər idarə etdi — tələblərin toplanması, funksiya planlaşdırması, komanda koordinasiyası və müştəri ilə kommunikasiya.", en: "Led the project from planning to delivery — requirement gathering, feature planning, team coordination, and client communication." },
-      },
-      {
-        info: { az: "Product Owner", en: "Product Owner" },
-        work: { az: "Məhsul baxışını və backloqu idarə etdi, rezervasiya axınını və məzmun strukturunu biznes məqsədlərinə uyğunlaşdırdı.", en: "Owned the product vision and backlog, aligning the reservation flow and content structure with business goals." },
-      },
-    ],
-  },
-  {
     id: 27,
     name: { az: "Macara Club", en: "Macara Club" },
     detail: { az: "Turizm və Əyləncə", en: "Tourism & Entertainment" },
     time: "2024",
-    image: "https://image.thum.io/get/width/1200/crop/900/https://macaraclub.az/",
+    image:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1788245094/7_tuqeji.png",
     link: "https://macaraclub.az/",
     littleName: { az: "Macara Club", en: "Macara Club" },
     color: "#3F7E6E",
     bigDescription: {
-      az: "<span>Macara Club</span> — əyləncə və istirahət məkanları şəbəkəsi üçün hazırlanmış əsas rəqəmsal platforma. Filiallar, tədbir formatları və rezervasiya modulu vahid, tam responsiv təcrübədə toplanıb. Layihə boyunca tələblərin planlaşdırılması, funksiyaların prioritetləşdirilməsi, komanda koordinasiyası və baştan-sona təhvil aparıldı. (Qeyd: hazırkı şəkillər müvəqqəti mock-up-dır.)",
-      en: "A main digital platform built for <span>Macara Club</span>, a network of entertainment and leisure venues. Branches, event formats and a reservation module are gathered into a single, fully responsive experience. Requirement planning, feature prioritization, team coordination and end-to-end delivery were carried out throughout the project. (Note: current images are a temporary mock-up.)",
+      az: "<span>Macara Club</span> — əyləncə və istirahət məkanları şəbəkəsi üçün hazırlanmış əsas rəqəmsal platforma. Filiallar, tədbir formatları və rezervasiya modulu vahid, tam responsiv təcrübədə toplanıb. Layihə boyunca tələblərin planlaşdırılması, funksiyaların prioritetləşdirilməsi, komanda koordinasiyası və baştan-sona təhvil aparıldı.",
+      en: "A main digital platform built for <span>Macara Club</span>, a network of entertainment and leisure venues. Branches, event formats and a reservation module are gathered into a single, fully responsive experience. Requirement planning, feature prioritization, team coordination and end-to-end delivery were carried out throughout the project.",
     },
     process: { az: "Komanda əsaslı", en: "Team-based" },
-    image1: "https://image.thum.io/get/width/600/crop/1000/https://macaraclub.az/",
-    image2: "",
+    image1:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1788245097/8_tnoxnu.png",
+    image2:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1788245096/9_oxb6dq.png",
     job: [
       {
         info: { az: "IT Layihə Meneceri", en: "IT Project Manager" },
@@ -963,17 +572,20 @@ const projects = [
     name: { az: "OliveAds", en: "OliveAds" },
     detail: { az: "Marketinq Agentliyi", en: "Marketing Agency" },
     time: "2024",
-    image: "https://image.thum.io/get/width/1200/crop/900/https://oliveads.az/",
+    image:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1788245094/4_rbi9vm.png",
     link: "https://oliveads.az/",
     littleName: { az: "OliveAds", en: "OliveAds" },
     color: "#6E8B3D",
     bigDescription: {
-      az: "<span>OliveAds</span> — rəqəmsal marketinq agentliyi üçün xidmətləri, keys-ləri və əlaqə axınını təqdim edən korporativ veb-sayt. Təmiz struktur, sürətli yüklənmə və tam responsivlik üzərində fokuslanıldı. Layihə boyunca tələblərin planlaşdırılması, funksiyaların prioritetləşdirilməsi, komanda koordinasiyası və baştan-sona təhvil aparıldı. (Qeyd: hazırkı şəkillər müvəqqəti mock-up-dır.)",
-      en: "A corporate website for <span>OliveAds</span>, a digital marketing agency, presenting services, case studies and a contact flow. The focus was on clean structure, fast loading and full responsiveness. Requirement planning, feature prioritization, team coordination and end-to-end delivery were carried out throughout the project. (Note: current images are a temporary mock-up.)",
+      az: "<span>OliveAds</span> — rəqəmsal marketinq agentliyi üçün xidmətləri, keys-ləri və əlaqə axınını təqdim edən korporativ veb-sayt. Təmiz struktur, sürətli yüklənmə və tam responsivlik üzərində fokuslanıldı. Layihə boyunca tələblərin planlaşdırılması, funksiyaların prioritetləşdirilməsi, komanda koordinasiyası və baştan-sona təhvil aparıldı.",
+      en: "A corporate website for <span>OliveAds</span>, a digital marketing agency, presenting services, case studies and a contact flow. The focus was on clean structure, fast loading and full responsiveness. Requirement planning, feature prioritization, team coordination and end-to-end delivery were carried out throughout the project.",
     },
     process: { az: "Komanda əsaslı", en: "Team-based" },
-    image1: "https://image.thum.io/get/width/600/crop/1000/https://oliveads.az/",
-    image2: "",
+    image1:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1788245096/5_szulkg.png",
+    image2:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1788245096/6_qckmlg.png",
     job: [
       {
         info: { az: "IT Layihə Meneceri", en: "IT Project Manager" },
@@ -990,17 +602,20 @@ const projects = [
     name: { az: "Insyde", en: "Insyde" },
     detail: { az: "Rəqəmsal Məhsul", en: "Digital Product" },
     time: "2026",
-    image: "https://image.thum.io/get/width/1200/crop/900/https://insyde.info/",
+    image:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1788245094/10_qpb3aj.png",
     link: "https://insyde.info/",
     littleName: { az: "Insyde", en: "Insyde" },
     color: "#1b2350",
     bigDescription: {
-      az: "<span>Insyde</span> — NFC və QR ilə işləyən rəqəmsal profil platforması. İstifadəçi bir toxunuşla əlaqə məlumatlarını, sosial şəbəkələrini və portfoliosunu paylaşa bilir; sistem tam olaraq öz üzərimdə dizayn edilib və qurulub. Bazar araşdırması, funksiya prioritetləşdirməsi və buraxılış baştan-sona idarə olundu. (Qeyd: hazırkı şəkillər müvəqqəti mock-up-dır.)",
-      en: "<span>Insyde</span> is an NFC- and QR-powered digital profile platform. A user can share contact details, social links and a portfolio with a single tap; the system was designed and built entirely by me. Market research, feature prioritization and launch were managed end-to-end. (Note: current images are a temporary mock-up.)",
+      az: "<span>Insyde</span> — NFC və QR ilə işləyən rəqəmsal profil platforması. İstifadəçi bir toxunuşla əlaqə məlumatlarını, sosial şəbəkələrini və portfoliosunu paylaşa bilir; sistem tam olaraq öz üzərimdə dizayn edilib və qurulub. Bazar araşdırması, funksiya prioritetləşdirməsi və buraxılış baştan-sona idarə olundu.",
+      en: "<span>Insyde</span> is an NFC- and QR-powered digital profile platform. A user can share contact details, social links and a portfolio with a single tap; the system was designed and built entirely by me. Market research, feature prioritization and launch were managed end-to-end.",
     },
     process: { az: "Fərdi", en: "Individually" },
-    image1: "https://image.thum.io/get/width/600/crop/1000/https://insyde.info/",
-    image2: "",
+    image1:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1788245094/12_ckwjb0.png",
+    image2:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1788245094/11_f6abzm.png",
     job: [
       {
         info: { az: "Təsisçi və Product Owner", en: "Founder & Product Owner" },
@@ -1013,17 +628,20 @@ const projects = [
     name: { az: "Indo", en: "Indo" },
     detail: { az: "Pərakəndə", en: "Retail" },
     time: "2024",
-    image: "https://image.thum.io/get/width/1200/crop/900/https://www.indo.az/",
+    image:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1788245094/1_ibsjul.png",
     link: "https://www.indo.az/",
     littleName: { az: "Indo", en: "Indo" },
     color: "#B23A48",
     bigDescription: {
-      az: "<span>Indo</span> — pərakəndə brendi üçün Cervision komandası ilə hazırlanmış korporativ veb-platforma. Məhsul kataloqu, mağaza məlumatları və kampaniya bölmələri tam responsiv, sürətli interfeysdə birləşdirilib. Layihə boyunca tələblərin planlaşdırılması, funksiyaların prioritetləşdirilməsi, komanda koordinasiyası və baştan-sona təhvil aparıldı. (Qeyd: hazırkı şəkillər müvəqqəti mock-up-dır.)",
-      en: "<span>Indo</span> is a corporate web platform built with the Cervision team for a retail brand. Product catalogue, store information and campaign sections are combined in a fast, fully responsive interface. Requirement planning, feature prioritization, team coordination and end-to-end delivery were carried out throughout the project. (Note: current images are a temporary mock-up.)",
+      az: "<span>Indo</span> — pərakəndə brendi üçün Cervision komandası ilə hazırlanmış korporativ veb-platforma. Məhsul kataloqu, mağaza məlumatları və kampaniya bölmələri tam responsiv, sürətli interfeysdə birləşdirilib. Layihə boyunca tələblərin planlaşdırılması, funksiyaların prioritetləşdirilməsi, komanda koordinasiyası və baştan-sona təhvil aparıldı.",
+      en: "<span>Indo</span> is a corporate web platform built with the Cervision team for a retail brand. Product catalogue, store information and campaign sections are combined in a fast, fully responsive interface. Requirement planning, feature prioritization, team coordination and end-to-end delivery were carried out throughout the project.",
     },
     process: { az: "Komanda əsaslı · Cervision", en: "Team-based · Cervision" },
-    image1: "https://image.thum.io/get/width/600/crop/1000/https://www.indo.az/",
-    image2: "",
+    image1:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1788245095/2_d9dlmw.png",
+    image2:
+      "https://res.cloudinary.com/ds42i5esb/image/upload/v1788245095/2_d9dlmw.png",
     job: [
       {
         info: { az: "IT Layihə Meneceri", en: "IT Project Manager" },
@@ -1034,6 +652,187 @@ const projects = [
         work: { az: "Kataloq və kampaniya modullarının tələblərini müəyyənləşdirdi, backloqu prioritetləşdirdi və Cervision komandası ilə icranı koordinasiya etdi.", en: "Defined requirements for the catalogue and campaign modules, prioritized the backlog, and coordinated delivery with the Cervision team." },
       },
     ],
+  },
+];
+
+/* Kartların sırası: 1-ci Insyde (id 32), 2-ci Melhem (id 1), qalanları öz sırası ilə. */
+const featuredOrder = { 32: 1, 1: 2 };
+projects.sort(
+  (a, b) => (featuredOrder[a.id] || 99) - (featuredOrder[b.id] || 99)
+);
+
+/**
+ * Şəkilsiz, sətir formatında göstərilən layihələr (cədvəl görünüşü).
+ * time və link boş ola bilər — məlum olduqca doldurulacaq.
+ */
+export const rowProjects = [
+  {
+    id: 101,
+    name: { az: "CanubGas Təchizat Xidməti", en: "CanubGas Supply Service" },
+    time: "2025",
+    link: "https://canubgas.az/",
+  },
+  {
+    id: 102,
+    name: { az: "Stadt Taxi Lübeck", en: "Stadt Taxi Lübeck" },
+    time: "2024",
+    link: "https://www.stadttaxi-luebeck.de/",
+  },
+  {
+    id: 103,
+    name: { az: "Bal Bee", en: "Bal Bee" },
+    time: "2025",
+    link: "https://balbee.az/",
+  },
+  {
+    id: 104,
+    name: { az: "TACS", en: "TACS" },
+    time: "2025",
+    link: "https://tacs.az/",
+  },
+  {
+    id: 105,
+    name: { az: "AZTURK PACKAGE", en: "AZTURK PACKAGE" },
+    time: "2025",
+    link: "https://azturkpackage.az/",
+  },
+  {
+    id: 106,
+    name: { az: "Macara Sheki", en: "Macara Sheki" },
+    time: "2024",
+    link: "https://sheki.macaraclub.az/",
+  },
+  {
+    id: 107,
+    name: { az: "Macara Quba", en: "Macara Quba" },
+    time: "",
+    link: "",
+  },
+  {
+    id: 108,
+    name: { az: "PSG-UK", en: "PSG-UK" },
+    time: "",
+    link: "",
+  },
+  {
+    id: 109,
+    name: { az: "PSG-US", en: "PSG-US" },
+    time: "",
+    link: "",
+  },
+  {
+    id: 110,
+    name: { az: "Albuhara", en: "Albuhara" },
+    time: "",
+    link: "",
+  },
+  {
+    id: 111,
+    name: { az: "Atlas", en: "Atlas" },
+    time: "",
+    link: "",
+  },
+  {
+    id: 112,
+    name: { az: "Barrister", en: "Barrister" },
+    time: "",
+    link: "",
+  },
+  {
+    id: 113,
+    name: { az: "Guba Garden", en: "Guba Garden" },
+    time: "",
+    link: "",
+  },
+  {
+    id: 114,
+    name: { az: "Saf Catering", en: "Saf Catering" },
+    time: "",
+    link: "",
+  },
+  {
+    id: 115,
+    name: { az: "City Center", en: "City Center" },
+    time: "",
+    link: "",
+  },
+  {
+    id: 116,
+    name: { az: "Oksijen", en: "Oksijen" },
+    time: "",
+    link: "",
+  },
+  {
+    id: 117,
+    name: { az: "Olimp Energy", en: "Olimp Energy" },
+    time: "",
+    link: "",
+  },
+  {
+    id: 118,
+    name: { az: "Murphy", en: "Murphy" },
+    time: "",
+    link: "",
+  },
+  {
+    id: 119,
+    name: { az: "Chaparkhana", en: "Chaparkhana" },
+    time: "",
+    link: "",
+  },
+  {
+    id: 120,
+    name: { az: "CyberTred", en: "CyberTred" },
+    time: "",
+    link: "",
+  },
+  {
+    id: 121,
+    name: { az: "İnnokapital", en: "Innokapital" },
+    time: "",
+    link: "",
+  },
+  {
+    id: 122,
+    name: { az: "Museum Inn", en: "Museum Inn" },
+    time: "",
+    link: "",
+  },
+  {
+    id: 123,
+    name: { az: "Enor Group", en: "Enor Group" },
+    time: "",
+    link: "",
+  },
+  {
+    id: 124,
+    name: { az: "Investhome", en: "Investhome" },
+    time: "",
+    link: "",
+  },
+  {
+    id: 125,
+    name: { az: "CoLink Messenger", en: "CoLink Messenger" },
+    time: "",
+    link: "",
+  },
+  {
+    id: 126,
+    name: { az: "Saxara App", en: "Saxara App" },
+    time: "",
+    link: "",
+  },
+  {
+    id: 127,
+    name: { az: "Salonbazarı", en: "Salonbazari" },
+    time: "",
+    link: "",
+  },
+  {
+    id: 128,
+    name: { az: "PosWeb", en: "PosWeb" },
+    time: "",
+    link: "",
   },
 ];
 

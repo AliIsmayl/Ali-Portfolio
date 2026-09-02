@@ -35,9 +35,9 @@ nav {
       overflow: hidden;
       cursor: pointer;
       border-radius: 0;
-      background: #1b2350;
+      background: var(--clr-base);
       outline: none;
-      border: 1px solid #1b2350;
+      border: 1px solid var(--clr-base);
 
       p {
         font-size: 13px;
@@ -59,11 +59,11 @@ nav {
 
         p {
           transition: all 0.5s ease;
-          color: #1b2350;
+          color: var(--clr-base);
         }
       }
 
-      background-color: #1b2350;
+      background-color: var(--clr-base);
       color: #ffffff;
 
       span {
@@ -98,7 +98,7 @@ nav {
   }
 }
 
-/* keep the sticky navbar tone in sync with each page's background */
+/* keep the sticky navbar AND the open menu overlay tone in sync with each page */
 body[data-route="projects"] nav {
   background: #efece2;
 }
@@ -106,6 +106,15 @@ body[data-route="contact"] nav {
   background: #f1ebdd;
 }
 body[data-route="detail"] nav {
+  background: #f1ede3;
+}
+body[data-route="projects"] .circle-overlay.expanded {
+  background: #efece2;
+}
+body[data-route="contact"] .circle-overlay.expanded {
+  background: #f1ebdd;
+}
+body[data-route="detail"] .circle-overlay.expanded {
   background: #f1ede3;
 }
 
@@ -119,7 +128,7 @@ body[data-route="detail"] nav {
   z-index: 5;
   pointer-events: none;
   transform-origin: var(--origin-x) var(--origin-y);
-  color: #1b2350;
+  color: var(--clr-base);
   display: flex;
   align-items: end;
   background: #f4f1ea;
@@ -173,12 +182,12 @@ body[data-route="detail"] nav {
       justify-content: end;
       .lang {
         font-family: "Inter Tight", sans-serif;
-        color: #b0afaf;
+        color: var(--clr-tint-3);
         font-size: 20px;
         position: relative;
         cursor: pointer;
         &.selected {
-          color: #1b2350 !important;
+          color: var(--clr-base) !important;
         }
         &::after {
           content: "";
@@ -187,7 +196,7 @@ body[data-route="detail"] nav {
           height: 1px;
           bottom: -2px;
           left: 0;
-          background-color: #1b2350;
+          background-color: var(--clr-base);
           transition: width 0.3s ease;
         }
 
@@ -225,7 +234,8 @@ body[data-route="detail"] nav {
       margin-top: 30px;
     }
     a {
-      color: #1b2350;
+      position: relative;
+      color: var(--clr-base);
       text-decoration: none;
       font-weight: 400;
       letter-spacing: -0.02em;
@@ -237,6 +247,36 @@ body[data-route="detail"] nav {
       &:hover {
         transform: translateX(16px);
         color: #b07d43;
+      }
+
+      /* current page */
+      &.active {
+        color: var(--clr-base);
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: -34px;
+          top: 50%;
+          width: 20px;
+          height: 2px;
+          background: #b07d43;
+          transform: translateY(-50%);
+
+          @media (max-width: 551px) {
+            left: -22px;
+            width: 12px;
+          }
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0.12em;
+          width: 100%;
+          height: 2px;
+          background: rgba(27, 35, 80, 0.35);
+        }
       }
     }
   }
@@ -267,7 +307,7 @@ body[data-route="detail"] nav {
       }
 
       a {
-        color: #1b2350;
+        color: var(--clr-base);
         text-decoration: none;
         font-size: 14px;
         position: relative;
@@ -279,7 +319,7 @@ body[data-route="detail"] nav {
           height: 1px;
           bottom: -2px;
           left: 0;
-          background-color: #676767;
+          background-color: var(--clr-tint-4);
           transition: width 0.3s ease;
         }
 

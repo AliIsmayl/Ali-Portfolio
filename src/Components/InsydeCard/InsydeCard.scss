@@ -43,7 +43,7 @@
       font-family: "Fraunces", Georgia, serif;
       font-size: 13.5px;
       font-weight: 600;
-      color: #1b2350;
+      color: var(--clr-base);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -63,12 +63,12 @@
     flex-shrink: 0;
     margin-left: 4px;
     font-size: 18px;
-    color: #1b2350;
+    color: var(--clr-base);
     transition: transform 0.3s ease;
   }
 
   &:hover {
-    border-color: #1b2350;
+    border-color: var(--clr-base);
     .insyde-card__arrow {
       transform: translateX(4px);
     }

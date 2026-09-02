@@ -30,7 +30,7 @@ function ProjectDetail() {
   return (
     <div
       id="projectDetail"
-      style={{ "--project-color": detail.color || "#1b2350" }}
+      style={{ "--project-color": detail.color || "var(--clr-base)" }}
     >
       <div className="pd-top">
         <div className="pd-head">

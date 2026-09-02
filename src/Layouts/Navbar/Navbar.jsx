@@ -1,12 +1,19 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
 
 function Navbar() {
   const { t: Pages } = useTranslation("translation", { keyPrefix: "Pages" });
   const { t: Navbar } = useTranslation("translation", { keyPrefix: "Navbar" });
+
+  const { pathname } = useLocation();
+  const currentKey = pathname.startsWith("/project")
+    ? "Project"
+    : pathname === "/contact"
+    ? "Contact"
+    : "Home";
 
   const defaultLang = localStorage.getItem("language")
     ? JSON.parse(localStorage.getItem("language"))
@@ -102,13 +109,25 @@ function Navbar() {
             </div>
           </div>
           <div className="menu-items">
-            <Link to="/" onClick={() => setIsExpanded(false)}>
+            <Link
+              to="/"
+              className={currentKey === "Home" ? "active" : ""}
+              onClick={() => setIsExpanded(false)}
+            >
               {Pages("Home")}
             </Link>
-            <Link to="/project" onClick={() => setIsExpanded(false)}>
+            <Link
+              to="/project"
+              className={currentKey === "Project" ? "active" : ""}
+              onClick={() => setIsExpanded(false)}
+            >
               {Pages("Project")}
             </Link>
-            <Link to="/contact" onClick={() => setIsExpanded(false)}>
+            <Link
+              to="/contact"
+              className={currentKey === "Contact" ? "active" : ""}
+              onClick={() => setIsExpanded(false)}
+            >
               {Pages("Contact")}
             </Link>
           </div>

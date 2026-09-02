@@ -16,7 +16,7 @@ function AboutMe() {
     <section id="aboutMe">
       <h1>{About("Head")}</h1>
       <div className="downBox">
-        <img src="https://res.cloudinary.com/ds42i5esb/image/upload/v1788183192/Ali_pwvxja.jpg" alt="Ali Ismayil" />
+        <img src="https://res.cloudinary.com/ds42i5esb/image/upload/v1788238645/Ali_2_sftcod.jpg" alt="Ali Ismayil" />
         <div className="text">
           {" "}
           <p>{ReactHtmlParser(About("Text1"))}</p>

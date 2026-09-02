@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./ProjectsSection.scss";
-import info from "../../../project";
+import info, { rowProjects } from "../../../project";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -78,6 +78,19 @@ function ProjectsSection() {
             </Link>
           ))}
       </div>
+
+      {isProjectPage && rowProjects?.length > 0 && (
+        <div className="rowList">
+          <h2>{lang === "az" ? "DİGƏR LAYİHƏLƏR" : "OTHER PROJECTS"}</h2>
+          <ul>
+            {rowProjects.map((item) => (
+              <li key={item.id}>
+                {item?.name?.[lang] || item?.name?.en || ""}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </section>
   );
 }

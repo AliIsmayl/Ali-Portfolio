@@ -75,7 +75,7 @@
         font-weight: 600;
         letter-spacing: 0.22em;
         text-transform: uppercase;
-        color: #1b2350;
+        color: var(--clr-base);
       }
       .lamp {
         width: 7px;
@@ -97,7 +97,7 @@
       letter-spacing: -0.045em;
       text-align: center;
       white-space: nowrap;
-      color: #1b2350;
+      color: var(--clr-base);
       width: 100%;
 
       @media (max-width: 680px) {
@@ -123,7 +123,7 @@
       font-size: clamp(10px, 1.1vw, 13px);
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: #1b2350;
+      color: var(--clr-base);
     }
     > p {
       opacity: 0.7;
@@ -168,7 +168,7 @@
 }
 
 .btn-shine {
-  background: linear-gradient(to right, #1b2350 0, #b07d43 12%, #1b2350 24%);
+  background: linear-gradient(to right, var(--clr-base) 0, #b07d43 12%, var(--clr-base) 24%);
   background-position: 0;
   -webkit-background-clip: text;
   background-clip: text;

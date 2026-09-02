@@ -22,9 +22,9 @@ import { useTranslation } from "react-i18next";
 const fieldSx = {
   "& .MuiInput-root:before": { borderBottom: "1px solid rgba(27,35,80,0.3)" },
   "& .MuiInput-root:hover:not(.Mui-disabled):before": {
-    borderBottom: "1px solid #1b2350",
+    borderBottom: "1px solid var(--clr-base)",
   },
-  "& .MuiInput-root:after": { borderBottom: "1px solid #1b2350" },
+  "& .MuiInput-root:after": { borderBottom: "1px solid var(--clr-base)" },
   "& .MuiInputBase-input": { padding: "10px 0", fontSize: "1.05rem" },
   "& .MuiInputLabel-root": {
     fontSize: "0.8rem",
@@ -32,13 +32,13 @@ const fieldSx = {
     textTransform: "uppercase",
     color: "rgba(27,35,80,0.55)",
   },
-  "& .MuiInputLabel-root.Mui-focused": { color: "#1b2350" },
+  "& .MuiInputLabel-root.Mui-focused": { color: "var(--clr-base)" },
 };
 
 const StyledSelect = styled(Select)(() => ({
   "&:before": { borderBottom: "1px solid rgba(27,35,80,0.3)" },
-  "&:hover:not(.Mui-disabled):before": { borderBottom: "1px solid #1b2350" },
-  "&:after": { borderBottom: "1px solid #1b2350" },
+  "&:hover:not(.Mui-disabled):before": { borderBottom: "1px solid var(--clr-base)" },
+  "&:after": { borderBottom: "1px solid var(--clr-base)" },
   "& .MuiSelect-select": { padding: "10px 0", fontSize: "1.05rem" },
 }));
 
@@ -239,8 +239,8 @@ function ContactPage() {
                 letterSpacing: "0.28em",
                 fontSize: "0.78rem",
                 mt: 2,
-                background: "#1b2350",
-                "&:hover": { background: "#2b356e" },
+                background: "var(--clr-base)",
+                "&:hover": { background: "var(--clr-tint-5)" },
                 transition: "background 0.3s ease",
               }}
             >
@@ -269,7 +269,7 @@ function ContactPage() {
         <div className="image-section">
           <div className="image-container">
             <img
-              src="https://res.cloudinary.com/ds42i5esb/image/upload/v1753182180/Ali-Portfolio/Image1_xk2but.jpg"
+              src="https://res.cloudinary.com/ds42i5esb/image/upload/v1788238645/Ali_2_sftcod.jpg"
               alt="Ali Ismayil"
               className="contact-image"
             />

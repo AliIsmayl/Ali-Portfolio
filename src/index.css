@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* --- Brand colour system (test) — derived from #1b2350.
+   Revert = restore previous hard-coded values. --- */
+:root {
+  --clr-tint-1: #d1d3dc; /* 10% */
+  --clr-tint-2: #b3b6c5; /* 20% */
+  --clr-tint-3: #8d91a8; /* 30% */
+  --clr-tint-4: #676c8a; /* 40% */
+  --clr-tint-5: #41486d; /* 50% */
+  --clr-base: #1b2350; /* base  */
+  --clr-shade-1: #171d43; /* 60% */
+  --clr-shade-2: #121735; /* 70% */
+  --clr-shade-3: #0e1228; /* 80% */
+  --clr-shade-4: #090c1b; /* 90% */
+  --clr-shade-5: #050710; /* 100% */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,8 +40,10 @@
 
 /* One typeface everywhere */
 body {
-  background: #f4f1ea;
-  color: #1b2350;
+  /* single source of truth for the page tone — the navbar reads the same var */
+  --page-bg: #f4f1ea;
+  background: var(--page-bg);
+  color: var(--clr-base);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* "clip" hides horizontal overflow without creating a scroll container,
@@ -59,22 +77,23 @@ button,
   pointer-events: auto !important;
 }
 
-/* Per-page background tone — same family, page-appropriate */
+/* Per-page background tone — same family, page-appropriate.
+   Set the var only; `background` above follows it, and so does the navbar. */
 body[data-route="home"] {
-  background: #f4f1ea;
+  --page-bg: #f4f1ea;
 }
 body[data-route="projects"] {
-  background: #efece2;
+  --page-bg: #efece2;
 }
 body[data-route="contact"] {
-  background: #f1ebdd;
+  --page-bg: #f1ebdd;
 }
 body[data-route="detail"] {
-  background: #f1ede3;
+  --page-bg: #f1ede3;
 }
 
 ::selection {
-  background-color: #1b2350;
+  background-color: var(--clr-base);
   color: #f4f1ea;
 }
 
@@ -83,11 +102,11 @@ body[data-route="detail"] {
   height: 9px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1b2350;
+  background: var(--clr-base);
   border-radius: 0;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #2b356e;
+  background: var(--clr-tint-5);
 }
 ::-webkit-scrollbar-track {
   background: #e3ded1;
@@ -97,5 +116,5 @@ body[data-route="detail"] {
 }
 * {
   scrollbar-width: thin;
-  scrollbar-color: #1b2350 #e3ded1;
+  scrollbar-color: var(--clr-base) #e3ded1;
 }
