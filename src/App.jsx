@@ -10,6 +10,7 @@ import Footer from "./Layouts/Footer/Footer";
 import ContactPage from "./Pages/ContactPage/ContactPage";
 import ProjectDetail from "./Pages/ProjectDetail/ProjectDetail";
 import InsydeCard from "./Components/InsydeCard/InsydeCard";
+import Intro from "./Components/Intro/Intro";
 import { initLenis, scrollToTop } from "./lenis";
 
 function ScrollToTopOnRouteChange() {
@@ -36,6 +37,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <Intro />
       <ScrollToTopOnRouteChange />
       <Navbar />
       <Routes>

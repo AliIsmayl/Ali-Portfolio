@@ -1,0 +1,97 @@
+.intro {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  background: var(--page-bg, #f4f1ea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.95s cubic-bezier(0.76, 0, 0.24, 1);
+  will-change: transform;
+
+  &--out {
+    transform: translateY(-100%);
+  }
+
+  &__inner {
+    padding: 0 24px;
+    text-align: center;
+  }
+
+  &__name {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    font-size: clamp(38px, 9vw, 130px);
+    line-height: 1;
+    color: var(--clr-base, #1b2350);
+
+    span {
+      display: inline-block;
+      white-space: pre;
+      transform: translateY(110%);
+      animation: introLetter 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      animation-delay: calc(var(--i) * 0.045s + 0.1s);
+    }
+  }
+
+  &__line {
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin-top: clamp(14px, 2vw, 26px);
+    background: #b07d43;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: introLine 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: 0.55s;
+  }
+
+  &__count {
+    position: absolute;
+    right: clamp(18px, 4vw, 48px);
+    bottom: clamp(16px, 4vw, 40px);
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    font-family: "Inter Tight", sans-serif;
+    color: var(--clr-base, #1b2350);
+
+    span {
+      font-size: clamp(28px, 5vw, 56px);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      font-variant-numeric: tabular-nums;
+    }
+
+    i {
+      font-style: normal;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+    }
+  }
+}
+
+@keyframes introLetter {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes introLine {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro {
+    display: none;
+  }
+}
