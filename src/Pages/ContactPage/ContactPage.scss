@@ -4,7 +4,7 @@ $secondary-color: #6c757d;
 $error-color: var(--clr-shade-2);
 $success-color: #23d160;
 $light-color: #f8f9fa;
-$dark-color: var(--clr-base);
+$dark-color: #1b2350;
 $transition: all 0.3s ease;
 
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
@@ -206,7 +206,7 @@ $transition: all 0.3s ease;
       width: 100%;
       padding: 10px 20px;
       color: white;
-      background: rgba($dark-color, 0.7);
+      background: rgba($dark-color, 0.85);
       animation: fadeIn 0.8s ease-out 0.4s both;
       h3 {
         font-size: 1.5rem;

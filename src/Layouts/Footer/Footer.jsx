@@ -58,6 +58,15 @@ function Footer() {
                 <span>Digital Card</span>
                 <MdArrowOutward />
               </a>
+              <a
+                href="https://veb-sayt-qiymet.netlify.app/"
+                target="_blank"
+                rel="noopener"
+                className="foot-link"
+              >
+                <span>{Pages("Pricing")}</span>
+                <MdArrowOutward />
+              </a>
             </div>
           </div>
         </div>

@@ -149,6 +149,9 @@ function Navbar() {
               <Link to={`tel:+994998982004`} target="_blank">
                 {Pages("Number")}
               </Link>
+              <Link to={"https://veb-sayt-qiymet.netlify.app/"} target="_blank">
+                {Pages("Pricing")}
+              </Link>
             </div>
           </div>
         </div>

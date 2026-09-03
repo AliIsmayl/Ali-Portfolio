@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoMailOutline } from "react-icons/io5";
-import { RxInstagramLogo } from "react-icons/rx";
+import { MdOutlineNfc, MdOutlineSell } from "react-icons/md";
 import { Link } from "react-router";
 import { LuPhone } from "react-icons/lu";
 import "./ContactPage.scss";
@@ -55,6 +55,7 @@ function ContactPage() {
   const { t: Contact } = useTranslation("translation", {
     keyPrefix: "Contact",
   });
+  const { t: Pages } = useTranslation("translation", { keyPrefix: "Pages" });
 
   const [formData, setFormData] = useState({
     name: "",
@@ -288,11 +289,18 @@ function ContactPage() {
               <LuPhone /> <p>+994 99 898 2004</p>
             </Link>
             <Link
-              to={"https://www.instagram.com/ali.ismayil_"}
+              to={"https://insyde.info/personal/06upZzUpyAx4/"}
               target="_blank"
               className="link"
             >
-              <RxInstagramLogo /> <p>ali.ismayil_</p>
+              <MdOutlineNfc /> <p>Ali Ismayil</p>
+            </Link>
+            <Link
+              to={"https://veb-sayt-qiymet.netlify.app/"}
+              target="_blank"
+              className="link"
+            >
+              <MdOutlineSell /> <p>{Pages("Pricing")}</p>
             </Link>
           </div>
         </div>
